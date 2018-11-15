@@ -1,0 +1,1043 @@
+2018-07-16 10:14:17.852  INFO shantim2-l2 --- [           main] c.d.c.App                                : Starting App on shantim2-l2 with PID 1604 (C:\Users\shashikant\eclipse-workspace\UserApp\target\classes started by shashikant in C:\Users\shashikant\eclipse-workspace\UserApp)
+2018-07-16 10:14:17.899  INFO shantim2-l2 --- [           main] c.d.c.App                                : No active profile set, falling back to default profiles: default
+2018-07-16 10:14:18.064  INFO shantim2-l2 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@63475ace: startup date [Mon Jul 16 10:14:18 IST 2018]; root of context hierarchy
+2018-07-16 10:14:18.361  INFO shantim2-l2 --- [kground-preinit] o.h.v.i.u.Version                        : HV000001: Hibernate Validator 5.3.5.Final
+2018-07-16 10:14:20.002  INFO shantim2-l2 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-07-16 10:14:20.026  INFO shantim2-l2 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2018-07-16 10:14:20.028  INFO shantim2-l2 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-07-16 10:14:20.165  INFO shantim2-l2 --- [ost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2018-07-16 10:14:20.165  INFO shantim2-l2 --- [ost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 2149 ms
+2018-07-16 10:14:20.370  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2018-07-16 10:14:20.377  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-16 10:14:20.377  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-16 10:14:20.378  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-16 10:14:20.378  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-16 10:14:20.843  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@63475ace: startup date [Mon Jul 16 10:14:18 IST 2018]; root of context hierarchy
+2018-07-16 10:14:20.918  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/user],methods=[GET],produces=[application/json || application/xml]}" onto public com.dm_02_tbdapp.bean.UserProfile com.dm_02_tbdapp.controller.UserAppController.setUserProfile(java.lang.String)
+2018-07-16 10:14:20.920  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/login],methods=[POST]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.loginUser(org.json.simple.JSONObject)
+2018-07-16 10:14:20.921  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/logout],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.logoutUser()
+2018-07-16 10:14:20.921  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/registerUser],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.registerUser(com.dm_02_tbdapp.bean.User)
+2018-07-16 10:14:20.922  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/updateUser],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.updateUser(com.dm_02_tbdapp.bean.User)
+2018-07-16 10:14:20.922  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/updateUserAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.updateAddress(com.dm_02_tbdapp.bean.User)
+2018-07-16 10:14:20.923  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/addAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.addAddress(com.dm_02_tbdapp.bean.User)
+2018-07-16 10:14:20.923  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/removeAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.removeAddress(com.dm_02_tbdapp.bean.User)
+2018-07-16 10:14:20.928  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-16 10:14:20.929  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-16 10:14:20.966  INFO shantim2-l2 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-16 10:14:20.966  INFO shantim2-l2 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-16 10:14:21.028  INFO shantim2-l2 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-16 10:14:21.404  INFO shantim2-l2 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-07-16 10:14:21.531  INFO shantim2-l2 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2018-07-16 10:14:21.562  INFO shantim2-l2 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2018-07-16 10:14:21.687  INFO shantim2-l2 --- [           main] o.a.t.u.n.NioSelectorPool                : Using a shared selector for servlet write/read
+2018-07-16 10:14:21.796  INFO shantim2-l2 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2018-07-16 10:14:21.812  INFO shantim2-l2 --- [           main] c.d.c.App                                : Started App in 4.483 seconds (JVM running for 8.216)
+2018-07-16 10:55:23.949  INFO shantim2-l2 --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-07-16 10:55:23.949  INFO shantim2-l2 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization started
+2018-07-16 10:55:24.203  INFO shantim2-l2 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization completed in 254 ms
+2018-07-16 10:55:26.226  INFO shantim2-l2 --- [nio-8080-exec-1] c.d.c.UserManager                        : json object is created and entered into class UserManager.java .
+2018-07-16 10:55:26.241  INFO shantim2-l2 --- [nio-8080-exec-1] c.d.c.UserManager                        : this method is responsible to return the json object.
+2018-07-16 12:12:54.771  INFO shantim2-l2 --- [on(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-07-16 12:12:54.771  INFO shantim2-l2 --- [on(2)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@63475ace: startup date [Mon Jul 16 10:14:18 IST 2018]; root of context hierarchy
+2018-07-16 12:12:54.787  INFO shantim2-l2 --- [on(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-07-16 12:13:38.551  INFO shantim2-l2 --- [           main] c.d.c.App                                : Starting App on shantim2-l2 with PID 3132 (C:\Users\shashikant\eclipse-workspace\UserApp\target\classes started by shashikant in C:\Users\shashikant\eclipse-workspace\UserApp)
+2018-07-16 12:13:38.551  INFO shantim2-l2 --- [           main] c.d.c.App                                : No active profile set, falling back to default profiles: default
+2018-07-16 12:13:38.629  INFO shantim2-l2 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@63475ace: startup date [Mon Jul 16 12:13:38 IST 2018]; root of context hierarchy
+2018-07-16 12:13:38.894  INFO shantim2-l2 --- [kground-preinit] o.h.v.i.u.Version                        : HV000001: Hibernate Validator 5.3.5.Final
+2018-07-16 12:13:40.806  INFO shantim2-l2 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-07-16 12:13:40.821  INFO shantim2-l2 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2018-07-16 12:13:40.821  INFO shantim2-l2 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-07-16 12:13:40.947  INFO shantim2-l2 --- [ost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2018-07-16 12:13:40.947  INFO shantim2-l2 --- [ost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 2318 ms
+2018-07-16 12:13:41.181  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2018-07-16 12:13:41.181  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-16 12:13:41.181  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-16 12:13:41.197  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-16 12:13:41.197  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-16 12:13:41.701  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@63475ace: startup date [Mon Jul 16 12:13:38 IST 2018]; root of context hierarchy
+2018-07-16 12:13:41.810  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/user],methods=[GET],produces=[application/json || application/xml]}" onto public com.dm_02_tbdapp.bean.UserProfile com.dm_02_tbdapp.controller.UserAppController.setUserProfile(java.lang.String)
+2018-07-16 12:13:41.810  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/login],methods=[POST]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.loginUser(org.json.simple.JSONObject)
+2018-07-16 12:13:41.810  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/logout],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.logoutUser()
+2018-07-16 12:13:41.810  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/registerUser],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.registerUser(com.dm_02_tbdapp.bean.User)
+2018-07-16 12:13:41.810  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/updateUser],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.updateUser(com.dm_02_tbdapp.bean.User)
+2018-07-16 12:13:41.810  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/updateUserAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.updateAddress(com.dm_02_tbdapp.bean.User)
+2018-07-16 12:13:41.810  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/addAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.addAddress(com.dm_02_tbdapp.bean.User)
+2018-07-16 12:13:41.810  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/removeAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.removeAddress(com.dm_02_tbdapp.bean.User)
+2018-07-16 12:13:41.810  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-16 12:13:41.826  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-16 12:13:41.873  INFO shantim2-l2 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-16 12:13:41.873  INFO shantim2-l2 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-16 12:13:41.951  INFO shantim2-l2 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-16 12:13:42.263  INFO shantim2-l2 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-07-16 12:13:42.295  INFO shantim2-l2 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2018-07-16 12:13:42.310  INFO shantim2-l2 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2018-07-16 12:13:42.341  INFO shantim2-l2 --- [           main] o.a.t.u.n.NioSelectorPool                : Using a shared selector for servlet write/read
+2018-07-16 12:13:42.373  INFO shantim2-l2 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2018-07-16 12:13:42.388  INFO shantim2-l2 --- [           main] c.d.c.App                                : Started App in 4.199 seconds (JVM running for 9.079)
+2018-07-16 12:27:40.529  INFO shantim2-l2 --- [nio-8080-exec-2] o.a.c.c.C.[.[.[/]                        : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-07-16 12:27:40.529  INFO shantim2-l2 --- [nio-8080-exec-2] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization started
+2018-07-16 12:27:40.625  INFO shantim2-l2 --- [nio-8080-exec-2] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization completed in 96 ms
+2018-07-16 12:27:41.062  INFO shantim2-l2 --- [nio-8080-exec-2] c.d.c.UserManager                        : json object is created and entered into class UserManager.java .
+2018-07-16 12:27:41.077  INFO shantim2-l2 --- [nio-8080-exec-2] c.d.c.UserManager                        : this method is responsible to return the json object.
+2018-07-16 12:38:52.855  INFO shantim2-l2 --- [nio-8080-exec-6] c.d.c.UserManager                        : json object is created and entered into class UserManager.java .
+2018-07-16 12:38:52.871  INFO shantim2-l2 --- [nio-8080-exec-6] c.d.c.UserManager                        : this method is responsible to return the json object.
+2018-07-16 12:39:03.288  INFO shantim2-l2 --- [on(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-07-16 12:39:03.288  INFO shantim2-l2 --- [on(2)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@63475ace: startup date [Mon Jul 16 12:13:38 IST 2018]; root of context hierarchy
+2018-07-16 12:39:03.303  INFO shantim2-l2 --- [on(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-07-16 12:39:48.519  INFO shantim2-l2 --- [           main] c.d.c.App                                : Starting App on shantim2-l2 with PID 9168 (C:\Users\shashikant\eclipse-workspace\UserApp\target\classes started by shashikant in C:\Users\shashikant\eclipse-workspace\UserApp)
+2018-07-16 12:39:48.519  INFO shantim2-l2 --- [           main] c.d.c.App                                : No active profile set, falling back to default profiles: default
+2018-07-16 12:39:48.987  INFO shantim2-l2 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@63475ace: startup date [Mon Jul 16 12:39:48 IST 2018]; root of context hierarchy
+2018-07-16 12:39:49.111  INFO shantim2-l2 --- [kground-preinit] o.h.v.i.u.Version                        : HV000001: Hibernate Validator 5.3.5.Final
+2018-07-16 12:39:53.330  INFO shantim2-l2 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-07-16 12:39:53.361  INFO shantim2-l2 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2018-07-16 12:39:53.361  INFO shantim2-l2 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-07-16 12:39:53.699  INFO shantim2-l2 --- [ost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2018-07-16 12:39:53.699  INFO shantim2-l2 --- [ost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 4728 ms
+2018-07-16 12:39:54.183  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2018-07-16 12:39:54.198  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-16 12:39:54.198  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-16 12:39:54.198  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-16 12:39:54.198  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-16 12:39:55.257  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@63475ace: startup date [Mon Jul 16 12:39:48 IST 2018]; root of context hierarchy
+2018-07-16 12:39:55.441  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/user],methods=[GET],produces=[application/json || application/xml]}" onto public com.dm_02_tbdapp.bean.UserProfile com.dm_02_tbdapp.controller.UserAppController.setUserProfile(java.lang.String)
+2018-07-16 12:39:55.441  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/login],methods=[POST]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.loginUser(org.json.simple.JSONObject)
+2018-07-16 12:39:55.441  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/logout],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.logoutUser()
+2018-07-16 12:39:55.457  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/registerUser],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.registerUser(com.dm_02_tbdapp.bean.User)
+2018-07-16 12:39:55.457  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/updateUser],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.updateUser(com.dm_02_tbdapp.bean.User)
+2018-07-16 12:39:55.457  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/updateUserAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.updateAddress(com.dm_02_tbdapp.bean.User)
+2018-07-16 12:39:55.457  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/addAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.addAddress(com.dm_02_tbdapp.bean.User)
+2018-07-16 12:39:55.457  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/removeAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.removeAddress(com.dm_02_tbdapp.bean.User)
+2018-07-16 12:39:55.480  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-16 12:39:55.482  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-16 12:39:55.564  INFO shantim2-l2 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-16 12:39:55.564  INFO shantim2-l2 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-16 12:39:55.720  INFO shantim2-l2 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-16 12:39:56.266  INFO shantim2-l2 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-07-16 12:39:56.339  INFO shantim2-l2 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2018-07-16 12:39:56.355  INFO shantim2-l2 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2018-07-16 12:39:56.401  INFO shantim2-l2 --- [           main] o.a.t.u.n.NioSelectorPool                : Using a shared selector for servlet write/read
+2018-07-16 12:39:56.481  INFO shantim2-l2 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2018-07-16 12:39:56.497  INFO shantim2-l2 --- [           main] c.d.c.App                                : Started App in 8.801 seconds (JVM running for 11.935)
+2018-07-16 12:40:17.383  INFO shantim2-l2 --- [nio-8080-exec-3] o.a.c.c.C.[.[.[/]                        : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-07-16 12:40:17.383  INFO shantim2-l2 --- [nio-8080-exec-3] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization started
+2018-07-16 12:40:17.416  INFO shantim2-l2 --- [nio-8080-exec-3] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization completed in 33 ms
+2018-07-16 12:40:17.526  INFO shantim2-l2 --- [nio-8080-exec-3] c.d.c.UserManager                        : json object is created and entered into class UserManager.java .
+2018-07-16 12:40:17.526  INFO shantim2-l2 --- [nio-8080-exec-3] c.d.c.UserManager                        : this method is responsible to return the json object.
+2018-07-16 12:42:06.212  INFO shantim2-l2 --- [on(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-07-16 12:42:06.212  INFO shantim2-l2 --- [on(2)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@63475ace: startup date [Mon Jul 16 12:39:48 IST 2018]; root of context hierarchy
+2018-07-16 12:42:06.228  INFO shantim2-l2 --- [on(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-07-16 12:42:50.626  INFO shantim2-l2 --- [           main] c.d.c.App                                : Starting App on shantim2-l2 with PID 6956 (C:\Users\shashikant\eclipse-workspace\UserApp\target\classes started by shashikant in C:\Users\shashikant\eclipse-workspace\UserApp)
+2018-07-16 12:42:50.657  INFO shantim2-l2 --- [           main] c.d.c.App                                : No active profile set, falling back to default profiles: default
+2018-07-16 12:42:51.422  INFO shantim2-l2 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@63475ace: startup date [Mon Jul 16 12:42:51 IST 2018]; root of context hierarchy
+2018-07-16 12:42:51.484  INFO shantim2-l2 --- [kground-preinit] o.h.v.i.u.Version                        : HV000001: Hibernate Validator 5.3.5.Final
+2018-07-16 12:42:59.169  INFO shantim2-l2 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-07-16 12:42:59.232  INFO shantim2-l2 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2018-07-16 12:42:59.248  INFO shantim2-l2 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-07-16 12:42:59.745  INFO shantim2-l2 --- [ost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2018-07-16 12:42:59.745  INFO shantim2-l2 --- [ost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 8354 ms
+2018-07-16 12:43:00.533  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2018-07-16 12:43:00.549  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-16 12:43:00.549  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-16 12:43:00.549  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-16 12:43:00.549  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-16 12:43:02.705  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@63475ace: startup date [Mon Jul 16 12:42:51 IST 2018]; root of context hierarchy
+2018-07-16 12:43:03.080  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/user],methods=[GET],produces=[application/json || application/xml]}" onto public com.dm_02_tbdapp.bean.UserProfile com.dm_02_tbdapp.controller.UserAppController.setUserProfile(java.lang.String)
+2018-07-16 12:43:03.080  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/login],methods=[POST]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.loginUser(org.json.simple.JSONObject)
+2018-07-16 12:43:03.080  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/logout],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.logoutUser()
+2018-07-16 12:43:03.096  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/registerUser],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.registerUser(com.dm_02_tbdapp.bean.User)
+2018-07-16 12:43:03.096  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/updateUser],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.updateUser(com.dm_02_tbdapp.bean.User)
+2018-07-16 12:43:03.096  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/updateUserAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.updateAddress(com.dm_02_tbdapp.bean.User)
+2018-07-16 12:43:03.096  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/addAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.addAddress(com.dm_02_tbdapp.bean.User)
+2018-07-16 12:43:03.096  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/removeAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.removeAddress(com.dm_02_tbdapp.bean.User)
+2018-07-16 12:43:03.111  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-16 12:43:03.111  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-16 12:43:03.361  INFO shantim2-l2 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-16 12:43:03.361  INFO shantim2-l2 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-16 12:43:03.613  INFO shantim2-l2 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-16 12:43:04.656  INFO shantim2-l2 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-07-16 12:43:04.782  INFO shantim2-l2 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2018-07-16 12:43:04.844  INFO shantim2-l2 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2018-07-16 12:43:04.922  INFO shantim2-l2 --- [           main] o.a.t.u.n.NioSelectorPool                : Using a shared selector for servlet write/read
+2018-07-16 12:43:05.234  INFO shantim2-l2 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2018-07-16 12:43:05.265  INFO shantim2-l2 --- [           main] c.d.c.App                                : Started App in 16.43 seconds (JVM running for 23.573)
+2018-07-16 12:43:46.788  INFO shantim2-l2 --- [nio-8080-exec-2] o.a.c.c.C.[.[.[/]                        : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-07-16 12:43:46.788  INFO shantim2-l2 --- [nio-8080-exec-2] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization started
+2018-07-16 12:43:46.821  INFO shantim2-l2 --- [nio-8080-exec-2] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization completed in 33 ms
+2018-07-16 12:43:46.930  INFO shantim2-l2 --- [nio-8080-exec-2] c.d.c.UserManager                        : json object is created and entered into class UserManager.java .
+2018-07-16 12:43:46.930  INFO shantim2-l2 --- [nio-8080-exec-2] c.d.c.UserManager                        : this method is responsible to return the json object.
+2018-07-16 12:44:07.421  INFO shantim2-l2 --- [io-8080-exec-10] c.d.c.UserManager                        : json object is created and entered into class UserManager.java .
+2018-07-16 12:44:07.421  INFO shantim2-l2 --- [io-8080-exec-10] c.d.c.UserManager                        : this method is responsible to return the json object.
+2018-07-16 12:53:30.628  INFO shantim2-l2 --- [nio-8080-exec-8] c.d.c.UserManager                        : json object is created and entered into class UserManager.java .
+2018-07-16 12:53:30.628  INFO shantim2-l2 --- [nio-8080-exec-8] c.d.c.UserManager                        : this method is responsible to return the json object.
+2018-07-16 12:53:45.652  INFO shantim2-l2 --- [nio-8080-exec-4] c.d.c.UserManager                        : json object is created and entered into class UserManager.java .
+2018-07-16 12:53:45.652  INFO shantim2-l2 --- [nio-8080-exec-4] c.d.c.UserManager                        : this method is responsible to return the json object.
+2018-07-16 12:53:51.525  INFO shantim2-l2 --- [nio-8080-exec-9] c.d.c.UserManager                        : json object is created and entered into class UserManager.java .
+2018-07-16 12:53:51.525  INFO shantim2-l2 --- [nio-8080-exec-9] c.d.c.UserManager                        : this method is responsible to return the json object.
+2018-07-16 12:53:53.984  INFO shantim2-l2 --- [nio-8080-exec-5] c.d.c.UserManager                        : json object is created and entered into class UserManager.java .
+2018-07-16 12:53:53.984  INFO shantim2-l2 --- [nio-8080-exec-5] c.d.c.UserManager                        : this method is responsible to return the json object.
+2018-07-16 12:54:52.497  INFO shantim2-l2 --- [nio-8080-exec-7] c.d.c.UserManager                        : json object is created and entered into class UserManager.java .
+2018-07-16 12:54:52.497  INFO shantim2-l2 --- [nio-8080-exec-7] c.d.c.UserManager                        : this method is responsible to return the json object.
+2018-07-16 12:56:46.721  INFO shantim2-l2 --- [nio-8080-exec-2] c.d.c.UserManager                        : json object is created and entered into class UserManager.java .
+2018-07-16 12:56:46.736  INFO shantim2-l2 --- [nio-8080-exec-2] c.d.c.UserManager                        : this method is responsible to return the json object.
+2018-07-16 12:57:06.204  INFO shantim2-l2 --- [nio-8080-exec-6] c.d.c.UserManager                        : json object is created and entered into class UserManager.java .
+2018-07-16 12:57:06.204  INFO shantim2-l2 --- [nio-8080-exec-6] c.d.c.UserManager                        : this method is responsible to return the json object.
+2018-07-16 12:57:08.207  INFO shantim2-l2 --- [io-8080-exec-10] c.d.c.UserManager                        : json object is created and entered into class UserManager.java .
+2018-07-16 12:57:08.207  INFO shantim2-l2 --- [io-8080-exec-10] c.d.c.UserManager                        : this method is responsible to return the json object.
+2018-07-16 12:58:15.789  INFO shantim2-l2 --- [nio-8080-exec-8] c.d.c.UserManager                        : json object is created and entered into class UserManager.java .
+2018-07-16 12:58:15.789  INFO shantim2-l2 --- [nio-8080-exec-8] c.d.c.UserManager                        : this method is responsible to return the json object.
+2018-07-16 13:02:12.704  INFO shantim2-l2 --- [nio-8080-exec-9] c.d.c.UserManager                        : json object is created and entered into class UserManager.java .
+2018-07-16 13:02:12.720  INFO shantim2-l2 --- [nio-8080-exec-9] c.d.c.UserManager                        : this method is responsible to return the json object.
+2018-07-16 13:02:25.569  INFO shantim2-l2 --- [nio-8080-exec-5] c.d.c.UserManager                        : json object is created and entered into class UserManager.java .
+2018-07-16 13:02:25.569  INFO shantim2-l2 --- [nio-8080-exec-5] c.d.c.UserManager                        : this method is responsible to return the json object.
+2018-07-16 13:02:27.244  INFO shantim2-l2 --- [nio-8080-exec-7] c.d.c.UserManager                        : json object is created and entered into class UserManager.java .
+2018-07-16 13:02:27.244  INFO shantim2-l2 --- [nio-8080-exec-7] c.d.c.UserManager                        : this method is responsible to return the json object.
+2018-07-16 13:02:41.084  INFO shantim2-l2 --- [nio-8080-exec-3] c.d.c.UserManager                        : json object is created and entered into class UserManager.java .
+2018-07-16 13:02:41.084  INFO shantim2-l2 --- [nio-8080-exec-3] c.d.c.UserManager                        : this method is responsible to return the json object.
+2018-07-16 13:02:43.158  INFO shantim2-l2 --- [nio-8080-exec-2] c.d.c.UserManager                        : json object is created and entered into class UserManager.java .
+2018-07-16 13:02:43.158  INFO shantim2-l2 --- [nio-8080-exec-2] c.d.c.UserManager                        : this method is responsible to return the json object.
+2018-07-16 13:03:56.530  INFO shantim2-l2 --- [io-8080-exec-10] c.d.c.UserManager                        : json object is created and entered into class UserManager.java .
+2018-07-16 13:03:56.530  INFO shantim2-l2 --- [io-8080-exec-10] c.d.c.UserManager                        : this method is responsible to return the json object.
+2018-07-16 13:04:01.550  INFO shantim2-l2 --- [nio-8080-exec-1] c.d.c.UserManager                        : json object is created and entered into class UserManager.java .
+2018-07-16 13:04:01.550  INFO shantim2-l2 --- [nio-8080-exec-1] c.d.c.UserManager                        : this method is responsible to return the json object.
+2018-07-16 13:05:53.498  INFO shantim2-l2 --- [nio-8080-exec-4] c.d.c.UserManager                        : json object is created and entered into class UserManager.java .
+2018-07-16 13:05:53.505  INFO shantim2-l2 --- [nio-8080-exec-4] c.d.c.UserManager                        : this method is responsible to return the json object.
+2018-07-16 13:07:45.178  INFO shantim2-l2 --- [nio-8080-exec-5] c.d.c.UserManager                        : json object is created and entered into class UserManager.java .
+2018-07-16 13:07:45.178  INFO shantim2-l2 --- [nio-8080-exec-5] c.d.c.UserManager                        : this method is responsible to return the json object.
+2018-07-16 13:08:05.295  INFO shantim2-l2 --- [nio-8080-exec-7] c.d.c.UserManager                        : json object is created and entered into class UserManager.java .
+2018-07-16 13:08:05.295  INFO shantim2-l2 --- [nio-8080-exec-7] c.d.c.UserManager                        : this method is responsible to return the json object.
+2018-07-16 14:06:51.610  INFO shantim2-l2 --- [nio-8080-exec-2] c.d.c.UserManager                        : json object is created and entered into class UserManager.java .
+2018-07-16 14:06:51.610  INFO shantim2-l2 --- [nio-8080-exec-2] c.d.c.UserManager                        : this method is responsible to return the json object.
+2018-07-16 14:06:51.931  INFO shantim2-l2 --- [nio-8080-exec-6] c.d.c.UserManager                        : json object is created and entered into class UserManager.java .
+2018-07-16 14:06:51.931  INFO shantim2-l2 --- [nio-8080-exec-6] c.d.c.UserManager                        : this method is responsible to return the json object.
+2018-07-16 14:12:06.068  INFO shantim2-l2 --- [nio-8080-exec-1] c.d.c.UserManager                        : json object is created and entered into class UserManager.java .
+2018-07-16 14:12:06.068  INFO shantim2-l2 --- [nio-8080-exec-1] c.d.c.UserManager                        : this method is responsible to return the json object.
+2018-07-16 15:57:45.536  INFO shantim2-l2 --- [nio-8080-exec-4] c.d.c.UserManager                        : json object is created and entered into class UserManager.java .
+2018-07-16 15:57:45.536  INFO shantim2-l2 --- [nio-8080-exec-4] c.d.c.UserManager                        : this method is responsible to return the json object.
+2018-07-16 16:03:35.875  INFO shantim2-l2 --- [nio-8080-exec-7] c.d.c.UserManager                        : json object is created and entered into class UserManager.java .
+2018-07-16 16:03:35.891  INFO shantim2-l2 --- [nio-8080-exec-7] c.d.c.UserManager                        : this method is responsible to return the json object.
+2018-07-16 16:11:09.358  INFO shantim2-l2 --- [           main] c.d.c.App                                : Starting App on shantim2-l2 with PID 6944 (C:\Users\shashikant\eclipse-workspace\UserApp\target\classes started by shashikant in C:\Users\shashikant\eclipse-workspace\UserApp)
+2018-07-16 16:11:09.374  INFO shantim2-l2 --- [           main] c.d.c.App                                : No active profile set, falling back to default profiles: default
+2018-07-16 16:11:09.806  INFO shantim2-l2 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e6d5d29: startup date [Mon Jul 16 16:11:09 IST 2018]; root of context hierarchy
+2018-07-16 16:11:11.190  INFO shantim2-l2 --- [kground-preinit] o.h.v.i.u.Version                        : HV000001: Hibernate Validator 5.3.5.Final
+2018-07-16 16:11:18.843  INFO shantim2-l2 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-07-16 16:11:18.938  INFO shantim2-l2 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2018-07-16 16:11:18.954  INFO shantim2-l2 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-07-16 16:11:19.646  INFO shantim2-l2 --- [ost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2018-07-16 16:11:19.647  INFO shantim2-l2 --- [ost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 9872 ms
+2018-07-16 16:11:20.478  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2018-07-16 16:11:20.494  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-16 16:11:20.494  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-16 16:11:20.494  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-16 16:11:20.494  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-16 16:11:23.878  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e6d5d29: startup date [Mon Jul 16 16:11:09 IST 2018]; root of context hierarchy
+2018-07-16 16:11:24.319  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/registerUser],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.registerUser(com.dm_02_tbdapp.bean.User)
+2018-07-16 16:11:24.319  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/updateUser],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.updateUser(com.dm_02_tbdapp.bean.User)
+2018-07-16 16:11:24.319  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/updateUserAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.updateAddress(com.dm_02_tbdapp.bean.User)
+2018-07-16 16:11:24.319  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/addAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.addAddress(com.dm_02_tbdapp.bean.User)
+2018-07-16 16:11:24.340  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/removeAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.removeAddress(com.dm_02_tbdapp.bean.User)
+2018-07-16 16:11:24.342  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/user],methods=[GET],produces=[application/json || application/xml]}" onto public com.dm_02_tbdapp.bean.UserProfile com.dm_02_tbdapp.controller.UserAppController.setUserProfile(java.lang.String)
+2018-07-16 16:11:24.342  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/login],methods=[POST]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.loginUser(org.json.simple.JSONObject)
+2018-07-16 16:11:24.342  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/logout],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.logoutUser()
+2018-07-16 16:11:24.358  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-16 16:11:24.374  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-16 16:11:24.643  INFO shantim2-l2 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-16 16:11:24.647  INFO shantim2-l2 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-16 16:11:25.188  INFO shantim2-l2 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-16 16:11:27.497  INFO shantim2-l2 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-07-16 16:11:27.611  INFO shantim2-l2 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2018-07-16 16:11:27.689  INFO shantim2-l2 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2018-07-16 16:11:27.720 ERROR shantim2-l2 --- [           main] o.a.c.h.Http11NioProtocol                : Failed to start end point associated with ProtocolHandler ["http-nio-8080"]
+java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:990)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:635)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1022)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:250)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:193)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.dm_02_tbdapp.controller.App.main(App.java:15)
+2018-07-16 16:11:27.770 ERROR shantim2-l2 --- [           main] o.a.c.c.StandardService                  : Failed to start connector [Connector[HTTP/1.1-8080]]
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8080]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:250)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:193)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.dm_02_tbdapp.controller.App.main(App.java:15)
+Caused by: org.apache.catalina.LifecycleException: service.getName(): "Tomcat";  Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1031)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 13 more
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:990)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:635)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1022)
+	... 14 more
+2018-07-16 16:11:27.817  INFO shantim2-l2 --- [           main] o.a.c.h.Http11NioProtocol                : Pausing ProtocolHandler ["http-nio-8080"]
+2018-07-16 16:11:27.817  INFO shantim2-l2 --- [           main] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2018-07-16 16:11:27.879  INFO shantim2-l2 --- [           main] o.a.c.u.LifecycleBase                    : The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+2018-07-16 16:11:27.879  INFO shantim2-l2 --- [           main] o.a.c.h.Http11NioProtocol                : Stopping ProtocolHandler ["http-nio-8080"]
+2018-07-16 16:11:27.879  INFO shantim2-l2 --- [           main] o.a.c.h.Http11NioProtocol                : Destroying ProtocolHandler ["http-nio-8080"]
+2018-07-16 16:11:27.926  INFO shantim2-l2 --- [           main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2018-07-16 16:11:27.942 ERROR shantim2-l2 --- [           main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8080 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8080, or configure this application to listen on another port.
+
+2018-07-16 16:11:27.958  INFO shantim2-l2 --- [           main] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e6d5d29: startup date [Mon Jul 16 16:11:09 IST 2018]; root of context hierarchy
+2018-07-16 16:11:27.964  INFO shantim2-l2 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-07-16 16:12:08.695  INFO shantim2-l2 --- [on(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-07-16 16:12:08.695  INFO shantim2-l2 --- [on(2)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@63475ace: startup date [Mon Jul 16 12:42:51 IST 2018]; root of context hierarchy
+2018-07-16 16:12:08.710  INFO shantim2-l2 --- [on(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-07-16 16:13:03.623  INFO shantim2-l2 --- [           main] c.d.c.App                                : Starting App on shantim2-l2 with PID 7176 (C:\Users\shashikant\eclipse-workspace\UserApp\target\classes started by shashikant in C:\Users\shashikant\eclipse-workspace\UserApp)
+2018-07-16 16:13:03.686  INFO shantim2-l2 --- [           main] c.d.c.App                                : No active profile set, falling back to default profiles: default
+2018-07-16 16:13:04.402  INFO shantim2-l2 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5c530d1e: startup date [Mon Jul 16 16:13:04 IST 2018]; root of context hierarchy
+2018-07-16 16:13:04.700  INFO shantim2-l2 --- [kground-preinit] o.h.v.i.u.Version                        : HV000001: Hibernate Validator 5.3.5.Final
+2018-07-16 16:13:13.747  INFO shantim2-l2 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-07-16 16:13:13.796  INFO shantim2-l2 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2018-07-16 16:13:13.811  INFO shantim2-l2 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-07-16 16:13:14.562  INFO shantim2-l2 --- [ost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2018-07-16 16:13:14.564  INFO shantim2-l2 --- [ost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 10181 ms
+2018-07-16 16:13:15.915  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2018-07-16 16:13:15.946  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-16 16:13:15.946  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-16 16:13:15.946  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-16 16:13:15.946  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-16 16:13:19.112  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5c530d1e: startup date [Mon Jul 16 16:13:04 IST 2018]; root of context hierarchy
+2018-07-16 16:13:19.774  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/user],methods=[GET],produces=[application/json || application/xml]}" onto public com.dm_02_tbdapp.bean.UserProfile com.dm_02_tbdapp.controller.UserAppController.setUserProfile(java.lang.String)
+2018-07-16 16:13:19.790  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/login],methods=[POST]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.loginUser(org.json.simple.JSONObject)
+2018-07-16 16:13:19.790  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/logout],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.logoutUser()
+2018-07-16 16:13:19.805  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/registerUser],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.registerUser(com.dm_02_tbdapp.bean.User)
+2018-07-16 16:13:19.805  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/updateUser],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.updateUser(com.dm_02_tbdapp.bean.User)
+2018-07-16 16:13:19.805  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/updateUserAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.updateAddress(com.dm_02_tbdapp.bean.User)
+2018-07-16 16:13:19.805  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/addAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.addAddress(com.dm_02_tbdapp.bean.User)
+2018-07-16 16:13:19.821  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/removeAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.removeAddress(com.dm_02_tbdapp.bean.User)
+2018-07-16 16:13:19.837  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-16 16:13:19.859  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-16 16:13:20.293  INFO shantim2-l2 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-16 16:13:20.296  INFO shantim2-l2 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-16 16:13:20.693  INFO shantim2-l2 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-16 16:13:22.995  INFO shantim2-l2 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-07-16 16:13:23.107  INFO shantim2-l2 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2018-07-16 16:13:23.167  INFO shantim2-l2 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2018-07-16 16:13:23.245  INFO shantim2-l2 --- [           main] o.a.t.u.n.NioSelectorPool                : Using a shared selector for servlet write/read
+2018-07-16 16:13:23.466  INFO shantim2-l2 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2018-07-16 16:13:23.546  INFO shantim2-l2 --- [           main] c.d.c.App                                : Started App in 21.733 seconds (JVM running for 29.776)
+2018-07-16 16:14:51.947  INFO shantim2-l2 --- [           main] c.d.c.App                                : Starting App on shantim2-l2 with PID 6392 (C:\Users\shashikant\eclipse-workspace\UserApp\target\classes started by shashikant in C:\Users\shashikant\eclipse-workspace\UserApp)
+2018-07-16 16:14:51.962  INFO shantim2-l2 --- [           main] c.d.c.App                                : No active profile set, falling back to default profiles: default
+2018-07-16 16:14:52.201  INFO shantim2-l2 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2a2c13a8: startup date [Mon Jul 16 16:14:52 IST 2018]; root of context hierarchy
+2018-07-16 16:14:52.232  INFO shantim2-l2 --- [kground-preinit] o.h.v.i.u.Version                        : HV000001: Hibernate Validator 5.3.5.Final
+2018-07-16 16:14:54.430  INFO shantim2-l2 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-07-16 16:14:54.445  INFO shantim2-l2 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2018-07-16 16:14:54.445  INFO shantim2-l2 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-07-16 16:14:54.635  INFO shantim2-l2 --- [ost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2018-07-16 16:14:54.635  INFO shantim2-l2 --- [ost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 2434 ms
+2018-07-16 16:14:54.937  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2018-07-16 16:14:54.937  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-16 16:14:54.937  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-16 16:14:54.937  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-16 16:14:54.953  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-16 16:14:56.445  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2a2c13a8: startup date [Mon Jul 16 16:14:52 IST 2018]; root of context hierarchy
+2018-07-16 16:14:56.848  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/user],methods=[GET],produces=[application/json || application/xml]}" onto public com.dm_02_tbdapp.bean.UserProfile com.dm_02_tbdapp.controller.UserAppController.setUserProfile(java.lang.String)
+2018-07-16 16:14:56.863  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/login],methods=[POST]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.loginUser(org.json.simple.JSONObject)
+2018-07-16 16:14:56.863  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/logout],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.logoutUser()
+2018-07-16 16:14:56.863  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/registerUser],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.registerUser(com.dm_02_tbdapp.bean.User)
+2018-07-16 16:14:56.863  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/updateUser],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.updateUser(com.dm_02_tbdapp.bean.User)
+2018-07-16 16:14:56.863  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/updateUserAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.updateAddress(com.dm_02_tbdapp.bean.User)
+2018-07-16 16:14:56.863  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/addAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.addAddress(com.dm_02_tbdapp.bean.User)
+2018-07-16 16:14:56.863  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/removeAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.removeAddress(com.dm_02_tbdapp.bean.User)
+2018-07-16 16:14:56.894  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-16 16:14:56.894  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-16 16:14:57.175  INFO shantim2-l2 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-16 16:14:57.175  INFO shantim2-l2 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-16 16:14:57.426  INFO shantim2-l2 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-16 16:14:59.214  INFO shantim2-l2 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-07-16 16:14:59.350  INFO shantim2-l2 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2018-07-16 16:14:59.397  INFO shantim2-l2 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2018-07-16 16:14:59.413 ERROR shantim2-l2 --- [           main] o.a.c.h.Http11NioProtocol                : Failed to start end point associated with ProtocolHandler ["http-nio-8080"]
+java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:990)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:635)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1022)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:250)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:193)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.dm_02_tbdapp.controller.App.main(App.java:15)
+2018-07-16 16:14:59.428 ERROR shantim2-l2 --- [           main] o.a.c.c.StandardService                  : Failed to start connector [Connector[HTTP/1.1-8080]]
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8080]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:250)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:193)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.dm_02_tbdapp.controller.App.main(App.java:15)
+Caused by: org.apache.catalina.LifecycleException: service.getName(): "Tomcat";  Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1031)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 13 more
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:990)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:635)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1022)
+	... 14 more
+2018-07-16 16:14:59.460  INFO shantim2-l2 --- [           main] o.a.c.h.Http11NioProtocol                : Pausing ProtocolHandler ["http-nio-8080"]
+2018-07-16 16:14:59.460  INFO shantim2-l2 --- [           main] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2018-07-16 16:14:59.522  INFO shantim2-l2 --- [           main] o.a.c.u.LifecycleBase                    : The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+2018-07-16 16:14:59.538  INFO shantim2-l2 --- [           main] o.a.c.h.Http11NioProtocol                : Stopping ProtocolHandler ["http-nio-8080"]
+2018-07-16 16:14:59.538  INFO shantim2-l2 --- [           main] o.a.c.h.Http11NioProtocol                : Destroying ProtocolHandler ["http-nio-8080"]
+2018-07-16 16:14:59.571  INFO shantim2-l2 --- [           main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2018-07-16 16:14:59.602 ERROR shantim2-l2 --- [           main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8080 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8080, or configure this application to listen on another port.
+
+2018-07-16 16:14:59.602  INFO shantim2-l2 --- [           main] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2a2c13a8: startup date [Mon Jul 16 16:14:52 IST 2018]; root of context hierarchy
+2018-07-16 16:14:59.618  INFO shantim2-l2 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-07-16 16:15:53.358  INFO shantim2-l2 --- [on(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-07-16 16:15:53.358  INFO shantim2-l2 --- [on(2)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5c530d1e: startup date [Mon Jul 16 16:13:04 IST 2018]; root of context hierarchy
+2018-07-16 16:15:53.358  INFO shantim2-l2 --- [on(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-07-16 16:16:15.715  INFO shantim2-l2 --- [           main] c.d.c.App                                : Starting App on shantim2-l2 with PID 4404 (C:\Users\shashikant\eclipse-workspace\UserApp\target\classes started by shashikant in C:\Users\shashikant\eclipse-workspace\UserApp)
+2018-07-16 16:16:15.715  INFO shantim2-l2 --- [           main] c.d.c.App                                : No active profile set, falling back to default profiles: default
+2018-07-16 16:16:15.856  INFO shantim2-l2 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e6d5d29: startup date [Mon Jul 16 16:16:15 IST 2018]; root of context hierarchy
+2018-07-16 16:16:16.027  INFO shantim2-l2 --- [kground-preinit] o.h.v.i.u.Version                        : HV000001: Hibernate Validator 5.3.5.Final
+2018-07-16 16:16:18.126  INFO shantim2-l2 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-07-16 16:16:18.141  INFO shantim2-l2 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2018-07-16 16:16:18.141  INFO shantim2-l2 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-07-16 16:16:18.323  INFO shantim2-l2 --- [ost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2018-07-16 16:16:18.323  INFO shantim2-l2 --- [ost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 2467 ms
+2018-07-16 16:16:18.613  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2018-07-16 16:16:18.613  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-16 16:16:18.628  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-16 16:16:18.628  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-16 16:16:18.628  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-16 16:16:19.727  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e6d5d29: startup date [Mon Jul 16 16:16:15 IST 2018]; root of context hierarchy
+2018-07-16 16:16:19.869  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/user],methods=[GET],produces=[application/json || application/xml]}" onto public com.dm_02_tbdapp.bean.UserProfile com.dm_02_tbdapp.controller.UserAppController.setUserProfile(java.lang.String)
+2018-07-16 16:16:19.869  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/login],methods=[POST]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.loginUser(org.json.simple.JSONObject)
+2018-07-16 16:16:19.869  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/logout],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.logoutUser()
+2018-07-16 16:16:19.869  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/registerUser],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.registerUser(com.dm_02_tbdapp.bean.User)
+2018-07-16 16:16:19.869  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/updateUser],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.updateUser(com.dm_02_tbdapp.bean.User)
+2018-07-16 16:16:19.869  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/updateUserAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.updateAddress(com.dm_02_tbdapp.bean.User)
+2018-07-16 16:16:19.869  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/addAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.addAddress(com.dm_02_tbdapp.bean.User)
+2018-07-16 16:16:19.869  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/removeAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.removeAddress(com.dm_02_tbdapp.bean.User)
+2018-07-16 16:16:19.869  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-16 16:16:19.869  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-16 16:16:19.961  INFO shantim2-l2 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-16 16:16:19.962  INFO shantim2-l2 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-16 16:16:20.077  INFO shantim2-l2 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-16 16:16:20.570  INFO shantim2-l2 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-07-16 16:16:20.602  INFO shantim2-l2 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2018-07-16 16:16:20.617  INFO shantim2-l2 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2018-07-16 16:16:20.633  INFO shantim2-l2 --- [           main] o.a.t.u.n.NioSelectorPool                : Using a shared selector for servlet write/read
+2018-07-16 16:16:20.709  INFO shantim2-l2 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2018-07-16 16:16:20.709  INFO shantim2-l2 --- [           main] c.d.c.App                                : Started App in 5.437 seconds (JVM running for 9.534)
+2018-07-16 16:16:40.969  INFO shantim2-l2 --- [on(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-07-16 16:16:40.969  INFO shantim2-l2 --- [on(2)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e6d5d29: startup date [Mon Jul 16 16:16:15 IST 2018]; root of context hierarchy
+2018-07-16 16:16:40.969  INFO shantim2-l2 --- [on(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-07-16 16:17:03.778  INFO shantim2-l2 --- [           main] c.d.c.App                                : Starting App on shantim2-l2 with PID 8584 (C:\Users\shashikant\eclipse-workspace\UserApp\target\classes started by shashikant in C:\Users\shashikant\eclipse-workspace\UserApp)
+2018-07-16 16:17:03.796  INFO shantim2-l2 --- [           main] c.d.c.App                                : No active profile set, falling back to default profiles: default
+2018-07-16 16:17:04.413  INFO shantim2-l2 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e6d5d29: startup date [Mon Jul 16 16:17:04 IST 2018]; root of context hierarchy
+2018-07-16 16:17:04.557  INFO shantim2-l2 --- [kground-preinit] o.h.v.i.u.Version                        : HV000001: Hibernate Validator 5.3.5.Final
+2018-07-16 16:17:11.717  INFO shantim2-l2 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-07-16 16:17:11.794  INFO shantim2-l2 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2018-07-16 16:17:11.801  INFO shantim2-l2 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-07-16 16:17:12.254  INFO shantim2-l2 --- [ost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2018-07-16 16:17:12.254  INFO shantim2-l2 --- [ost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 7872 ms
+2018-07-16 16:17:13.196  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2018-07-16 16:17:13.216  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-16 16:17:13.216  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-16 16:17:13.216  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-16 16:17:13.216  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-16 16:17:15.615  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e6d5d29: startup date [Mon Jul 16 16:17:04 IST 2018]; root of context hierarchy
+2018-07-16 16:17:15.959  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/user],methods=[GET],produces=[application/json || application/xml]}" onto public com.dm_02_tbdapp.bean.UserProfile com.dm_02_tbdapp.controller.UserAppController.setUserProfile(java.lang.String)
+2018-07-16 16:17:15.975  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/login],methods=[POST]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.loginUser(org.json.simple.JSONObject)
+2018-07-16 16:17:15.975  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/logout],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.logoutUser()
+2018-07-16 16:17:15.975  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/registerUser],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.registerUser(com.dm_02_tbdapp.bean.User)
+2018-07-16 16:17:15.975  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/updateUser],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.updateUser(com.dm_02_tbdapp.bean.User)
+2018-07-16 16:17:15.975  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/updateUserAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.updateAddress(com.dm_02_tbdapp.bean.User)
+2018-07-16 16:17:15.975  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/addAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.addAddress(com.dm_02_tbdapp.bean.User)
+2018-07-16 16:17:15.990  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/removeAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.removeAddress(com.dm_02_tbdapp.bean.User)
+2018-07-16 16:17:16.006  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-16 16:17:16.006  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-16 16:17:16.240  INFO shantim2-l2 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-16 16:17:16.240  INFO shantim2-l2 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-16 16:17:16.491  INFO shantim2-l2 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-16 16:17:18.240  INFO shantim2-l2 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-07-16 16:17:18.342  INFO shantim2-l2 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2018-07-16 16:17:18.389  INFO shantim2-l2 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2018-07-16 16:17:18.436  INFO shantim2-l2 --- [           main] o.a.t.u.n.NioSelectorPool                : Using a shared selector for servlet write/read
+2018-07-16 16:17:18.708  INFO shantim2-l2 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2018-07-16 16:17:18.755  INFO shantim2-l2 --- [           main] c.d.c.App                                : Started App in 16.54 seconds (JVM running for 21.01)
+2018-07-16 16:17:52.987  INFO shantim2-l2 --- [           main] c.d.c.App                                : Starting App on shantim2-l2 with PID 7788 (C:\Users\shashikant\eclipse-workspace\UserApp\target\classes started by shashikant in C:\Users\shashikant\eclipse-workspace\UserApp)
+2018-07-16 16:17:53.003  INFO shantim2-l2 --- [           main] c.d.c.App                                : No active profile set, falling back to default profiles: default
+2018-07-16 16:17:53.388  INFO shantim2-l2 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5c530d1e: startup date [Mon Jul 16 16:17:53 IST 2018]; root of context hierarchy
+2018-07-16 16:17:54.636  INFO shantim2-l2 --- [kground-preinit] o.h.v.i.u.Version                        : HV000001: Hibernate Validator 5.3.5.Final
+2018-07-16 16:17:59.263  INFO shantim2-l2 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-07-16 16:17:59.279  INFO shantim2-l2 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2018-07-16 16:17:59.294  INFO shantim2-l2 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-07-16 16:17:59.436  INFO shantim2-l2 --- [ost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2018-07-16 16:17:59.436  INFO shantim2-l2 --- [ost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 6063 ms
+2018-07-16 16:17:59.768  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2018-07-16 16:17:59.768  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-16 16:17:59.768  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-16 16:17:59.768  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-16 16:17:59.768  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-16 16:18:00.525  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5c530d1e: startup date [Mon Jul 16 16:17:53 IST 2018]; root of context hierarchy
+2018-07-16 16:18:00.657  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/user],methods=[GET],produces=[application/json || application/xml]}" onto public com.dm_02_tbdapp.bean.UserProfile com.dm_02_tbdapp.controller.UserAppController.setUserProfile(java.lang.String)
+2018-07-16 16:18:00.657  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/login],methods=[POST]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.loginUser(org.json.simple.JSONObject)
+2018-07-16 16:18:00.657  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/logout],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.logoutUser()
+2018-07-16 16:18:00.657  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/registerUser],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.registerUser(com.dm_02_tbdapp.bean.User)
+2018-07-16 16:18:00.657  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/updateUser],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.updateUser(com.dm_02_tbdapp.bean.User)
+2018-07-16 16:18:00.657  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/updateUserAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.updateAddress(com.dm_02_tbdapp.bean.User)
+2018-07-16 16:18:00.657  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/addAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.addAddress(com.dm_02_tbdapp.bean.User)
+2018-07-16 16:18:00.657  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/removeAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.removeAddress(com.dm_02_tbdapp.bean.User)
+2018-07-16 16:18:00.657  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-16 16:18:00.673  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-16 16:18:00.751  INFO shantim2-l2 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-16 16:18:00.751  INFO shantim2-l2 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-16 16:18:00.845  INFO shantim2-l2 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-16 16:18:01.359  INFO shantim2-l2 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-07-16 16:18:01.406  INFO shantim2-l2 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2018-07-16 16:18:01.422  INFO shantim2-l2 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2018-07-16 16:18:01.422 ERROR shantim2-l2 --- [           main] o.a.c.h.Http11NioProtocol                : Failed to start end point associated with ProtocolHandler ["http-nio-8080"]
+java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:990)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:635)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1022)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:250)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:193)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.dm_02_tbdapp.controller.App.main(App.java:15)
+2018-07-16 16:18:01.422 ERROR shantim2-l2 --- [           main] o.a.c.c.StandardService                  : Failed to start connector [Connector[HTTP/1.1-8080]]
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8080]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:250)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:193)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.dm_02_tbdapp.controller.App.main(App.java:15)
+Caused by: org.apache.catalina.LifecycleException: service.getName(): "Tomcat";  Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1031)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 13 more
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:990)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:635)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1022)
+	... 14 more
+2018-07-16 16:18:01.437  INFO shantim2-l2 --- [           main] o.a.c.h.Http11NioProtocol                : Pausing ProtocolHandler ["http-nio-8080"]
+2018-07-16 16:18:01.437  INFO shantim2-l2 --- [           main] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2018-07-16 16:18:01.453  INFO shantim2-l2 --- [           main] o.a.c.u.LifecycleBase                    : The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+2018-07-16 16:18:01.453  INFO shantim2-l2 --- [           main] o.a.c.h.Http11NioProtocol                : Stopping ProtocolHandler ["http-nio-8080"]
+2018-07-16 16:18:01.453  INFO shantim2-l2 --- [           main] o.a.c.h.Http11NioProtocol                : Destroying ProtocolHandler ["http-nio-8080"]
+2018-07-16 16:18:01.469  INFO shantim2-l2 --- [           main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2018-07-16 16:18:01.469 ERROR shantim2-l2 --- [           main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8080 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8080, or configure this application to listen on another port.
+
+2018-07-16 16:18:01.469  INFO shantim2-l2 --- [           main] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5c530d1e: startup date [Mon Jul 16 16:17:53 IST 2018]; root of context hierarchy
+2018-07-16 16:18:01.469  INFO shantim2-l2 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-07-16 16:19:18.079  INFO shantim2-l2 --- [           main] c.d.c.App                                : Starting App on shantim2-l2 with PID 9020 (C:\Users\shashikant\eclipse-workspace\UserApp\target\classes started by shashikant in C:\Users\shashikant\eclipse-workspace\UserApp)
+2018-07-16 16:19:18.094  INFO shantim2-l2 --- [           main] c.d.c.App                                : No active profile set, falling back to default profiles: default
+2018-07-16 16:19:18.622  INFO shantim2-l2 --- [kground-preinit] o.h.v.i.u.Version                        : HV000001: Hibernate Validator 5.3.5.Final
+2018-07-16 16:19:18.823  INFO shantim2-l2 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e6d5d29: startup date [Mon Jul 16 16:19:18 IST 2018]; root of context hierarchy
+2018-07-16 16:19:26.107  INFO shantim2-l2 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-07-16 16:19:26.154  INFO shantim2-l2 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2018-07-16 16:19:26.154  INFO shantim2-l2 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-07-16 16:19:26.623  INFO shantim2-l2 --- [ost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2018-07-16 16:19:26.623  INFO shantim2-l2 --- [ost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 7800 ms
+2018-07-16 16:19:27.593  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2018-07-16 16:19:27.641  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-16 16:19:27.643  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-16 16:19:27.646  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-16 16:19:27.647  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-16 16:19:30.270  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e6d5d29: startup date [Mon Jul 16 16:19:18 IST 2018]; root of context hierarchy
+2018-07-16 16:19:30.690  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/user],methods=[GET],produces=[application/json || application/xml]}" onto public com.dm_02_tbdapp.bean.UserProfile com.dm_02_tbdapp.controller.UserAppController.setUserProfile(java.lang.String)
+2018-07-16 16:19:30.690  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/login],methods=[POST]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.loginUser(org.json.simple.JSONObject)
+2018-07-16 16:19:30.690  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/logout],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.logoutUser()
+2018-07-16 16:19:30.690  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/registerUser],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.registerUser(com.dm_02_tbdapp.bean.User)
+2018-07-16 16:19:30.706  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/updateUser],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.updateUser(com.dm_02_tbdapp.bean.User)
+2018-07-16 16:19:30.706  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/updateUserAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.updateAddress(com.dm_02_tbdapp.bean.User)
+2018-07-16 16:19:30.706  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/addAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.addAddress(com.dm_02_tbdapp.bean.User)
+2018-07-16 16:19:30.706  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/removeAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.removeAddress(com.dm_02_tbdapp.bean.User)
+2018-07-16 16:19:30.721  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-16 16:19:30.721  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-16 16:19:30.989  INFO shantim2-l2 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-16 16:19:30.989  INFO shantim2-l2 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-16 16:19:31.307  INFO shantim2-l2 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-16 16:19:33.273  INFO shantim2-l2 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-07-16 16:19:33.368  INFO shantim2-l2 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2018-07-16 16:19:33.446  INFO shantim2-l2 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2018-07-16 16:19:33.462 ERROR shantim2-l2 --- [           main] o.a.c.h.Http11NioProtocol                : Failed to start end point associated with ProtocolHandler ["http-nio-8080"]
+java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:990)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:635)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1022)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:250)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:193)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.dm_02_tbdapp.controller.App.main(App.java:15)
+2018-07-16 16:19:33.462 ERROR shantim2-l2 --- [           main] o.a.c.c.StandardService                  : Failed to start connector [Connector[HTTP/1.1-8080]]
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8080]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:250)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:193)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.dm_02_tbdapp.controller.App.main(App.java:15)
+Caused by: org.apache.catalina.LifecycleException: service.getName(): "Tomcat";  Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1031)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 13 more
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:990)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:635)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1022)
+	... 14 more
+2018-07-16 16:19:33.493  INFO shantim2-l2 --- [           main] o.a.c.h.Http11NioProtocol                : Pausing ProtocolHandler ["http-nio-8080"]
+2018-07-16 16:19:33.509  INFO shantim2-l2 --- [           main] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2018-07-16 16:19:33.541  INFO shantim2-l2 --- [           main] o.a.c.u.LifecycleBase                    : The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+2018-07-16 16:19:33.557  INFO shantim2-l2 --- [           main] o.a.c.h.Http11NioProtocol                : Stopping ProtocolHandler ["http-nio-8080"]
+2018-07-16 16:19:33.557  INFO shantim2-l2 --- [           main] o.a.c.h.Http11NioProtocol                : Destroying ProtocolHandler ["http-nio-8080"]
+2018-07-16 16:19:33.572  INFO shantim2-l2 --- [           main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2018-07-16 16:19:33.608 ERROR shantim2-l2 --- [           main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8080 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8080, or configure this application to listen on another port.
+
+2018-07-16 16:19:33.608  INFO shantim2-l2 --- [           main] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e6d5d29: startup date [Mon Jul 16 16:19:18 IST 2018]; root of context hierarchy
+2018-07-16 16:19:33.624  INFO shantim2-l2 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-07-16 16:20:28.476  INFO shantim2-l2 --- [           main] c.d.c.App                                : Starting App on shantim2-l2 with PID 7056 (C:\Users\shashikant\eclipse-workspace\UserApp\target\classes started by shashikant in C:\Users\shashikant\eclipse-workspace\UserApp)
+2018-07-16 16:20:28.492  INFO shantim2-l2 --- [           main] c.d.c.App                                : No active profile set, falling back to default profiles: default
+2018-07-16 16:20:28.731  INFO shantim2-l2 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e6d5d29: startup date [Mon Jul 16 16:20:28 IST 2018]; root of context hierarchy
+2018-07-16 16:20:28.771  INFO shantim2-l2 --- [kground-preinit] o.h.v.i.u.Version                        : HV000001: Hibernate Validator 5.3.5.Final
+2018-07-16 16:20:30.922  INFO shantim2-l2 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-07-16 16:20:30.938  INFO shantim2-l2 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2018-07-16 16:20:30.938  INFO shantim2-l2 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-07-16 16:20:31.184  INFO shantim2-l2 --- [ost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2018-07-16 16:20:31.184  INFO shantim2-l2 --- [ost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 2464 ms
+2018-07-16 16:20:31.436  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2018-07-16 16:20:31.451  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-16 16:20:31.451  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-16 16:20:31.451  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-16 16:20:31.451  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-16 16:20:32.365  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e6d5d29: startup date [Mon Jul 16 16:20:28 IST 2018]; root of context hierarchy
+2018-07-16 16:20:32.491  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/user],methods=[GET],produces=[application/json || application/xml]}" onto public com.dm_02_tbdapp.bean.UserProfile com.dm_02_tbdapp.controller.UserAppController.setUserProfile(java.lang.String)
+2018-07-16 16:20:32.507  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/login],methods=[POST]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.loginUser(org.json.simple.JSONObject)
+2018-07-16 16:20:32.507  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/logout],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.logoutUser()
+2018-07-16 16:20:32.507  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/registerUser],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.registerUser(com.dm_02_tbdapp.bean.User)
+2018-07-16 16:20:32.507  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/updateUser],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.updateUser(com.dm_02_tbdapp.bean.User)
+2018-07-16 16:20:32.507  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/updateUserAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.updateAddress(com.dm_02_tbdapp.bean.User)
+2018-07-16 16:20:32.507  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/addAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.addAddress(com.dm_02_tbdapp.bean.User)
+2018-07-16 16:20:32.507  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/removeAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.removeAddress(com.dm_02_tbdapp.bean.User)
+2018-07-16 16:20:32.507  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-16 16:20:32.507  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-16 16:20:32.591  INFO shantim2-l2 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-16 16:20:32.591  INFO shantim2-l2 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-16 16:20:32.685  INFO shantim2-l2 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-16 16:20:33.290  INFO shantim2-l2 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-07-16 16:20:33.321  INFO shantim2-l2 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2018-07-16 16:20:33.321  INFO shantim2-l2 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2018-07-16 16:20:33.338 ERROR shantim2-l2 --- [           main] o.a.c.h.Http11NioProtocol                : Failed to start end point associated with ProtocolHandler ["http-nio-8080"]
+java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:990)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:635)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1022)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:250)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:193)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.dm_02_tbdapp.controller.App.main(App.java:15)
+2018-07-16 16:20:33.338 ERROR shantim2-l2 --- [           main] o.a.c.c.StandardService                  : Failed to start connector [Connector[HTTP/1.1-8080]]
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8080]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:250)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:193)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.dm_02_tbdapp.controller.App.main(App.java:15)
+Caused by: org.apache.catalina.LifecycleException: service.getName(): "Tomcat";  Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1031)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 13 more
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:990)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:635)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1022)
+	... 14 more
+2018-07-16 16:20:33.354  INFO shantim2-l2 --- [           main] o.a.c.h.Http11NioProtocol                : Pausing ProtocolHandler ["http-nio-8080"]
+2018-07-16 16:20:33.354  INFO shantim2-l2 --- [           main] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2018-07-16 16:20:33.369  INFO shantim2-l2 --- [           main] o.a.c.u.LifecycleBase                    : The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+2018-07-16 16:20:33.369  INFO shantim2-l2 --- [           main] o.a.c.h.Http11NioProtocol                : Stopping ProtocolHandler ["http-nio-8080"]
+2018-07-16 16:20:33.369  INFO shantim2-l2 --- [           main] o.a.c.h.Http11NioProtocol                : Destroying ProtocolHandler ["http-nio-8080"]
+2018-07-16 16:20:33.369  INFO shantim2-l2 --- [           main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2018-07-16 16:20:33.385 ERROR shantim2-l2 --- [           main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8080 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8080, or configure this application to listen on another port.
+
+2018-07-16 16:20:33.385  INFO shantim2-l2 --- [           main] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e6d5d29: startup date [Mon Jul 16 16:20:28 IST 2018]; root of context hierarchy
+2018-07-16 16:20:33.385  INFO shantim2-l2 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-07-16 16:22:33.368  INFO shantim2-l2 --- [           main] c.d.c.App                                : Starting App on shantim2-l2 with PID 2996 (C:\Users\shashikant\eclipse-workspace\UserApp\target\classes started by shashikant in C:\Users\shashikant\eclipse-workspace\UserApp)
+2018-07-16 16:22:33.384  INFO shantim2-l2 --- [           main] c.d.c.App                                : No active profile set, falling back to default profiles: default
+2018-07-16 16:22:33.619  INFO shantim2-l2 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e6d5d29: startup date [Mon Jul 16 16:22:33 IST 2018]; root of context hierarchy
+2018-07-16 16:22:33.776  INFO shantim2-l2 --- [kground-preinit] o.h.v.i.u.Version                        : HV000001: Hibernate Validator 5.3.5.Final
+2018-07-16 16:22:38.365  INFO shantim2-l2 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-07-16 16:22:38.396  INFO shantim2-l2 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2018-07-16 16:22:38.396  INFO shantim2-l2 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-07-16 16:22:38.695  INFO shantim2-l2 --- [ost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2018-07-16 16:22:38.695  INFO shantim2-l2 --- [ost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 5092 ms
+2018-07-16 16:22:38.991  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2018-07-16 16:22:38.991  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-16 16:22:38.991  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-16 16:22:38.991  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-16 16:22:38.991  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-16 16:22:40.066  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e6d5d29: startup date [Mon Jul 16 16:22:33 IST 2018]; root of context hierarchy
+2018-07-16 16:22:40.206  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/user],methods=[GET],produces=[application/json || application/xml]}" onto public com.dm_02_tbdapp.bean.UserProfile com.dm_02_tbdapp.controller.UserAppController.setUserProfile(java.lang.String)
+2018-07-16 16:22:40.206  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/login],methods=[POST]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.loginUser(org.json.simple.JSONObject)
+2018-07-16 16:22:40.206  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/logout],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.logoutUser()
+2018-07-16 16:22:40.206  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/registerUser],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.registerUser(com.dm_02_tbdapp.bean.User)
+2018-07-16 16:22:40.222  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/updateUser],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.updateUser(com.dm_02_tbdapp.bean.User)
+2018-07-16 16:22:40.222  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/updateUserAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.updateAddress(com.dm_02_tbdapp.bean.User)
+2018-07-16 16:22:40.222  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/addAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.addAddress(com.dm_02_tbdapp.bean.User)
+2018-07-16 16:22:40.222  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/removeAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.removeAddress(com.dm_02_tbdapp.bean.User)
+2018-07-16 16:22:40.222  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-16 16:22:40.222  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-16 16:22:40.337  INFO shantim2-l2 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-16 16:22:40.337  INFO shantim2-l2 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-16 16:22:40.434  INFO shantim2-l2 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-16 16:22:40.987  INFO shantim2-l2 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-07-16 16:22:41.018  INFO shantim2-l2 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2018-07-16 16:22:41.033  INFO shantim2-l2 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2018-07-16 16:22:41.049 ERROR shantim2-l2 --- [           main] o.a.c.h.Http11NioProtocol                : Failed to start end point associated with ProtocolHandler ["http-nio-8080"]
+java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:990)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:635)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1022)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:250)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:193)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.dm_02_tbdapp.controller.App.main(App.java:15)
+2018-07-16 16:22:41.049 ERROR shantim2-l2 --- [           main] o.a.c.c.StandardService                  : Failed to start connector [Connector[HTTP/1.1-8080]]
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8080]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:250)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:193)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.dm_02_tbdapp.controller.App.main(App.java:15)
+Caused by: org.apache.catalina.LifecycleException: service.getName(): "Tomcat";  Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1031)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 13 more
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:990)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:635)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1022)
+	... 14 more
+2018-07-16 16:22:41.065  INFO shantim2-l2 --- [           main] o.a.c.h.Http11NioProtocol                : Pausing ProtocolHandler ["http-nio-8080"]
+2018-07-16 16:22:41.080  INFO shantim2-l2 --- [           main] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2018-07-16 16:22:41.097  INFO shantim2-l2 --- [           main] o.a.c.u.LifecycleBase                    : The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+2018-07-16 16:22:41.097  INFO shantim2-l2 --- [           main] o.a.c.h.Http11NioProtocol                : Stopping ProtocolHandler ["http-nio-8080"]
+2018-07-16 16:22:41.097  INFO shantim2-l2 --- [           main] o.a.c.h.Http11NioProtocol                : Destroying ProtocolHandler ["http-nio-8080"]
+2018-07-16 16:22:41.097  INFO shantim2-l2 --- [           main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2018-07-16 16:22:41.112 ERROR shantim2-l2 --- [           main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8080 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8080, or configure this application to listen on another port.
+
+2018-07-16 16:22:41.112  INFO shantim2-l2 --- [           main] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e6d5d29: startup date [Mon Jul 16 16:22:33 IST 2018]; root of context hierarchy
+2018-07-16 16:22:41.112  INFO shantim2-l2 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-07-16 16:23:56.137  INFO shantim2-l2 --- [on(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-07-16 16:23:56.139  INFO shantim2-l2 --- [on(2)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e6d5d29: startup date [Mon Jul 16 16:17:04 IST 2018]; root of context hierarchy
+2018-07-16 16:23:56.149  INFO shantim2-l2 --- [on(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-07-16 16:24:27.330  INFO shantim2-l2 --- [           main] c.d.c.App                                : Starting App on shantim2-l2 with PID 8792 (C:\Users\shashikant\eclipse-workspace\UserApp\target\classes started by shashikant in C:\Users\shashikant\eclipse-workspace\UserApp)
+2018-07-16 16:24:27.330  INFO shantim2-l2 --- [           main] c.d.c.App                                : No active profile set, falling back to default profiles: default
+2018-07-16 16:24:27.424  INFO shantim2-l2 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@63475ace: startup date [Mon Jul 16 16:24:27 IST 2018]; root of context hierarchy
+2018-07-16 16:24:27.730  INFO shantim2-l2 --- [kground-preinit] o.h.v.i.u.Version                        : HV000001: Hibernate Validator 5.3.5.Final
+2018-07-16 16:24:29.668  INFO shantim2-l2 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-07-16 16:24:29.684  INFO shantim2-l2 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2018-07-16 16:24:29.699  INFO shantim2-l2 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-07-16 16:24:29.873  INFO shantim2-l2 --- [ost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2018-07-16 16:24:29.873  INFO shantim2-l2 --- [ost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 2449 ms
+2018-07-16 16:24:30.093  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2018-07-16 16:24:30.093  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-16 16:24:30.093  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-16 16:24:30.093  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-16 16:24:30.093  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-16 16:24:30.515  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@63475ace: startup date [Mon Jul 16 16:24:27 IST 2018]; root of context hierarchy
+2018-07-16 16:24:30.597  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/user],methods=[GET],produces=[application/json || application/xml]}" onto public com.dm_02_tbdapp.bean.UserProfile com.dm_02_tbdapp.controller.UserAppController.setUserProfile(java.lang.String)
+2018-07-16 16:24:30.597  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/login],methods=[POST]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.loginUser(org.json.simple.JSONObject)
+2018-07-16 16:24:30.597  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/logout],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.logoutUser()
+2018-07-16 16:24:30.597  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/registerUser],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.registerUser(com.dm_02_tbdapp.bean.User)
+2018-07-16 16:24:30.597  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/updateUser],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.updateUser(com.dm_02_tbdapp.bean.User)
+2018-07-16 16:24:30.597  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/updateUserAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.updateAddress(com.dm_02_tbdapp.bean.User)
+2018-07-16 16:24:30.597  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/addAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.addAddress(com.dm_02_tbdapp.bean.User)
+2018-07-16 16:24:30.597  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/removeAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.removeAddress(com.dm_02_tbdapp.bean.User)
+2018-07-16 16:24:30.613  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-16 16:24:30.613  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-16 16:24:30.675  INFO shantim2-l2 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-16 16:24:30.675  INFO shantim2-l2 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-16 16:24:30.722  INFO shantim2-l2 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-16 16:24:30.942  INFO shantim2-l2 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-07-16 16:24:30.973  INFO shantim2-l2 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2018-07-16 16:24:30.988  INFO shantim2-l2 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2018-07-16 16:24:31.004  INFO shantim2-l2 --- [           main] o.a.t.u.n.NioSelectorPool                : Using a shared selector for servlet write/read
+2018-07-16 16:24:31.035  INFO shantim2-l2 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2018-07-16 16:24:31.035  INFO shantim2-l2 --- [           main] c.d.c.App                                : Started App in 4.073 seconds (JVM running for 5.598)
+2018-07-16 16:45:38.417  INFO shantim2-l2 --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-07-16 16:45:38.417  INFO shantim2-l2 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization started
+2018-07-16 16:45:38.471  INFO shantim2-l2 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization completed in 54 ms
+2018-07-16 16:45:38.698  INFO shantim2-l2 --- [nio-8080-exec-1] c.d.c.UserManager                        : json object is created and entered into class UserManager.java .
+2018-07-16 16:45:38.713  INFO shantim2-l2 --- [nio-8080-exec-1] c.d.c.UserManager                        : this method is responsible to return the json object.
+2018-07-16 17:11:16.571  INFO shantim2-l2 --- [nio-8080-exec-3] c.d.c.UserManager                        : json object is created and entered into class UserManager.java .
+2018-07-16 17:11:16.586  INFO shantim2-l2 --- [nio-8080-exec-3] c.d.c.UserManager                        : this method is responsible to return the json object.
+2018-07-16 17:11:23.346  INFO shantim2-l2 --- [nio-8080-exec-4] c.d.c.UserManager                        : json object is created and entered into class UserManager.java .
+2018-07-16 17:11:23.346  INFO shantim2-l2 --- [nio-8080-exec-4] c.d.c.UserManager                        : this method is responsible to return the json object.
+2018-07-16 18:33:39.028  INFO shantim2-l2 --- [on(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-07-16 18:33:39.028  INFO shantim2-l2 --- [on(2)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@63475ace: startup date [Mon Jul 16 16:24:27 IST 2018]; root of context hierarchy
+2018-07-16 18:33:39.031  INFO shantim2-l2 --- [on(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
