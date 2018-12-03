@@ -1,0 +1,432 @@
+2018-08-20 10:14:29.392  INFO shantim2-l2 --- [           main] c.d.c.App                                : Starting App on shantim2-l2 with PID 6100 (C:\Users\shashikant\eclipse-workspace\UserApp\target\classes started by shashikant in C:\Users\shashikant\eclipse-workspace\UserApp)
+2018-08-20 10:14:29.861  INFO shantim2-l2 --- [           main] c.d.c.App                                : No active profile set, falling back to default profiles: default
+2018-08-20 10:14:30.704  INFO shantim2-l2 --- [           main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7ee8290b: startup date [Mon Aug 20 10:14:30 IST 2018]; root of context hierarchy
+2018-08-20 10:14:41.266  INFO shantim2-l2 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2018-08-20 10:14:41.392  INFO shantim2-l2 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2018-08-20 10:14:41.439  INFO shantim2-l2 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2018-08-20 10:14:41.439  INFO shantim2-l2 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-08-20 10:14:41.485  INFO shantim2-l2 --- [ost-startStop-1] o.a.c.c.AprLifecycleListener             : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_144\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_144/bin/server;C:/Program Files/Java/jre1.8.0_144/bin;C:/Program Files/Java/jre1.8.0_144/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Java\jdk1.7.0_51\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Java\jdk1.8.0_144\bin;C:\Program Files\Java\jre1.8.0_144\bin;curl;C:\Program Files\nodejs\;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\Program Files\MySQL\MySQL Server 5.7\bin;C:\Users\shashikant\AppData\Roaming\npm;C:\Users\shashikant\Desktop;;.]
+2018-08-20 10:14:41.891  INFO shantim2-l2 --- [ost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2018-08-20 10:14:41.891  INFO shantim2-l2 --- [ost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 11312 ms
+2018-08-20 10:14:42.297  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Servlet dispatcherServlet mapped to [/]
+2018-08-20 10:14:42.312  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-08-20 10:14:42.312  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-08-20 10:14:42.312  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-08-20 10:14:42.312  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2018-08-20 10:14:43.624  INFO shantim2-l2 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-20 10:14:44.343  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7ee8290b: startup date [Mon Aug 20 10:14:30 IST 2018]; root of context hierarchy
+2018-08-20 10:14:44.577  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/catalog],methods=[GET]}" onto public java.lang.String com.dm_02_tbdapp.controller.UserAppController.catalog()
+2018-08-20 10:14:44.577  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/insertIntoProduct_Table],methods=[POST]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.insertIntoProduct_Table(org.json.simple.JSONObject)
+2018-08-20 10:14:44.577  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/user],methods=[GET],produces=[application/json || application/xml]}" onto public com.dm_02_tbdapp.bean.UserProfile com.dm_02_tbdapp.controller.UserAppController.setUserProfile(java.lang.String)
+2018-08-20 10:14:44.577  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/login],methods=[POST]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.loginUser(org.json.simple.JSONObject)
+2018-08-20 10:14:44.577  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/RegisterUser],methods=[POST]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.newUser(org.json.simple.JSONObject)
+2018-08-20 10:14:44.593  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/logout],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.logoutUser()
+2018-08-20 10:14:44.593  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/registerUser],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.registerUser(com.dm_02_tbdapp.bean.User)
+2018-08-20 10:14:44.593  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/updateUser],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.updateUser(com.dm_02_tbdapp.bean.User)
+2018-08-20 10:14:44.593  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/updateUserAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.updateAddress(com.dm_02_tbdapp.bean.User)
+2018-08-20 10:14:44.593  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/addAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.addAddress(com.dm_02_tbdapp.bean.User)
+2018-08-20 10:14:44.593  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/removeAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.removeAddress(com.dm_02_tbdapp.bean.User)
+2018-08-20 10:14:44.593  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/product],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.product()
+2018-08-20 10:14:44.608  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-08-20 10:14:44.608  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-20 10:14:44.671  INFO shantim2-l2 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-20 10:14:44.671  INFO shantim2-l2 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-20 10:14:45.501  INFO shantim2-l2 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-08-20 10:14:45.516  INFO shantim2-l2 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-08-20 10:14:45.516  INFO shantim2-l2 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-08-20 10:14:45.579  INFO shantim2-l2 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2018-08-20 10:14:45.750  INFO shantim2-l2 --- [           main] o.a.t.u.n.NioSelectorPool                : Using a shared selector for servlet write/read
+2018-08-20 10:14:46.009  INFO shantim2-l2 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2018-08-20 10:14:46.040  INFO shantim2-l2 --- [           main] c.d.c.App                                : Started App in 20.675 seconds (JVM running for 37.816)
+2018-08-20 10:26:36.387  INFO shantim2-l2 --- [           main] c.d.c.App                                : Starting App on shantim2-l2 with PID 3980 (C:\Users\shashikant\eclipse-workspace\UserApp\target\classes started by shashikant in C:\Users\shashikant\eclipse-workspace\UserApp)
+2018-08-20 10:26:36.587  INFO shantim2-l2 --- [           main] c.d.c.App                                : No active profile set, falling back to default profiles: default
+2018-08-20 10:26:37.242  INFO shantim2-l2 --- [           main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5f8edcc5: startup date [Mon Aug 20 10:26:37 IST 2018]; root of context hierarchy
+2018-08-20 10:26:45.097  INFO shantim2-l2 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2018-08-20 10:26:45.231  INFO shantim2-l2 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2018-08-20 10:26:45.287  INFO shantim2-l2 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2018-08-20 10:26:45.288  INFO shantim2-l2 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-08-20 10:26:45.355  INFO shantim2-l2 --- [ost-startStop-1] o.a.c.c.AprLifecycleListener             : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_144\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_144/bin/server;C:/Program Files/Java/jre1.8.0_144/bin;C:/Program Files/Java/jre1.8.0_144/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Java\jdk1.7.0_51\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Java\jdk1.8.0_144\bin;C:\Program Files\Java\jre1.8.0_144\bin;curl;C:\Program Files\nodejs\;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\Program Files\MySQL\MySQL Server 5.7\bin;C:\Users\shashikant\AppData\Roaming\npm;C:\Users\shashikant\Desktop;;.]
+2018-08-20 10:26:46.125  INFO shantim2-l2 --- [ost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2018-08-20 10:26:46.125  INFO shantim2-l2 --- [ost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 8916 ms
+2018-08-20 10:26:46.428  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Servlet dispatcherServlet mapped to [/]
+2018-08-20 10:26:46.433  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-08-20 10:26:46.434  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-08-20 10:26:46.434  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-08-20 10:26:46.434  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2018-08-20 10:26:47.727  INFO shantim2-l2 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-20 10:26:48.333  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5f8edcc5: startup date [Mon Aug 20 10:26:37 IST 2018]; root of context hierarchy
+2018-08-20 10:26:48.679  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/catalog],methods=[GET]}" onto public java.lang.String com.dm_02_tbdapp.controller.UserAppController.catalog()
+2018-08-20 10:26:48.684  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/user],methods=[GET],produces=[application/json || application/xml]}" onto public com.dm_02_tbdapp.bean.UserProfile com.dm_02_tbdapp.controller.UserAppController.setUserProfile(java.lang.String)
+2018-08-20 10:26:48.684  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/login],methods=[POST]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.loginUser(org.json.simple.JSONObject)
+2018-08-20 10:26:48.685  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/RegisterUser],methods=[POST]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.newUser(org.json.simple.JSONObject)
+2018-08-20 10:26:48.685  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/logout],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.logoutUser()
+2018-08-20 10:26:48.685  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/registerUser],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.registerUser(com.dm_02_tbdapp.bean.User)
+2018-08-20 10:26:48.686  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/updateUser],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.updateUser(com.dm_02_tbdapp.bean.User)
+2018-08-20 10:26:48.686  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/updateUserAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.updateAddress(com.dm_02_tbdapp.bean.User)
+2018-08-20 10:26:48.686  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/addAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.addAddress(com.dm_02_tbdapp.bean.User)
+2018-08-20 10:26:48.687  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/removeAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.removeAddress(com.dm_02_tbdapp.bean.User)
+2018-08-20 10:26:48.688  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/product],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.product()
+2018-08-20 10:26:48.688  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/insertIntoProduct_Table],methods=[POST]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.insertIntoProduct_Table(org.json.simple.JSONObject)
+2018-08-20 10:26:48.700  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-08-20 10:26:48.702  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-20 10:26:48.773  INFO shantim2-l2 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-20 10:26:48.774  INFO shantim2-l2 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-20 10:26:52.137  INFO shantim2-l2 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-08-20 10:26:52.178  INFO shantim2-l2 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-08-20 10:26:52.273  INFO shantim2-l2 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-08-20 10:26:52.533  INFO shantim2-l2 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2018-08-20 10:26:52.862  INFO shantim2-l2 --- [           main] o.a.t.u.n.NioSelectorPool                : Using a shared selector for servlet write/read
+2018-08-20 10:26:53.271  INFO shantim2-l2 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2018-08-20 10:26:53.352  INFO shantim2-l2 --- [           main] c.d.c.App                                : Started App in 20.393 seconds (JVM running for 31.078)
+2018-08-20 10:45:57.730  INFO shantim2-l2 --- [           main] c.d.c.App                                : Starting App on shantim2-l2 with PID 3516 (C:\Users\shashikant\eclipse-workspace\UserApp\target\classes started by shashikant in C:\Users\shashikant\eclipse-workspace\UserApp)
+2018-08-20 10:45:57.804  INFO shantim2-l2 --- [           main] c.d.c.App                                : No active profile set, falling back to default profiles: default
+2018-08-20 10:45:58.523  INFO shantim2-l2 --- [           main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6ab778a: startup date [Mon Aug 20 10:45:58 IST 2018]; root of context hierarchy
+2018-08-20 10:47:04.336  INFO shantim2-l2 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2018-08-20 10:47:04.498  INFO shantim2-l2 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2018-08-20 10:47:04.609  INFO shantim2-l2 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2018-08-20 10:47:04.610  INFO shantim2-l2 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-08-20 10:47:04.753  INFO shantim2-l2 --- [ost-startStop-1] o.a.c.c.AprLifecycleListener             : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_144\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_144/bin/server;C:/Program Files/Java/jre1.8.0_144/bin;C:/Program Files/Java/jre1.8.0_144/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Java\jdk1.7.0_51\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Java\jdk1.8.0_144\bin;C:\Program Files\Java\jre1.8.0_144\bin;curl;C:\Program Files\nodejs\;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\Program Files\MySQL\MySQL Server 5.7\bin;C:\Users\shashikant\AppData\Roaming\npm;C:\Users\shashikant\Desktop;;.]
+2018-08-20 10:47:05.215  INFO shantim2-l2 --- [ost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2018-08-20 10:47:05.217  INFO shantim2-l2 --- [ost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 66780 ms
+2018-08-20 10:47:05.849  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Servlet dispatcherServlet mapped to [/]
+2018-08-20 10:47:05.875  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-08-20 10:47:05.877  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-08-20 10:47:05.877  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-08-20 10:47:05.878  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2018-08-20 10:47:07.288  INFO shantim2-l2 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-20 10:47:08.048  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6ab778a: startup date [Mon Aug 20 10:45:58 IST 2018]; root of context hierarchy
+2018-08-20 10:47:08.220  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/catalog],methods=[GET]}" onto public java.lang.String com.dm_02_tbdapp.controller.UserAppController.catalog()
+2018-08-20 10:47:08.228  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/user],methods=[GET],produces=[application/json || application/xml]}" onto public com.dm_02_tbdapp.bean.UserProfile com.dm_02_tbdapp.controller.UserAppController.setUserProfile(java.lang.String)
+2018-08-20 10:47:08.229  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/login],methods=[POST]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.loginUser(org.json.simple.JSONObject)
+2018-08-20 10:47:08.231  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/RegisterUser],methods=[POST]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.newUser(org.json.simple.JSONObject)
+2018-08-20 10:47:08.233  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/logout],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.logoutUser()
+2018-08-20 10:47:08.234  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/registerUser],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.registerUser(com.dm_02_tbdapp.bean.User)
+2018-08-20 10:47:08.235  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/updateUser],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.updateUser(com.dm_02_tbdapp.bean.User)
+2018-08-20 10:47:08.235  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/updateUserAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.updateAddress(com.dm_02_tbdapp.bean.User)
+2018-08-20 10:47:08.237  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/addAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.addAddress(com.dm_02_tbdapp.bean.User)
+2018-08-20 10:47:08.238  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/removeAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.removeAddress(com.dm_02_tbdapp.bean.User)
+2018-08-20 10:47:08.239  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/product],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.product()
+2018-08-20 10:47:08.239  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/insertIntoProduct_Table],methods=[POST]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.insertIntoProduct_Table(org.json.simple.JSONObject)
+2018-08-20 10:47:08.252  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-08-20 10:47:08.253  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-20 10:47:08.318  INFO shantim2-l2 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-20 10:47:08.319  INFO shantim2-l2 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-20 10:47:09.087  INFO shantim2-l2 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-08-20 10:47:09.093  INFO shantim2-l2 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-08-20 10:47:09.104  INFO shantim2-l2 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-08-20 10:47:09.129  INFO shantim2-l2 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2018-08-20 10:47:09.258  INFO shantim2-l2 --- [           main] o.a.t.u.n.NioSelectorPool                : Using a shared selector for servlet write/read
+2018-08-20 10:47:09.304  INFO shantim2-l2 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2018-08-20 10:47:09.325  INFO shantim2-l2 --- [           main] c.d.c.App                                : Started App in 75.506 seconds (JVM running for 87.598)
+2018-08-20 10:54:55.260  INFO shantim2-l2 --- [on(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-08-20 10:54:55.269  INFO shantim2-l2 --- [on(2)-127.0.0.1] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6ab778a: startup date [Mon Aug 20 10:45:58 IST 2018]; root of context hierarchy
+2018-08-20 10:54:55.345  INFO shantim2-l2 --- [on(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-08-20 10:54:55.363  INFO shantim2-l2 --- [on(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-08-20 10:55:22.960  INFO shantim2-l2 --- [           main] c.d.c.App                                : Starting App on shantim2-l2 with PID 208 (C:\Users\shashikant\eclipse-workspace\UserApp\target\classes started by shashikant in C:\Users\shashikant\eclipse-workspace\UserApp)
+2018-08-20 10:55:22.969  INFO shantim2-l2 --- [           main] c.d.c.App                                : No active profile set, falling back to default profiles: default
+2018-08-20 10:55:23.062  INFO shantim2-l2 --- [           main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7ee8290b: startup date [Mon Aug 20 10:55:23 IST 2018]; root of context hierarchy
+2018-08-20 10:55:25.145  INFO shantim2-l2 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2018-08-20 10:55:25.179  INFO shantim2-l2 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2018-08-20 10:55:25.193  INFO shantim2-l2 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2018-08-20 10:55:25.194  INFO shantim2-l2 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-08-20 10:55:25.202  INFO shantim2-l2 --- [ost-startStop-1] o.a.c.c.AprLifecycleListener             : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_144\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_144/bin/server;C:/Program Files/Java/jre1.8.0_144/bin;C:/Program Files/Java/jre1.8.0_144/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Java\jdk1.7.0_51\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Java\jdk1.8.0_144\bin;C:\Program Files\Java\jre1.8.0_144\bin;curl;C:\Program Files\nodejs\;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\Program Files\MySQL\MySQL Server 5.7\bin;C:\Users\shashikant\AppData\Roaming\npm;C:\Users\shashikant\Desktop;;.]
+2018-08-20 10:55:25.407  INFO shantim2-l2 --- [ost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2018-08-20 10:55:25.407  INFO shantim2-l2 --- [ost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 2350 ms
+2018-08-20 10:55:25.594  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Servlet dispatcherServlet mapped to [/]
+2018-08-20 10:55:25.601  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-08-20 10:55:25.602  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-08-20 10:55:25.602  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-08-20 10:55:25.603  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2018-08-20 10:55:25.983  INFO shantim2-l2 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-20 10:55:26.287  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7ee8290b: startup date [Mon Aug 20 10:55:23 IST 2018]; root of context hierarchy
+2018-08-20 10:55:26.374  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/catalog],methods=[GET]}" onto public java.lang.String com.dm_02_tbdapp.controller.UserAppController.catalog()
+2018-08-20 10:55:26.377  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/user],methods=[GET],produces=[application/json || application/xml]}" onto public com.dm_02_tbdapp.bean.UserProfile com.dm_02_tbdapp.controller.UserAppController.setUserProfile(java.lang.String)
+2018-08-20 10:55:26.378  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/login],methods=[POST]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.loginUser(org.json.simple.JSONObject)
+2018-08-20 10:55:26.379  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/RegisterUser],methods=[POST]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.newUser(org.json.simple.JSONObject)
+2018-08-20 10:55:26.379  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/logout],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.logoutUser()
+2018-08-20 10:55:26.380  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/registerUser],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.registerUser(com.dm_02_tbdapp.bean.User)
+2018-08-20 10:55:26.380  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/updateUser],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.updateUser(com.dm_02_tbdapp.bean.User)
+2018-08-20 10:55:26.381  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/updateUserAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.updateAddress(com.dm_02_tbdapp.bean.User)
+2018-08-20 10:55:26.381  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/addAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.addAddress(com.dm_02_tbdapp.bean.User)
+2018-08-20 10:55:26.382  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/removeAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.removeAddress(com.dm_02_tbdapp.bean.User)
+2018-08-20 10:55:26.382  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/product],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.product()
+2018-08-20 10:55:26.383  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/insertIntoProduct_Table],methods=[POST]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.insertIntoProduct_Table(org.json.simple.JSONObject)
+2018-08-20 10:55:26.389  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-08-20 10:55:26.390  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-20 10:55:26.437  INFO shantim2-l2 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-20 10:55:26.438  INFO shantim2-l2 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-20 10:55:26.811  INFO shantim2-l2 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-08-20 10:55:26.816  INFO shantim2-l2 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-08-20 10:55:26.827  INFO shantim2-l2 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-08-20 10:55:26.853  INFO shantim2-l2 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2018-08-20 10:55:26.870  INFO shantim2-l2 --- [           main] o.a.t.u.n.NioSelectorPool                : Using a shared selector for servlet write/read
+2018-08-20 10:55:26.891  INFO shantim2-l2 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2018-08-20 10:55:26.897  INFO shantim2-l2 --- [           main] c.d.c.App                                : Started App in 4.479 seconds (JVM running for 5.911)
+2018-08-20 11:23:54.778  INFO shantim2-l2 --- [           main] c.d.c.App                                : Starting App on shantim2-l2 with PID 4156 (C:\Users\shashikant\eclipse-workspace\UserApp\target\classes started by shashikant in C:\Users\shashikant\eclipse-workspace\UserApp)
+2018-08-20 11:23:54.815  INFO shantim2-l2 --- [           main] c.d.c.App                                : No active profile set, falling back to default profiles: default
+2018-08-20 11:23:55.847  INFO shantim2-l2 --- [           main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@445b295b: startup date [Mon Aug 20 11:23:55 IST 2018]; root of context hierarchy
+2018-08-20 11:24:05.150  INFO shantim2-l2 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2018-08-20 11:24:05.439  INFO shantim2-l2 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2018-08-20 11:24:05.504  INFO shantim2-l2 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2018-08-20 11:24:05.505  INFO shantim2-l2 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-08-20 11:24:05.555  INFO shantim2-l2 --- [ost-startStop-1] o.a.c.c.AprLifecycleListener             : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_144\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_144/bin/server;C:/Program Files/Java/jre1.8.0_144/bin;C:/Program Files/Java/jre1.8.0_144/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Java\jdk1.7.0_51\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Java\jdk1.8.0_144\bin;C:\Program Files\Java\jre1.8.0_144\bin;curl;C:\Program Files\nodejs\;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\Program Files\MySQL\MySQL Server 5.7\bin;C:\Users\shashikant\AppData\Roaming\npm;C:\Users\shashikant\Desktop;;.]
+2018-08-20 11:24:06.258  INFO shantim2-l2 --- [ost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2018-08-20 11:24:06.258  INFO shantim2-l2 --- [ost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 10493 ms
+2018-08-20 11:24:06.701  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Servlet dispatcherServlet mapped to [/]
+2018-08-20 11:24:06.728  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-08-20 11:24:06.729  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-08-20 11:24:06.729  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-08-20 11:24:06.730  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2018-08-20 11:24:08.192  INFO shantim2-l2 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-20 11:24:09.305  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@445b295b: startup date [Mon Aug 20 11:23:55 IST 2018]; root of context hierarchy
+2018-08-20 11:24:09.548  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/catalog],methods=[GET]}" onto public java.lang.String com.dm_02_tbdapp.controller.UserAppController.catalog()
+2018-08-20 11:24:09.552  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/user],methods=[GET],produces=[application/json || application/xml]}" onto public com.dm_02_tbdapp.bean.UserProfile com.dm_02_tbdapp.controller.UserAppController.setUserProfile(java.lang.String)
+2018-08-20 11:24:09.552  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/login],methods=[POST]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.loginUser(org.json.simple.JSONObject)
+2018-08-20 11:24:09.553  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/RegisterUser],methods=[POST]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.newUser(org.json.simple.JSONObject)
+2018-08-20 11:24:09.553  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/logout],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.logoutUser()
+2018-08-20 11:24:09.553  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/registerUser],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.registerUser(com.dm_02_tbdapp.bean.User)
+2018-08-20 11:24:09.554  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/updateUser],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.updateUser(com.dm_02_tbdapp.bean.User)
+2018-08-20 11:24:09.554  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/updateUserAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.updateAddress(com.dm_02_tbdapp.bean.User)
+2018-08-20 11:24:09.554  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/addAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.addAddress(com.dm_02_tbdapp.bean.User)
+2018-08-20 11:24:09.555  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/removeAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.removeAddress(com.dm_02_tbdapp.bean.User)
+2018-08-20 11:24:09.555  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/product],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.product()
+2018-08-20 11:24:09.555  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/insertIntoProduct_Table],methods=[POST]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.insertIntoProduct_Table(org.json.simple.JSONObject)
+2018-08-20 11:24:09.560  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-08-20 11:24:09.561  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-20 11:24:09.592  INFO shantim2-l2 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-20 11:24:09.592  INFO shantim2-l2 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-20 11:24:10.344  INFO shantim2-l2 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-08-20 11:24:10.351  INFO shantim2-l2 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-08-20 11:24:10.362  INFO shantim2-l2 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-08-20 11:24:10.455  INFO shantim2-l2 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2018-08-20 11:24:10.870  INFO shantim2-l2 --- [           main] o.a.t.u.n.NioSelectorPool                : Using a shared selector for servlet write/read
+2018-08-20 11:24:11.067  INFO shantim2-l2 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2018-08-20 11:24:11.157  INFO shantim2-l2 --- [           main] c.d.c.App                                : Started App in 21.276 seconds (JVM running for 100.477)
+2018-08-20 11:25:10.702  INFO shantim2-l2 --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-08-20 11:25:10.703  INFO shantim2-l2 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization started
+2018-08-20 11:25:10.757  INFO shantim2-l2 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization completed in 54 ms
+2018-08-20 11:25:11.136  INFO shantim2-l2 --- [nio-8080-exec-1] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2018-08-20 11:25:14.458 ERROR shantim2-l2 --- [nio-8080-exec-1] c.z.h.p.HikariPool                       : HikariPool-1 - Exception during pool initialization.
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:990)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:342)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2188)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2221)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2016)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:776)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:117)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:123)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:365)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:194)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:460)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:534)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:151)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:115)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:78)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:371)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:446)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:456)
+	at org.springframework.jdbc.core.JdbcTemplate.queryForList(JdbcTemplate.java:484)
+	at com.dm_02_tbdapp.dao.CatalogProductDAO.retriveProduct(CatalogProductDAO.java:33)
+	at com.dm_02_tbdapp.dao.CatalogProductDAO$$FastClassBySpringCGLIB$$1217e791.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:746)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at com.dm_02_tbdapp.dao.CatalogProductDAO$$EnhancerBySpringCGLIB$$6b083fa1.retriveProduct(<generated>)
+	at com.dm_02_tbdapp.controller.CatalogManager.retriveProductDetails(CatalogManager.java:22)
+	at com.dm_02_tbdapp.controller.UserAppController.product(UserAppController.java:204)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:301)
+	... 92 more
+2018-08-20 11:25:14.529 ERROR shantim2-l2 --- [nio-8080-exec-1] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.] with root cause
+java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:301)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2188)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2221)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2016)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:776)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:117)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:123)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:365)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:194)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:460)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:534)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:151)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:115)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:78)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:371)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:446)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:456)
+	at org.springframework.jdbc.core.JdbcTemplate.queryForList(JdbcTemplate.java:484)
+	at com.dm_02_tbdapp.dao.CatalogProductDAO.retriveProduct(CatalogProductDAO.java:33)
+	at com.dm_02_tbdapp.dao.CatalogProductDAO$$FastClassBySpringCGLIB$$1217e791.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:746)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at com.dm_02_tbdapp.dao.CatalogProductDAO$$EnhancerBySpringCGLIB$$6b083fa1.retriveProduct(<generated>)
+	at com.dm_02_tbdapp.controller.CatalogManager.retriveProductDetails(CatalogManager.java:22)
+	at com.dm_02_tbdapp.controller.UserAppController.product(UserAppController.java:204)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2018-08-20 11:28:40.861  INFO shantim2-l2 --- [nio-8080-exec-2] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2018-08-20 11:28:41.097  INFO shantim2-l2 --- [nio-8080-exec-2] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2018-08-20 11:32:47.547  WARN shantim2-l2 --- [nio-8080-exec-6] o.s.w.s.PageNotFound                     : Request method 'POST' not supported
