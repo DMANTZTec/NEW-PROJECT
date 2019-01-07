@@ -1,0 +1,95 @@
+{
+	"rings": {
+		"popularringstypes": [
+			"dailywear",
+			"engagement",
+			"couplebrands"
+		],
+
+
+		"by-price-range": [
+			"below-10k",
+			"10k-20k",
+			"20k-30k"
+		],
+
+		"by-metal-and-stones": [
+			"diamond",
+			"gold",
+			"silver"
+		]
+	},
+	"earrings": {
+		"popular-earrings-types": [
+			"studs",
+			"drops",
+			"hoops"
+		],
+
+		"by-price-range": [
+			"below-10k",
+			"10k-20k",
+			"20k-30k"
+		],
+
+		"by-metal-and-stones": [
+			"diamond",
+			"gold",
+			"silver"
+		]
+	},
+
+
+	"pendents": {
+		"popular-pendents-types": [
+			"dailywear",
+			"religious",
+			"mangalsutras"
+		],
+
+		"by-price-range": [
+			"below-10k",
+			"10k-20k",
+			"20k-30k"
+		],
+
+		"by-metal-and-stones": [
+			"diamond",
+			"gold",
+			"silver"
+		]
+	},
+
+
+
+	"newarrivals": {
+		"popular-pendents-types": [
+			"dailywear",
+			"religious"
+		],
+
+		"by-price-range": [
+			"below-10k",
+			"10k-20k"
+		],
+
+		"by-metal-and-stones": [
+			"diamond",
+			"gold"
+		]
+	},
+
+	"goldcoins": {
+		"by-weight": [
+			"1-gram",
+			"2-gram",
+			"5 gram",
+			"7 gram"
+		],
+
+		"by-design": [
+			"floral",
+			"laxmi-ganesh"
+		]
+	}
+}

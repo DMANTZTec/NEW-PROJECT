@@ -4,7 +4,32 @@
     src: url('../fonts/Avenir-next-lt-pro-cufonfonts/AvenirNextLTPro-It.otf');
     src: url('../fonts/Avenir-next-lt-pro-cufonfonts/AvenirNextLTPro-It.eot?#iefix') format('embedded-opentype'), url('../fonts/Avenir-next-lt-pro-cufonfonts/AvenirNextLTPro-It.woff') format('woff'), url('../fonts/Avenir-next-lt-pro-cufonfonts/AvenirNextLTPro-It.ttf') format('truetype'), url('../fonts/Avenir-next-lt-pro-cufonfonts/AvenirNextLTPro-It') format('svg');
 }
-hheader .navbar{
+
+/* common-css */
+.pd-right{
+	padding-right:8px;
+}
+.number {
+    padding-right: 5px;
+}
+.navbar-inverse .navbar-nav>li>a{
+    color:#fff;
+}
+ul li a{
+  text-decoration: none !important;
+}
+
+/* common-css-end */
+
+
+
+.toll-free {
+    color: #fff;
+    text-transform: uppercase;
+    padding-top: 15px;
+    display: block;
+}
+.header .navbar{
     margin-bottom: 0px;
 }
 .header-middle .logo img{
@@ -45,6 +70,90 @@ hheader .navbar{
     color: #6A6A6A;
     font-size: 20px;
 }
+
+.category-section{
+ 	text-transform:uppercase;
+ 	text-align:center;
+ 	position: relative;
+ 	max-width: 720px;
+ 	margin: 0 auto
+}
+.category-section > li{
+    padding-right: 17px;
+    padding-left: 17px;
+}
+.category-section li a{
+    color:#272727;
+}
+.category-section .down-angle{
+    font-size: 15px;
+    font-weight: 600;
+    color: #AEAEAE;
+    padding-left: 8px;
+
+}
+.category-section .rings-section .rings-detail{
+    display:none;
+    background: #fff;
+    position: absolute;
+    /*top: 37%;*/
+    width: 100%;
+    padding: 15px  35px 35px 20px;
+    border: 1px solid #dfdfdf;
+    margin-top: -1px;
+    z-index: 999;
+    left: 0px;
+    list-style-type: none
+}
+/*.category-section .rings-section .rings-detail.pendents-center{
+    left: 130px;
+}*/
+#pendents-center{
+    left: 130px;
+}
+.category-section .rings-section .rings-detail.new-arrivals-center{
+    left:180px
+
+}
+
+.category-section .rings-section .rings-detail > li{
+	width: 33%;
+	float: left;
+	text-align: left;
+}
+.category-section .rings-section .rings-detail > li >span{
+   font-weight: 600;
+   border-bottom: 1px solid #dfdfdf;
+   padding-bottom: 3px;
+}
+
+.category-section .rings-section .rings-detail > li> ul{
+   padding: 0px;
+   text-align: left;
+   list-style-type:none;
+   padding-top: 8px;
+}
+.category-section .rings-section:hover div > ul{
+    display: block;
+    list-style-type:none;
+}
+.category-section .rings-section > a{
+    display: block;
+    border: transparent 1px solid;
+    font-size: 13px;
+    text-transform: uppercase;
+    padding: 10px 6px;
+    font-weight: 600;
+    color: #39322f;
+    text-align: center;
+    position: relative;
+    z-index: 0;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    transition: all .5s ease;
+   
+}
+
 /*banner section starts*/
 /*.banner-wrapper{
     padding-top: 100px;
