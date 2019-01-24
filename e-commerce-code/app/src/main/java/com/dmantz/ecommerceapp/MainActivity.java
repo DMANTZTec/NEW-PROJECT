@@ -1,11 +1,10 @@
 package com.dmantz.ecommerceapp;
 
-import android.content.Context;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
+import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
-import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
@@ -15,43 +14,56 @@ import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.SearchView;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.SubMenu;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.Toast;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
+import android.widget.LinearLayout;
 
 import com.dmantz.ecommerceapp.Adapters.RecyclerViewAdapter;
 import com.dmantz.ecommerceapp.Fragments.OneFragment;
+import com.dmantz.ecommerceapp.model.CatalogFilter;
+import com.dmantz.ecommerceapp.model.MenuModel;
 import com.dmantz.ecommerceapp.model.Product;
 import com.dmantz.ecommerceapp.model.ProductList;
 
+import org.json.JSONException;
+
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity implements SearchView.OnQueryTextListener {
+public class MainActivity extends AppCompatActivity implements SearchView.OnQueryTextListener, NavigationView.OnNavigationItemSelectedListener {
 
 
     public static final String TAG = "MainActivity";
+
+
+
+
     private DrawerLayout mDrawerLayout;
+
     private RecyclerView mRecyclerView;
     private RecyclerView.Adapter mAdapter;
     private RecyclerView.LayoutManager mLayoutManager;
-    private TabLayout tabLayout;
-    private ViewPager viewPager;
     private RecyclerViewAdapter adapter;
-    private ArrayList<ProductList> arrayList;
+
     private ProductList mProductList;
     private ProductList mFilteredProductList;
-    SearchView mSearchView;
-    Context mContext;
-    Button btnCategories;
 
+    Button btnCategories;
+    private CatalogFilter catalogFilterObj;
+
+    LinearLayout checkboxLinearLayout;
+    CheckBox menuItemCheckBox;
 
     public MainActivity() {
     }
@@ -72,6 +84,8 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
         btnCategories.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+
                 Intent categoriesList = new Intent(MainActivity.this, CategoriesListActivity.class);
                 startActivity(categoriesList);
 
@@ -87,34 +101,9 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
 
         actionbar.setDisplayHomeAsUpEnabled(true);
         actionbar.setHomeAsUpIndicator(R.drawable.navigation_icon);
-        mDrawerLayout = findViewById(R.id.navigation_drawer);
-
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
-
-        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-
-                int itemId = item.getItemId();
-
-                if(itemId == R.id.mens_cloth){
-                   // Toast.makeText(getApplicationContext(), item.getTitle(), Toast.LENGTH_SHORT).show();
-
-                    Intent intent = new Intent(MainActivity.this,ItemClient.class);
-                    startActivity(intent);
-
-                }
-
-                return false;
-            }
-        });
-        
 
 
-
-
-
-
+        addMenuItemInNavDrawer();
 
 
         mRecyclerView = findViewById(R.id.recyclerviewone);
@@ -129,8 +118,8 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
         // specify an adapter (see also next example)
 
 
-        //   adapter = new RecyclerViewAdapter(MainActivity.this, mProductList);
-        //   mRecyclerView.setAdapter(adapter);
+        adapter = new RecyclerViewAdapter(mProductList, this);
+        mRecyclerView.setAdapter(adapter);
 
 
         ECApplication lapp = (ECApplication) getApplication();
@@ -231,6 +220,11 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
         return true;
     }
 
+    @Override
+    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        return false;
+    }
+
 
     class ViewPagerAdapter extends FragmentPagerAdapter {
         private final List<Fragment> mFragmentList = new ArrayList<>();
@@ -259,6 +253,294 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
         public CharSequence getPageTitle(int position) {
             return mFragmentTitleList.get(position);
         }
+    }
+
+
+    private void addMenuItemInNavDrawer() {
+
+
+        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        navigationView.setNavigationItemSelectedListener(this);
+        mDrawerLayout = findViewById(R.id.navigation_drawer);
+        final Menu menu = navigationView.getMenu();
+
+        MenuModel menuModel = new MenuModel();
+
+        // SubMenu subMenu = menu.addSubMenu("Shop for");
+        //   SubMenu brands = menu.addSubMenu("BRANDS");
+
+
+        org.json.JSONObject navMenuOptions = menuModel.menuDetails(this);
+
+        MenuItem mi = null;
+
+
+        String filterKey;
+
+        Iterator<String> keys = navMenuOptions.keys();
+        String[] displayNameArray = new String[3];
+
+
+        while (keys.hasNext()) {
+
+            filterKey = (String) keys.next();
+            final SubMenu subMenu = menu.addSubMenu(filterKey);
+            //    mi = subMenu.add(filterKey);
+
+
+            try {
+
+                org.json.JSONArray categorieData = navMenuOptions.getJSONArray(filterKey);
+                Log.d(TAG, "addMenuItemInNavDrawer: " + categorieData);
+
+
+                for (int i = 0; i < categorieData.length(); i++) {
+
+                    org.json.JSONObject displayNameData = categorieData.getJSONObject(i);
+                    String displayName = displayNameData.getString("displayName");
+
+
+                    checkboxLinearLayout = new LinearLayout(this);
+                    menuItemCheckBox = new CheckBox(this);
+
+                    LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
+                    checkboxLinearLayout.setLayoutParams(layoutParams);
+                    LinearLayout.LayoutParams layoutParams2 = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+                    menuItemCheckBox.setLayoutParams(layoutParams2);
+
+
+                    Intent miIntent = new Intent();
+
+                    Bundle bundle = new Bundle();
+
+
+                    bundle.putString("filterType", filterKey);
+                    bundle.putString("filterData", displayName);
+
+
+                    checkboxLinearLayout.setOrientation(LinearLayout.VERTICAL);
+                    checkboxLinearLayout.addView(menuItemCheckBox);
+
+
+                    if (menuItemCheckBox.getParent() != null) {
+                        ((ViewGroup) menuItemCheckBox.getParent()).removeView(menuItemCheckBox);
+                    }
+
+                    mi = subMenu.add(displayName).setActionView(menuItemCheckBox);
+                    mi.setIntent(miIntent);
+
+                    menuItemCheckBox.setTag(bundle);
+
+                    menuItemCheckBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+                        @Override
+                        public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+
+                            Bundle bundle = (Bundle) buttonView.getTag();
+
+                            Log.d(TAG, "onCheckedChanged:bundle " + bundle);
+
+                          /*  Intent miIntent = getIntent();
+                            String filterEnabled = miIntent.getStringExtra("filterEnabled");
+                                String[] filterData = miIntent.getStringArrayExtra() */
+
+                            ECApplication lapp = (ECApplication) getApplication();
+
+
+                            if (isChecked) {
+
+
+                                lapp.catalogClient.updateFilter("add", bundle.getString("filterType"), bundle.getString("filterData"));
+
+                                try {
+
+                                    mProductList = lapp.catalogClient.productDisplayList();
+                                    mAdapter = new RecyclerViewAdapter(mProductList, getApplicationContext());
+                                    //ECApplication)getApplication());
+                                    mRecyclerView.setAdapter(mAdapter);
+                                    // miIntent.putExtra("filterEnabled", "true");
+
+                                } catch (Exception e) {
+                                    e.printStackTrace();
+                                }
+
+                            } else {
+
+
+                                lapp.catalogClient.updateFilter("delete", bundle.getString("filterType"), bundle.getString("filterData"));
+
+                                try {
+                                    mProductList = lapp.catalogClient.productDisplayList();
+                                    mAdapter = new RecyclerViewAdapter(mProductList, getApplicationContext());
+                                    //ECApplication)getApplication());
+                                    mRecyclerView.setAdapter(mAdapter);
+                                } catch (Exception e) {
+
+                                    e.printStackTrace();
+                                }
+
+                            }
+
+                        }
+                    });
+
+
+                }
+
+
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+
+
+        }
+
+  /*      mi.setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
+
+
+            @Override
+            public boolean onMenuItemClick(MenuItem item) {
+
+                Intent miIntent = item.getIntent();
+                String filterEnabled = miIntent.getStringExtra("filterEnabled");
+                //    String[] filterData = miIntent.getStringArrayExtra()
+                ECApplication lapp = (ECApplication) getApplication();
+
+                if (filterEnabled.equals("False")) {
+
+                    lapp.catalogClient.updateFilter("add", miIntent.getStringExtra("filterType"), miIntent.getStringExtra("filterData"));
+
+                    try {
+
+                        mProductList = lapp.catalogClient.productDisplayList();
+                        mAdapter = new RecyclerViewAdapter(mProductList, getApplicationContext());
+                        //ECApplication)getApplication());
+                        mRecyclerView.setAdapter(mAdapter);
+                        miIntent.putExtra("filterEnabled", "true");
+
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+
+
+                } else {
+
+
+                    lapp.catalogClient.updateFilter("delete", miIntent.getStringExtra("filterType"), miIntent.getStringExtra("filterData"));
+
+                    try {
+                        mProductList = lapp.catalogClient.productDisplayList();
+                        mAdapter = new RecyclerViewAdapter(mProductList, getApplicationContext());
+                        //ECApplication)getApplication());
+                        mRecyclerView.setAdapter(mAdapter);
+                    } catch (Exception e) {
+
+                        e.printStackTrace();
+                    }
+
+                }
+
+
+                return true;
+            }
+        });
+
+*/
+        // String[] displayNameArray = new String[3];
+        //   MenuItem brandsItem = null;
+        //   brandsItem = brands.add("NIKE").setActionView(R.layout.layout_menu_checkbox);
+
+
+        //for (int i = 0; i < navMenuOptions.length(); i++) {
+
+
+         /*   try {
+
+
+                org.json.JSONObject itemDetails = navMenuOptions.getJSONObject("displayName");
+
+
+                //   mi = subMenu.add(itemDetails.getString("displayName"));
+
+
+                //    mi.getSubMenu().addSubMenu("Size");
+
+0
+                Intent miIntent = new Intent();
+
+                miIntent.putExtra("filterType", itemDetails.getString("displayName"));
+                miIntent.putExtra("filterData", itemDetails.getString("filterData"));
+                miIntent.putExtra("filterEnabled", "False");
+
+                mi.setIntent(miIntent);
+
+
+                SpannableString s = new SpannableString(mi.getTitle());
+                s.setSpan(new BackgroundColorSpan(Color.BLUE), 0, s.length(), 0);
+                s.setSpan(new ForegroundColorSpan(Color.WHITE), 0, s.length(), 0);
+
+                mi.setTitle(s);
+
+
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+
+*/
+          /*  mi.setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
+
+
+                @Override
+                public boolean onMenuItemClick(MenuItem item) {
+
+                    Intent miIntent = item.getIntent();
+
+
+                    String filterEnabled = miIntent.getStringExtra("filterEnabled");
+
+                    //    String[] filterData = miIntent.getStringArrayExtra()
+
+                    ECApplication lapp = (ECApplication) getApplication();
+                    if (filterEnabled.equals("False")) {
+
+                        lapp.catalogClient.updateFilter("add", miIntent.getStringExtra("filterType"), miIntent.getStringExtra("filterData"));
+
+                        try {
+
+
+                            mProductList = lapp.catalogClient.productDisplayList();
+                            mAdapter = new RecyclerViewAdapter(mProductList, getApplicationContext());
+                            //ECApplication)getApplication());
+                            mRecyclerView.setAdapter(mAdapter);
+                            miIntent.putExtra("filterEnabled", "true");
+
+                        } catch (Exception e) {
+                            e.printStackTrace();
+                        }
+
+
+                    } else {
+
+
+                        lapp.catalogClient.updateFilter("delete", miIntent.getStringExtra("filterType"), miIntent.getStringExtra("filterData"));
+                        try {
+                            mProductList = lapp.catalogClient.productDisplayList();
+                            mAdapter = new RecyclerViewAdapter(mProductList, getApplicationContext());
+                            //ECApplication)getApplication());
+                            mRecyclerView.setAdapter(mAdapter);
+                        } catch (Exception e) {
+                            e.printStackTrace();
+                        }
+
+                    }
+
+
+                    return true;
+                }
+            }); */
+        // }
+
+        mDrawerLayout.closeDrawers();
+
     }
 
 

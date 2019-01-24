@@ -25,7 +25,6 @@ public class PaymentClient extends Activity implements PaymentResultListener {
     ImageView mProductImage;
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -84,11 +83,10 @@ public class PaymentClient extends Activity implements PaymentResultListener {
     }
 
 
-
     private void getProductImformation() {
 
 
-        if (getIntent().hasExtra("itemName") && getIntent().hasExtra("itemImage")&& getIntent().hasExtra("itemSize") && getIntent().hasExtra("itemPrice")) {
+        if (getIntent().hasExtra("itemName") && getIntent().hasExtra("itemImage") && getIntent().hasExtra("itemSize") && getIntent().hasExtra("itemPrice")) {
 
             String itemName = getIntent().getStringExtra("itemName");
             String itemUrl = getIntent().getStringExtra("itemImage");
@@ -96,14 +94,14 @@ public class PaymentClient extends Activity implements PaymentResultListener {
             String itemPrice = getIntent().getStringExtra("itemPrice");
             String itemSize = getIntent().getStringExtra("itemSize");
 
-            setProductImage(itemName, itemUrl,itemSize, itemPrice);
+            setProductImage(itemName, itemUrl, itemSize, itemPrice);
         }
 
 
     }
 
 
-    private void setProductImage(String itemName, String itemUrl,String itemSize,String itemPrice) {
+    private void setProductImage(String itemName, String itemUrl, String itemSize, String itemPrice) {
 
         mTextView = findViewById(R.id.itemInfo);
         mTextView.setText(itemName);

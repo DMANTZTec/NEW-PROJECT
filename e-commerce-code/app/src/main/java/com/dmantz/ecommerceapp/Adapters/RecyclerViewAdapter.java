@@ -107,10 +107,6 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
                 intent.putExtra("productUrl", mproductList.getProductList().get(position).getItemImageUrl());
 
 
-                Bundle extra = new Bundle();
-                extra.putString("name",mproductList.getProductList().get(position).getItemName());
-                intent.putExtras(extra);
-
 
                 mcontext.startActivity(intent);
             }

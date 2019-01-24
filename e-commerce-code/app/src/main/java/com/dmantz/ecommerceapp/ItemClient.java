@@ -4,8 +4,11 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -20,7 +23,7 @@ import com.squareup.picasso.Picasso;
 import java.util.HashMap;
 import java.util.Map;
 
-public class ItemClient extends AppCompatActivity {
+public class ItemClient extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
 
     //  ProgressDialog mProgressDialog;
@@ -38,6 +41,7 @@ public class ItemClient extends AppCompatActivity {
     DatabaseReference mFirebase, rootRef;
 
     TextView mTextView, itemCountText;
+    ImageView cartIconView;
 
     NotificationBadge mBadge;
 
@@ -51,6 +55,9 @@ public class ItemClient extends AppCompatActivity {
     String itemDescription;
     String itemImage;
 
+    String[] ProductSize = {"M", "L", "S", "XL", "XXL"};
+    String[] ProductColor = {"BLUE", "WHITE", "YELLOW", "RED"};
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,6 +65,8 @@ public class ItemClient extends AppCompatActivity {
         setContentView(R.layout.activity_item_client);
         getItemInformation();
         Firebase.setAndroidContext(this);
+
+        cartIconView = findViewById(R.id.cart_item_notification);
 
 
         buyNow = findViewById(R.id.buyNow);
@@ -89,6 +98,17 @@ public class ItemClient extends AppCompatActivity {
             }
         });
 
+        cartIconView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent onClickCartIcon = new Intent(ItemClient.this,CartClient.class);
+                startActivity(onClickCartIcon);
+
+
+
+
+            }
+        });
 
 
     /*    try {
@@ -224,21 +244,39 @@ public class ItemClient extends AppCompatActivity {
     private void setItemInformation(String itemName, String itemSize, String itemPrice, String itemId, String itemDescription, String itemImage) {
 
         TextView mName = findViewById(R.id.product_name);
-        mName.setText(itemName);
+        mName.setText("\t " + itemName);
 
 
         TextView mId = findViewById(R.id.product_id);
-        mId.setText(itemId);
+        mId.setText("Product id :" + " \n " + itemId);
 
 
         TextView mPrice = findViewById(R.id.product_price);
-        mPrice.setText(itemPrice);
+        mPrice.setText("PRICE : " + " " + itemPrice);
 
-        TextView mSize = findViewById(R.id.product_size);
-        mSize.setText(itemSize);
+
+        Spinner mSize = findViewById(R.id.product_size);
+        mSize.setOnItemSelectedListener(this);
+
+
+        ArrayAdapter aa = new ArrayAdapter(this, android.R.layout.simple_spinner_item, ProductSize);
+        aa.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+
+        mSize.setAdapter(aa);
+
+
+        Spinner mColor = findViewById(R.id.product_color);
+        mColor.setOnItemSelectedListener(this);
+
+
+        ArrayAdapter colorAdapter = new ArrayAdapter(this, android.R.layout.simple_spinner_item, ProductColor);
+        colorAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+
+        mColor.setAdapter(colorAdapter);
+
 
         TextView mDescription = findViewById(R.id.product_description);
-        mDescription.setText(itemDescription);
+        mDescription.setText("DESCRIPTION : " + "\n" + " \n " + itemDescription);
 
         ImageView mImageView = findViewById(R.id.image_product);
         Picasso.get().load(itemImage).fit().into(mImageView);
@@ -247,6 +285,15 @@ public class ItemClient extends AppCompatActivity {
     }
 
 
+    @Override
+    public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+
+    }
+
+    @Override
+    public void onNothingSelected(AdapterView<?> parent) {
+
+    }
 }
 
 

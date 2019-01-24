@@ -30,22 +30,18 @@ public class CategoriesListActivity extends Activity {
         mCategoryToolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent mBack = new Intent(CategoriesListActivity.this,MainActivity.class);
+                Intent mBack = new Intent(CategoriesListActivity.this, MainActivity.class);
                 startActivity(mBack);
             }
         });
 
 
-
         categoriesListView = findViewById(R.id.categories_list_view);
 
-        String[] categoriesNames = new String[] {"Men","Women","Kids"};
+        String[] categoriesNames = new String[]{"Men", "Women", "Kids"};
 
-        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this,R.layout.activity_textview_adapter,R.id.text_categories_list,categoriesNames);
+        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, R.layout.activity_textview_adapter, R.id.text_categories_list, categoriesNames);
         categoriesListView.setAdapter(arrayAdapter);
-
-
-
 
 
     }
