@@ -1,0 +1,650 @@
+2018-09-04 10:24:04.379  INFO home-PC --- [           main] c.d.c.App                                : Starting App on home-PC with PID 4240 (C:\Users\shashi\Desktop\UserApp\UserApp\target\classes started by shashi in C:\Users\shashi\Desktop\UserApp\UserApp)
+2018-09-04 10:24:04.430  INFO home-PC --- [           main] c.d.c.App                                : No active profile set, falling back to default profiles: default
+2018-09-04 10:24:04.810  INFO home-PC --- [           main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@56f6d40b: startup date [Tue Sep 04 10:24:04 IST 2018]; root of context hierarchy
+2018-09-04 10:24:08.510  INFO home-PC --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2018-09-04 10:24:08.665  INFO home-PC --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2018-09-04 10:24:08.858  INFO home-PC --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2018-09-04 10:24:08.859  INFO home-PC --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-09-04 10:24:08.998  INFO home-PC --- [ost-startStop-1] o.a.c.c.AprLifecycleListener             : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-10\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk-10\bin;C:\Program Files\Java\jdk-10\bin;C:\Program Files\Java\jdk-10\bin;.]
+2018-09-04 10:24:09.811  INFO home-PC --- [ost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2018-09-04 10:24:09.812  INFO home-PC --- [ost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 5083 ms
+2018-09-04 10:24:10.097  INFO home-PC --- [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Servlet dispatcherServlet mapped to [/]
+2018-09-04 10:24:10.125  INFO home-PC --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-04 10:24:10.125  INFO home-PC --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-04 10:24:10.126  INFO home-PC --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-04 10:24:10.126  INFO home-PC --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-04 10:24:11.809  INFO home-PC --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-04 10:24:12.290  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@56f6d40b: startup date [Tue Sep 04 10:24:04 IST 2018]; root of context hierarchy
+2018-09-04 10:24:12.431  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/catalog],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.catalog()
+2018-09-04 10:24:12.433  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/product],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.product()
+2018-09-04 10:24:12.435  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/insertImage],methods=[GET]}" onto public java.lang.String com.dm_02_tbdapp.controller.UserAppController.image(java.lang.String)
+2018-09-04 10:24:12.436  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/insertIntoProduct_Table],methods=[POST]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.insertIntoProduct_Table(org.json.simple.JSONObject)
+2018-09-04 10:24:12.437  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/user],methods=[GET],produces=[application/json || application/xml]}" onto public com.dm_02_tbdapp.bean.UserProfile com.dm_02_tbdapp.controller.UserAppController.setUserProfile(java.lang.String)
+2018-09-04 10:24:12.437  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/login],methods=[POST]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.loginUser(org.json.simple.JSONObject)
+2018-09-04 10:24:12.438  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/RegisterUser],methods=[POST]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.newUser(org.json.simple.JSONObject)
+2018-09-04 10:24:12.438  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/logout],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.logoutUser()
+2018-09-04 10:24:12.439  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/registerUser],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.registerUser(com.dm_02_tbdapp.bean.User)
+2018-09-04 10:24:12.439  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/updateUser],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.updateUser(com.dm_02_tbdapp.bean.User)
+2018-09-04 10:24:12.440  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/updateUserAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.updateAddress(com.dm_02_tbdapp.bean.User)
+2018-09-04 10:24:12.440  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/addAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.addAddress(com.dm_02_tbdapp.bean.User)
+2018-09-04 10:24:12.441  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/removeAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.removeAddress(com.dm_02_tbdapp.bean.User)
+2018-09-04 10:24:12.441  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/showImage],methods=[GET],produces=[image/jpeg]}" onto public byte[] com.dm_02_tbdapp.controller.UserAppController.displayImg(int) throws java.io.IOException
+2018-09-04 10:24:12.442  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/showImageNew]}" onto public void com.dm_02_tbdapp.controller.UserAppController.photo(javax.servlet.http.HttpServletResponse,int) throws java.io.IOException
+2018-09-04 10:24:12.450  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-04 10:24:12.451  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-04 10:24:12.487  INFO home-PC --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-04 10:24:12.487  INFO home-PC --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-04 10:24:12.949  INFO home-PC --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-09-04 10:24:12.953  INFO home-PC --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-09-04 10:24:12.963  INFO home-PC --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-09-04 10:24:12.987  INFO home-PC --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2018-09-04 10:24:13.091  INFO home-PC --- [           main] o.a.t.u.n.NioSelectorPool                : Using a shared selector for servlet write/read
+2018-09-04 10:24:13.150  INFO home-PC --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2018-09-04 10:24:13.157  INFO home-PC --- [           main] c.d.c.App                                : Started App in 11.827 seconds (JVM running for 16.755)
+2018-09-04 10:46:10.779  INFO home-PC --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-09-04 10:46:10.780  INFO home-PC --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization started
+2018-09-04 10:46:10.814  INFO home-PC --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization completed in 34 ms
+2018-09-04 10:46:10.885  INFO home-PC --- [nio-8080-exec-1] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2018-09-04 10:46:12.242  INFO home-PC --- [nio-8080-exec-1] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2018-09-04 11:10:24.508  WARN home-PC --- [l-1 housekeeper] c.z.h.p.HikariPool                       : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m42s257ms393µs616ns).
+2018-09-04 11:10:40.317  INFO home-PC --- [n(48)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-09-04 11:10:40.318  INFO home-PC --- [n(48)-127.0.0.1] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@56f6d40b: startup date [Tue Sep 04 10:24:04 IST 2018]; root of context hierarchy
+2018-09-04 11:10:40.333  INFO home-PC --- [n(48)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-09-04 11:10:40.334  INFO home-PC --- [n(48)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-09-04 11:10:40.335  INFO home-PC --- [n(48)-127.0.0.1] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2018-09-04 11:10:40.410  INFO home-PC --- [n(48)-127.0.0.1] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2018-09-04 11:10:59.027  INFO home-PC --- [           main] c.d.c.App                                : Starting App on home-PC with PID 6068 (C:\Users\shashi\Desktop\UserApp\UserApp\target\classes started by shashi in C:\Users\shashi\Desktop\UserApp\UserApp)
+2018-09-04 11:10:59.034  INFO home-PC --- [           main] c.d.c.App                                : No active profile set, falling back to default profiles: default
+2018-09-04 11:10:59.094  INFO home-PC --- [           main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1623134f: startup date [Tue Sep 04 11:10:59 IST 2018]; root of context hierarchy
+2018-09-04 11:11:00.521  INFO home-PC --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2018-09-04 11:11:00.547  INFO home-PC --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2018-09-04 11:11:00.561  INFO home-PC --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2018-09-04 11:11:00.562  INFO home-PC --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-09-04 11:11:00.569  INFO home-PC --- [ost-startStop-1] o.a.c.c.AprLifecycleListener             : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-10\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk-10\bin;C:\Program Files\Java\jdk-10\bin;C:\Program Files\Java\jdk-10\bin;.]
+2018-09-04 11:11:00.670  INFO home-PC --- [ost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2018-09-04 11:11:00.670  INFO home-PC --- [ost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1582 ms
+2018-09-04 11:11:00.837  INFO home-PC --- [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Servlet dispatcherServlet mapped to [/]
+2018-09-04 11:11:00.843  INFO home-PC --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-04 11:11:00.843  INFO home-PC --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-04 11:11:00.844  INFO home-PC --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-04 11:11:00.844  INFO home-PC --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-04 11:11:01.128  INFO home-PC --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-04 11:11:01.365  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1623134f: startup date [Tue Sep 04 11:10:59 IST 2018]; root of context hierarchy
+2018-09-04 11:11:01.426  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/catalog],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.catalog()
+2018-09-04 11:11:01.427  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/product],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.product()
+2018-09-04 11:11:01.428  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/insertImage],methods=[GET]}" onto public java.lang.String com.dm_02_tbdapp.controller.UserAppController.image(java.lang.String)
+2018-09-04 11:11:01.430  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/insertIntoProduct_Table],methods=[POST]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.insertIntoProduct_Table(org.json.simple.JSONObject)
+2018-09-04 11:11:01.430  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/user],methods=[GET],produces=[application/json || application/xml]}" onto public com.dm_02_tbdapp.bean.UserProfile com.dm_02_tbdapp.controller.UserAppController.setUserProfile(java.lang.String)
+2018-09-04 11:11:01.431  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/login],methods=[POST]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.loginUser(org.json.simple.JSONObject)
+2018-09-04 11:11:01.431  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/RegisterUser],methods=[POST]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.newUser(org.json.simple.JSONObject)
+2018-09-04 11:11:01.431  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/logout],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.logoutUser()
+2018-09-04 11:11:01.432  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/registerUser],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.registerUser(com.dm_02_tbdapp.bean.User)
+2018-09-04 11:11:01.432  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/updateUser],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.updateUser(com.dm_02_tbdapp.bean.User)
+2018-09-04 11:11:01.432  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/updateUserAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.updateAddress(com.dm_02_tbdapp.bean.User)
+2018-09-04 11:11:01.433  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/addAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.addAddress(com.dm_02_tbdapp.bean.User)
+2018-09-04 11:11:01.433  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/removeAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.removeAddress(com.dm_02_tbdapp.bean.User)
+2018-09-04 11:11:01.433  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/showImage],methods=[GET],produces=[image/jpeg]}" onto public byte[] com.dm_02_tbdapp.controller.UserAppController.displayImg(int) throws java.io.IOException
+2018-09-04 11:11:01.434  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/showImageNew]}" onto public void com.dm_02_tbdapp.controller.UserAppController.photo(javax.servlet.http.HttpServletResponse,int) throws java.io.IOException
+2018-09-04 11:11:01.440  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-04 11:11:01.441  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-04 11:11:01.472  INFO home-PC --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-04 11:11:01.472  INFO home-PC --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-04 11:11:01.769  INFO home-PC --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-09-04 11:11:01.771  INFO home-PC --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-09-04 11:11:01.778  INFO home-PC --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-09-04 11:11:01.815  INFO home-PC --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2018-09-04 11:11:01.827  INFO home-PC --- [           main] o.a.t.u.n.NioSelectorPool                : Using a shared selector for servlet write/read
+2018-09-04 11:11:01.862  INFO home-PC --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2018-09-04 11:11:01.869  INFO home-PC --- [           main] c.d.c.App                                : Started App in 3.227 seconds (JVM running for 4.852)
+2018-09-04 11:11:37.144  INFO home-PC --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-09-04 11:11:37.145  INFO home-PC --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization started
+2018-09-04 11:11:37.162  INFO home-PC --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization completed in 17 ms
+2018-09-04 11:11:37.193  INFO home-PC --- [nio-8080-exec-1] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2018-09-04 11:11:37.578  INFO home-PC --- [nio-8080-exec-1] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2018-09-04 11:29:22.530  WARN home-PC --- [l-1 housekeeper] c.z.h.p.HikariPool                       : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m14s962ms456µs516ns).
+2018-09-04 11:29:32.340  INFO home-PC --- [n(23)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-09-04 11:29:32.340  INFO home-PC --- [n(23)-127.0.0.1] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1623134f: startup date [Tue Sep 04 11:10:59 IST 2018]; root of context hierarchy
+2018-09-04 11:29:32.344  INFO home-PC --- [n(23)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-09-04 11:29:32.345  INFO home-PC --- [n(23)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-09-04 11:29:32.346  INFO home-PC --- [n(23)-127.0.0.1] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2018-09-04 11:29:32.389  INFO home-PC --- [n(23)-127.0.0.1] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2018-09-04 11:30:01.628  INFO home-PC --- [           main] c.d.c.App                                : Starting App on home-PC with PID 3988 (C:\Users\shashi\Desktop\UserApp\UserApp\target\classes started by shashi in C:\Users\shashi\Desktop\UserApp\UserApp)
+2018-09-04 11:30:01.634  INFO home-PC --- [           main] c.d.c.App                                : No active profile set, falling back to default profiles: default
+2018-09-04 11:30:01.695  INFO home-PC --- [           main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7c56e013: startup date [Tue Sep 04 11:30:01 IST 2018]; root of context hierarchy
+2018-09-04 11:30:03.116  INFO home-PC --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2018-09-04 11:30:03.154  INFO home-PC --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2018-09-04 11:30:03.168  INFO home-PC --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2018-09-04 11:30:03.169  INFO home-PC --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-09-04 11:30:03.176  INFO home-PC --- [ost-startStop-1] o.a.c.c.AprLifecycleListener             : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-10\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk-10\bin;C:\Program Files\Java\jdk-10\bin;C:\Program Files\Java\jdk-10\bin;.]
+2018-09-04 11:30:03.276  INFO home-PC --- [ost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2018-09-04 11:30:03.276  INFO home-PC --- [ost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1587 ms
+2018-09-04 11:30:03.425  INFO home-PC --- [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Servlet dispatcherServlet mapped to [/]
+2018-09-04 11:30:03.430  INFO home-PC --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-04 11:30:03.430  INFO home-PC --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-04 11:30:03.431  INFO home-PC --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-04 11:30:03.431  INFO home-PC --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-04 11:30:03.741  INFO home-PC --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-04 11:30:03.953  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7c56e013: startup date [Tue Sep 04 11:30:01 IST 2018]; root of context hierarchy
+2018-09-04 11:30:04.011  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/catalog],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.catalog()
+2018-09-04 11:30:04.012  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/product],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.product()
+2018-09-04 11:30:04.014  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/insertImage],methods=[GET]}" onto public java.lang.String com.dm_02_tbdapp.controller.UserAppController.image(java.lang.String)
+2018-09-04 11:30:04.016  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/user],methods=[GET],produces=[application/json || application/xml]}" onto public com.dm_02_tbdapp.bean.UserProfile com.dm_02_tbdapp.controller.UserAppController.setUserProfile(java.lang.String)
+2018-09-04 11:30:04.016  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/login],methods=[POST]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.loginUser(org.json.simple.JSONObject)
+2018-09-04 11:30:04.017  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/RegisterUser],methods=[POST]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.newUser(org.json.simple.JSONObject)
+2018-09-04 11:30:04.017  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/logout],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.logoutUser()
+2018-09-04 11:30:04.018  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/registerUser],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.registerUser(com.dm_02_tbdapp.bean.User)
+2018-09-04 11:30:04.018  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/updateUser],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.updateUser(com.dm_02_tbdapp.bean.User)
+2018-09-04 11:30:04.018  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/updateUserAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.updateAddress(com.dm_02_tbdapp.bean.User)
+2018-09-04 11:30:04.019  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/addAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.addAddress(com.dm_02_tbdapp.bean.User)
+2018-09-04 11:30:04.019  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/removeAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.removeAddress(com.dm_02_tbdapp.bean.User)
+2018-09-04 11:30:04.019  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/showImage],methods=[GET],produces=[image/jpeg]}" onto public byte[] com.dm_02_tbdapp.controller.UserAppController.displayImg(int) throws java.io.IOException
+2018-09-04 11:30:04.020  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/showImageNew]}" onto public void com.dm_02_tbdapp.controller.UserAppController.photo(javax.servlet.http.HttpServletResponse,int) throws java.io.IOException
+2018-09-04 11:30:04.020  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/insertIntoProduct_Table],methods=[POST]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.insertIntoProduct_Table(org.json.simple.JSONObject)
+2018-09-04 11:30:04.027  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-04 11:30:04.027  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-04 11:30:04.057  INFO home-PC --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-04 11:30:04.057  INFO home-PC --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-04 11:30:04.339  INFO home-PC --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-09-04 11:30:04.341  INFO home-PC --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-09-04 11:30:04.347  INFO home-PC --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-09-04 11:30:04.387  INFO home-PC --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2018-09-04 11:30:04.401  INFO home-PC --- [           main] o.a.t.u.n.NioSelectorPool                : Using a shared selector for servlet write/read
+2018-09-04 11:30:04.422  INFO home-PC --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2018-09-04 11:30:04.430  INFO home-PC --- [           main] c.d.c.App                                : Started App in 3.243 seconds (JVM running for 4.812)
+2018-09-04 11:41:06.320  INFO home-PC --- [io-8080-exec-10] o.a.c.c.C.[.[.[/]                        : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-09-04 11:41:06.320  INFO home-PC --- [io-8080-exec-10] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization started
+2018-09-04 11:41:06.338  INFO home-PC --- [io-8080-exec-10] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization completed in 18 ms
+2018-09-04 11:41:06.371  INFO home-PC --- [io-8080-exec-10] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2018-09-04 11:41:06.757  INFO home-PC --- [io-8080-exec-10] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2018-09-04 12:02:26.547  WARN home-PC --- [l-1 housekeeper] c.z.h.p.HikariPool                       : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m49s762ms497µs64ns).
+2018-09-04 12:29:23.221  INFO home-PC --- [n(65)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-09-04 12:29:23.222  INFO home-PC --- [n(65)-127.0.0.1] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7c56e013: startup date [Tue Sep 04 11:30:01 IST 2018]; root of context hierarchy
+2018-09-04 12:29:23.227  INFO home-PC --- [n(65)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-09-04 12:29:23.228  INFO home-PC --- [n(65)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-09-04 12:29:23.229  INFO home-PC --- [n(65)-127.0.0.1] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2018-09-04 12:29:23.249  INFO home-PC --- [n(65)-127.0.0.1] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2018-09-04 12:29:50.001  INFO home-PC --- [           main] c.d.c.App                                : Starting App on home-PC with PID 4424 (C:\Users\shashi\Desktop\UserApp\UserApp\target\classes started by shashi in C:\Users\shashi\Desktop\UserApp\UserApp)
+2018-09-04 12:29:50.007  INFO home-PC --- [           main] c.d.c.App                                : No active profile set, falling back to default profiles: default
+2018-09-04 12:29:50.064  INFO home-PC --- [           main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7a527389: startup date [Tue Sep 04 12:29:50 IST 2018]; root of context hierarchy
+2018-09-04 12:29:51.454  INFO home-PC --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2018-09-04 12:29:51.494  INFO home-PC --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2018-09-04 12:29:51.508  INFO home-PC --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2018-09-04 12:29:51.509  INFO home-PC --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-09-04 12:29:51.516  INFO home-PC --- [ost-startStop-1] o.a.c.c.AprLifecycleListener             : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-10\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk-10\bin;C:\Program Files\Java\jdk-10\bin;C:\Program Files\Java\jdk-10\bin;.]
+2018-09-04 12:29:51.617  INFO home-PC --- [ost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2018-09-04 12:29:51.618  INFO home-PC --- [ost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1560 ms
+2018-09-04 12:29:51.755  INFO home-PC --- [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Servlet dispatcherServlet mapped to [/]
+2018-09-04 12:29:51.760  INFO home-PC --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-04 12:29:51.760  INFO home-PC --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-04 12:29:51.761  INFO home-PC --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-04 12:29:51.761  INFO home-PC --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-04 12:29:52.088  INFO home-PC --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-04 12:29:52.312  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7a527389: startup date [Tue Sep 04 12:29:50 IST 2018]; root of context hierarchy
+2018-09-04 12:29:52.369  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/catalog],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.catalog()
+2018-09-04 12:29:52.371  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/product],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.product()
+2018-09-04 12:29:52.373  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/insertImage],methods=[GET]}" onto public java.lang.String com.dm_02_tbdapp.controller.UserAppController.image(java.lang.String)
+2018-09-04 12:29:52.374  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/user],methods=[GET],produces=[application/json || application/xml]}" onto public com.dm_02_tbdapp.bean.UserProfile com.dm_02_tbdapp.controller.UserAppController.setUserProfile(java.lang.String)
+2018-09-04 12:29:52.375  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/login],methods=[POST]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.loginUser(org.json.simple.JSONObject)
+2018-09-04 12:29:52.375  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/RegisterUser],methods=[POST]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.newUser(org.json.simple.JSONObject)
+2018-09-04 12:29:52.375  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/logout],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.logoutUser()
+2018-09-04 12:29:52.376  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/registerUser],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.registerUser(com.dm_02_tbdapp.bean.User)
+2018-09-04 12:29:52.376  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/updateUser],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.updateUser(com.dm_02_tbdapp.bean.User)
+2018-09-04 12:29:52.377  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/updateUserAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.updateAddress(com.dm_02_tbdapp.bean.User)
+2018-09-04 12:29:52.377  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/addAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.addAddress(com.dm_02_tbdapp.bean.User)
+2018-09-04 12:29:52.377  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/removeAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.removeAddress(com.dm_02_tbdapp.bean.User)
+2018-09-04 12:29:52.378  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/showImage],methods=[GET],produces=[image/jpeg]}" onto public byte[] com.dm_02_tbdapp.controller.UserAppController.displayImg(int) throws java.io.IOException
+2018-09-04 12:29:52.378  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/showImageNew]}" onto public void com.dm_02_tbdapp.controller.UserAppController.photo(javax.servlet.http.HttpServletResponse,int) throws java.io.IOException
+2018-09-04 12:29:52.379  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/insertIntoProduct_Table],methods=[POST]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.insertIntoProduct_Table(org.json.simple.JSONObject)
+2018-09-04 12:29:52.385  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-04 12:29:52.386  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-04 12:29:52.420  INFO home-PC --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-04 12:29:52.420  INFO home-PC --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-04 12:29:52.700  INFO home-PC --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-09-04 12:29:52.727  INFO home-PC --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-09-04 12:29:52.734  INFO home-PC --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-09-04 12:29:52.752  INFO home-PC --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2018-09-04 12:29:52.767  INFO home-PC --- [           main] o.a.t.u.n.NioSelectorPool                : Using a shared selector for servlet write/read
+2018-09-04 12:29:52.793  INFO home-PC --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2018-09-04 12:29:52.798  INFO home-PC --- [           main] c.d.c.App                                : Started App in 3.203 seconds (JVM running for 4.669)
+2018-09-04 12:35:26.487  INFO home-PC --- [nio-8080-exec-9] o.a.c.c.C.[.[.[/]                        : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-09-04 12:35:26.487  INFO home-PC --- [nio-8080-exec-9] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization started
+2018-09-04 12:35:26.508  INFO home-PC --- [nio-8080-exec-9] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization completed in 21 ms
+2018-09-04 12:35:26.542  INFO home-PC --- [nio-8080-exec-9] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2018-09-04 12:35:26.971  INFO home-PC --- [nio-8080-exec-9] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2018-09-04 13:52:51.515  WARN home-PC --- [l-1 housekeeper] c.z.h.p.HikariPool                       : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=45m54s380ms421µs305ns).
+2018-09-04 15:18:46.583  INFO home-PC --- [(134)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-09-04 15:18:46.584  INFO home-PC --- [(134)-127.0.0.1] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7a527389: startup date [Tue Sep 04 12:29:50 IST 2018]; root of context hierarchy
+2018-09-04 15:18:46.588  INFO home-PC --- [(134)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-09-04 15:18:46.589  INFO home-PC --- [(134)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-09-04 15:18:46.590  INFO home-PC --- [(134)-127.0.0.1] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2018-09-04 15:18:46.603  INFO home-PC --- [(134)-127.0.0.1] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2018-09-04 15:19:04.282  INFO home-PC --- [           main] c.d.c.App                                : Starting App on home-PC with PID 4864 (C:\Users\shashi\Desktop\UserApp\UserApp\target\classes started by shashi in C:\Users\shashi\Desktop\UserApp\UserApp)
+2018-09-04 15:19:04.289  INFO home-PC --- [           main] c.d.c.App                                : No active profile set, falling back to default profiles: default
+2018-09-04 15:19:04.351  INFO home-PC --- [           main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@31e75d13: startup date [Tue Sep 04 15:19:04 IST 2018]; root of context hierarchy
+2018-09-04 15:19:05.796  INFO home-PC --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2018-09-04 15:19:05.823  INFO home-PC --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2018-09-04 15:19:05.837  INFO home-PC --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2018-09-04 15:19:05.838  INFO home-PC --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-09-04 15:19:05.845  INFO home-PC --- [ost-startStop-1] o.a.c.c.AprLifecycleListener             : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-10\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk-10\bin;C:\Program Files\Java\jdk-10\bin;C:\Program Files\Java\jdk-10\bin;.]
+2018-09-04 15:19:05.947  INFO home-PC --- [ost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2018-09-04 15:19:05.947  INFO home-PC --- [ost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1603 ms
+2018-09-04 15:19:06.094  INFO home-PC --- [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Servlet dispatcherServlet mapped to [/]
+2018-09-04 15:19:06.099  INFO home-PC --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-04 15:19:06.099  INFO home-PC --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-04 15:19:06.099  INFO home-PC --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-04 15:19:06.100  INFO home-PC --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-04 15:19:06.405  INFO home-PC --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-04 15:19:06.646  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@31e75d13: startup date [Tue Sep 04 15:19:04 IST 2018]; root of context hierarchy
+2018-09-04 15:19:06.739  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/catalog],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.catalog()
+2018-09-04 15:19:06.740  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/product],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.product()
+2018-09-04 15:19:06.744  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/insertImage],methods=[GET]}" onto public java.lang.String com.dm_02_tbdapp.controller.UserAppController.image(java.lang.String)
+2018-09-04 15:19:06.745  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/user],methods=[GET],produces=[application/json || application/xml]}" onto public com.dm_02_tbdapp.bean.UserProfile com.dm_02_tbdapp.controller.UserAppController.setUserProfile(java.lang.String)
+2018-09-04 15:19:06.745  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/login],methods=[POST]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.loginUser(org.json.simple.JSONObject)
+2018-09-04 15:19:06.745  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/RegisterUser],methods=[POST]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.newUser(org.json.simple.JSONObject)
+2018-09-04 15:19:06.746  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/logout],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.logoutUser()
+2018-09-04 15:19:06.746  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/registerUser],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.registerUser(com.dm_02_tbdapp.bean.User)
+2018-09-04 15:19:06.747  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/updateUser],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.updateUser(com.dm_02_tbdapp.bean.User)
+2018-09-04 15:19:06.747  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/updateUserAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.updateAddress(com.dm_02_tbdapp.bean.User)
+2018-09-04 15:19:06.747  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/addAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.addAddress(com.dm_02_tbdapp.bean.User)
+2018-09-04 15:19:06.748  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/removeAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.removeAddress(com.dm_02_tbdapp.bean.User)
+2018-09-04 15:19:06.748  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/showImage],methods=[GET],produces=[image/jpeg]}" onto public byte[] com.dm_02_tbdapp.controller.UserAppController.displayImg(int) throws java.io.IOException
+2018-09-04 15:19:06.748  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/showImageNew]}" onto public void com.dm_02_tbdapp.controller.UserAppController.photo(javax.servlet.http.HttpServletResponse,int) throws java.io.IOException
+2018-09-04 15:19:06.749  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/insertIntoProduct_Table],methods=[POST]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.insertIntoProduct_Table(org.json.simple.JSONObject)
+2018-09-04 15:19:06.756  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-04 15:19:06.757  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-04 15:19:06.789  INFO home-PC --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-04 15:19:06.789  INFO home-PC --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-04 15:19:07.083  INFO home-PC --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-09-04 15:19:07.086  INFO home-PC --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-09-04 15:19:07.095  INFO home-PC --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-09-04 15:19:07.109  INFO home-PC --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2018-09-04 15:19:07.122  INFO home-PC --- [           main] o.a.t.u.n.NioSelectorPool                : Using a shared selector for servlet write/read
+2018-09-04 15:19:07.139  INFO home-PC --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2018-09-04 15:19:07.144  INFO home-PC --- [           main] c.d.c.App                                : Started App in 3.262 seconds (JVM running for 4.717)
+2018-09-04 16:37:49.016  INFO home-PC --- [nio-8080-exec-2] o.a.c.c.C.[.[.[/]                        : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-09-04 16:37:49.017  INFO home-PC --- [nio-8080-exec-2] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization started
+2018-09-04 16:37:49.060  INFO home-PC --- [nio-8080-exec-2] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization completed in 42 ms
+2018-09-04 16:37:49.170  INFO home-PC --- [nio-8080-exec-2] c.d.d.ImageDAO                           : entered into showImage() of class ImageDAO.
+2018-09-04 16:37:49.196  INFO home-PC --- [nio-8080-exec-2] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2018-09-04 16:37:50.594  INFO home-PC --- [nio-8080-exec-2] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2018-09-04 16:37:53.144  INFO home-PC --- [nio-8080-exec-2] c.d.c.UserAppController                  : getClass() mehtod : abc.jpg
+2018-09-04 16:37:53.144  INFO home-PC --- [nio-8080-exec-2] c.d.c.UserAppController                  : InputStream object is : java.io.FileInputStream@192f3041
+2018-09-04 18:12:25.026  INFO home-PC --- [(179)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-09-04 18:12:26.020  INFO home-PC --- [(179)-127.0.0.1] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@31e75d13: startup date [Tue Sep 04 15:19:04 IST 2018]; root of context hierarchy
+2018-09-04 18:12:30.288  INFO home-PC --- [(179)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-09-04 18:12:30.401  INFO home-PC --- [(179)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-09-04 18:12:30.834  INFO home-PC --- [(179)-127.0.0.1] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2018-09-04 18:12:32.023  INFO home-PC --- [(179)-127.0.0.1] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2018-09-04 18:14:42.468  INFO home-PC --- [           main] c.d.c.App                                : Starting App on home-PC with PID 5852 (C:\Users\shashi\Desktop\UserApp\UserApp\target\classes started by shashi in C:\Users\shashi\Desktop\UserApp\UserApp)
+2018-09-04 18:14:42.486  INFO home-PC --- [           main] c.d.c.App                                : No active profile set, falling back to default profiles: default
+2018-09-04 18:14:42.707  INFO home-PC --- [           main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@553f1d75: startup date [Tue Sep 04 18:14:42 IST 2018]; root of context hierarchy
+2018-09-04 18:14:46.390  INFO home-PC --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2018-09-04 18:14:46.518  INFO home-PC --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2018-09-04 18:14:46.564  INFO home-PC --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2018-09-04 18:14:46.565  INFO home-PC --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-09-04 18:14:46.595  INFO home-PC --- [ost-startStop-1] o.a.c.c.AprLifecycleListener             : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-10\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk-10\bin;C:\Program Files\Java\jdk-10\bin;C:\Program Files\Java\jdk-10\bin;.]
+2018-09-04 18:14:46.915  INFO home-PC --- [ost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2018-09-04 18:14:46.915  INFO home-PC --- [ost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 4267 ms
+2018-09-04 18:14:47.161  INFO home-PC --- [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Servlet dispatcherServlet mapped to [/]
+2018-09-04 18:14:47.177  INFO home-PC --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-04 18:14:47.177  INFO home-PC --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-04 18:14:47.178  INFO home-PC --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-04 18:14:47.178  INFO home-PC --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-04 18:14:47.834  INFO home-PC --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-04 18:14:48.234  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@553f1d75: startup date [Tue Sep 04 18:14:42 IST 2018]; root of context hierarchy
+2018-09-04 18:14:48.312  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/catalog],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.catalog()
+2018-09-04 18:14:48.313  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/product],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.product()
+2018-09-04 18:14:48.315  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/insertImage],methods=[GET]}" onto public java.lang.String com.dm_02_tbdapp.controller.UserAppController.image(java.lang.String)
+2018-09-04 18:14:48.317  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/user],methods=[GET],produces=[application/json || application/xml]}" onto public com.dm_02_tbdapp.bean.UserProfile com.dm_02_tbdapp.controller.UserAppController.setUserProfile(java.lang.String)
+2018-09-04 18:14:48.317  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/login],methods=[POST]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.loginUser(org.json.simple.JSONObject)
+2018-09-04 18:14:48.318  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/RegisterUser],methods=[POST]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.newUser(org.json.simple.JSONObject)
+2018-09-04 18:14:48.318  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/logout],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.logoutUser()
+2018-09-04 18:14:48.318  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/registerUser],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.registerUser(com.dm_02_tbdapp.bean.User)
+2018-09-04 18:14:48.319  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/updateUser],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.updateUser(com.dm_02_tbdapp.bean.User)
+2018-09-04 18:14:48.319  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/updateUserAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.updateAddress(com.dm_02_tbdapp.bean.User)
+2018-09-04 18:14:48.320  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/addAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.addAddress(com.dm_02_tbdapp.bean.User)
+2018-09-04 18:14:48.320  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/removeAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.removeAddress(com.dm_02_tbdapp.bean.User)
+2018-09-04 18:14:48.320  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/showImage],methods=[GET],produces=[image/jpeg]}" onto public byte[] com.dm_02_tbdapp.controller.UserAppController.displayImg(int) throws java.io.IOException
+2018-09-04 18:14:48.321  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/showImageNew]}" onto public void com.dm_02_tbdapp.controller.UserAppController.photo(javax.servlet.http.HttpServletResponse,int) throws java.io.IOException
+2018-09-04 18:14:48.321  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/insertIntoProduct_Table],methods=[POST]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.insertIntoProduct_Table(org.json.simple.JSONObject)
+2018-09-04 18:14:48.329  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-04 18:14:48.329  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-04 18:14:48.360  INFO home-PC --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-04 18:14:48.361  INFO home-PC --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-04 18:14:48.765  INFO home-PC --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-09-04 18:14:48.790  INFO home-PC --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-09-04 18:14:48.796  INFO home-PC --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-09-04 18:14:48.841  INFO home-PC --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2018-09-04 18:14:48.939  INFO home-PC --- [           main] o.a.t.u.n.NioSelectorPool                : Using a shared selector for servlet write/read
+2018-09-04 18:14:48.985  INFO home-PC --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2018-09-04 18:14:48.991  INFO home-PC --- [           main] c.d.c.App                                : Started App in 7.83 seconds (JVM running for 14.632)
+2018-09-04 18:15:43.266  INFO home-PC --- [nio-8080-exec-2] o.a.c.c.C.[.[.[/]                        : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-09-04 18:15:43.266  INFO home-PC --- [nio-8080-exec-2] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization started
+2018-09-04 18:15:44.575  INFO home-PC --- [nio-8080-exec-2] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization completed in 1308 ms
+2018-09-04 18:15:45.047  INFO home-PC --- [nio-8080-exec-2] c.d.d.ImageDAO                           : entered into showImage() of class ImageDAO.
+2018-09-04 18:15:45.117  INFO home-PC --- [nio-8080-exec-2] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2018-09-04 18:15:50.021  INFO home-PC --- [nio-8080-exec-2] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2018-09-04 18:15:50.944  INFO home-PC --- [nio-8080-exec-2] c.d.c.UserAppController                  : getClass() mehtod : shirt
+2018-09-04 18:15:50.944  INFO home-PC --- [nio-8080-exec-2] c.d.c.UserAppController                  : InputStream object is : java.io.FileInputStream@56201028
+2018-09-04 18:17:42.788  INFO home-PC --- [on(9)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-09-04 18:17:42.788  INFO home-PC --- [on(9)-127.0.0.1] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@553f1d75: startup date [Tue Sep 04 18:14:42 IST 2018]; root of context hierarchy
+2018-09-04 18:17:42.791  INFO home-PC --- [on(9)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-09-04 18:17:42.792  INFO home-PC --- [on(9)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-09-04 18:17:42.793  INFO home-PC --- [on(9)-127.0.0.1] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2018-09-04 18:17:42.819  INFO home-PC --- [on(9)-127.0.0.1] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2018-09-04 18:18:06.762  INFO home-PC --- [           main] c.d.c.App                                : Starting App on home-PC with PID 5176 (C:\Users\shashi\Desktop\UserApp\UserApp\target\classes started by shashi in C:\Users\shashi\Desktop\UserApp\UserApp)
+2018-09-04 18:18:06.768  INFO home-PC --- [           main] c.d.c.App                                : No active profile set, falling back to default profiles: default
+2018-09-04 18:18:06.828  INFO home-PC --- [           main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7a527389: startup date [Tue Sep 04 18:18:06 IST 2018]; root of context hierarchy
+2018-09-04 18:18:08.207  INFO home-PC --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2018-09-04 18:18:08.233  INFO home-PC --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2018-09-04 18:18:08.246  INFO home-PC --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2018-09-04 18:18:08.247  INFO home-PC --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-09-04 18:18:08.253  INFO home-PC --- [ost-startStop-1] o.a.c.c.AprLifecycleListener             : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-10\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk-10\bin;C:\Program Files\Java\jdk-10\bin;C:\Program Files\Java\jdk-10\bin;.]
+2018-09-04 18:18:08.404  INFO home-PC --- [ost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2018-09-04 18:18:08.404  INFO home-PC --- [ost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1584 ms
+2018-09-04 18:18:08.551  INFO home-PC --- [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Servlet dispatcherServlet mapped to [/]
+2018-09-04 18:18:08.556  INFO home-PC --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-04 18:18:08.556  INFO home-PC --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-04 18:18:08.556  INFO home-PC --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-04 18:18:08.557  INFO home-PC --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-04 18:18:08.858  INFO home-PC --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-04 18:18:09.106  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7a527389: startup date [Tue Sep 04 18:18:06 IST 2018]; root of context hierarchy
+2018-09-04 18:18:09.185  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/catalog],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.catalog()
+2018-09-04 18:18:09.187  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/product],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.product()
+2018-09-04 18:18:09.189  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/insertImage],methods=[GET]}" onto public java.lang.String com.dm_02_tbdapp.controller.UserAppController.image(java.lang.String)
+2018-09-04 18:18:09.192  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/user],methods=[GET],produces=[application/json || application/xml]}" onto public com.dm_02_tbdapp.bean.UserProfile com.dm_02_tbdapp.controller.UserAppController.setUserProfile(java.lang.String)
+2018-09-04 18:18:09.193  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/login],methods=[POST]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.loginUser(org.json.simple.JSONObject)
+2018-09-04 18:18:09.193  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/RegisterUser],methods=[POST]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.newUser(org.json.simple.JSONObject)
+2018-09-04 18:18:09.195  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/logout],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.logoutUser()
+2018-09-04 18:18:09.195  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/registerUser],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.registerUser(com.dm_02_tbdapp.bean.User)
+2018-09-04 18:18:09.195  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/updateUser],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.updateUser(com.dm_02_tbdapp.bean.User)
+2018-09-04 18:18:09.196  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/updateUserAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.updateAddress(com.dm_02_tbdapp.bean.User)
+2018-09-04 18:18:09.196  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/addAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.addAddress(com.dm_02_tbdapp.bean.User)
+2018-09-04 18:18:09.196  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/removeAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.removeAddress(com.dm_02_tbdapp.bean.User)
+2018-09-04 18:18:09.197  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/showImage],methods=[GET],produces=[image/jpeg]}" onto public byte[] com.dm_02_tbdapp.controller.UserAppController.displayImg(int) throws java.io.IOException
+2018-09-04 18:18:09.197  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/showImageNew]}" onto public void com.dm_02_tbdapp.controller.UserAppController.photo(javax.servlet.http.HttpServletResponse,int) throws java.io.IOException
+2018-09-04 18:18:09.197  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/insertIntoProduct_Table],methods=[POST]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.insertIntoProduct_Table(org.json.simple.JSONObject)
+2018-09-04 18:18:09.204  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-04 18:18:09.205  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-04 18:18:09.235  INFO home-PC --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-04 18:18:09.236  INFO home-PC --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-04 18:18:09.500  INFO home-PC --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-09-04 18:18:09.503  INFO home-PC --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-09-04 18:18:09.511  INFO home-PC --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-09-04 18:18:09.525  INFO home-PC --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2018-09-04 18:18:09.537  INFO home-PC --- [           main] o.a.t.u.n.NioSelectorPool                : Using a shared selector for servlet write/read
+2018-09-04 18:18:09.552  INFO home-PC --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2018-09-04 18:18:09.558  INFO home-PC --- [           main] c.d.c.App                                : Started App in 3.158 seconds (JVM running for 4.595)
+2018-09-04 18:18:42.363  INFO home-PC --- [nio-8080-exec-3] o.a.c.c.C.[.[.[/]                        : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-09-04 18:18:42.364  INFO home-PC --- [nio-8080-exec-3] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization started
+2018-09-04 18:18:42.383  INFO home-PC --- [nio-8080-exec-3] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization completed in 19 ms
+2018-09-04 18:18:42.442  INFO home-PC --- [nio-8080-exec-3] c.d.d.ImageDAO                           : entered into showImage() of class ImageDAO.
+2018-09-04 18:18:42.449  INFO home-PC --- [nio-8080-exec-3] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2018-09-04 18:18:42.834  INFO home-PC --- [nio-8080-exec-3] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2018-09-04 18:18:43.022  INFO home-PC --- [nio-8080-exec-3] c.d.c.UserAppController                  : getClass() mehtod : shirt
+2018-09-04 18:18:43.022  INFO home-PC --- [nio-8080-exec-3] c.d.c.UserAppController                  : InputStream object is : java.io.FileInputStream@6b2372b9
+2018-09-04 18:19:46.700  INFO home-PC --- [nio-8080-exec-1] c.d.d.ImageDAO                           : entered into showImage() of class ImageDAO.
+2018-09-04 18:19:46.787  INFO home-PC --- [nio-8080-exec-1] c.d.c.UserAppController                  : getClass() mehtod : shirt
+2018-09-04 18:19:46.787  INFO home-PC --- [nio-8080-exec-1] c.d.c.UserAppController                  : InputStream object is : java.io.FileInputStream@11831739
+2018-09-04 18:21:32.866  INFO home-PC --- [nio-8080-exec-6] c.d.d.ImageDAO                           : entered into showImage() of class ImageDAO.
+2018-09-04 18:21:33.907  INFO home-PC --- [nio-8080-exec-6] c.d.c.UserAppController                  : getClass() mehtod : shirt
+2018-09-04 18:21:33.907  INFO home-PC --- [nio-8080-exec-6] c.d.c.UserAppController                  : InputStream object is : java.io.FileInputStream@10ef42b
+2018-09-04 18:25:43.818  INFO home-PC --- [n(14)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-09-04 18:25:43.819  INFO home-PC --- [n(14)-127.0.0.1] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7a527389: startup date [Tue Sep 04 18:18:06 IST 2018]; root of context hierarchy
+2018-09-04 18:25:43.822  INFO home-PC --- [n(14)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-09-04 18:25:43.823  INFO home-PC --- [n(14)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-09-04 18:25:43.824  INFO home-PC --- [n(14)-127.0.0.1] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2018-09-04 18:25:43.844  INFO home-PC --- [n(14)-127.0.0.1] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2018-09-04 18:26:02.789  INFO home-PC --- [           main] c.d.c.App                                : Starting App on home-PC with PID 4352 (C:\Users\shashi\Desktop\UserApp\UserApp\target\classes started by shashi in C:\Users\shashi\Desktop\UserApp\UserApp)
+2018-09-04 18:26:02.795  INFO home-PC --- [           main] c.d.c.App                                : No active profile set, falling back to default profiles: default
+2018-09-04 18:26:02.850  INFO home-PC --- [           main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@75e01201: startup date [Tue Sep 04 18:26:02 IST 2018]; root of context hierarchy
+2018-09-04 18:26:04.212  INFO home-PC --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2018-09-04 18:26:04.242  INFO home-PC --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2018-09-04 18:26:04.255  INFO home-PC --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2018-09-04 18:26:04.256  INFO home-PC --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-09-04 18:26:04.262  INFO home-PC --- [ost-startStop-1] o.a.c.c.AprLifecycleListener             : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-10\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk-10\bin;C:\Program Files\Java\jdk-10\bin;C:\Program Files\Java\jdk-10\bin;.]
+2018-09-04 18:26:04.368  INFO home-PC --- [ost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2018-09-04 18:26:04.368  INFO home-PC --- [ost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1524 ms
+2018-09-04 18:26:04.506  INFO home-PC --- [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Servlet dispatcherServlet mapped to [/]
+2018-09-04 18:26:04.511  INFO home-PC --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-04 18:26:04.512  INFO home-PC --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-04 18:26:04.512  INFO home-PC --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-04 18:26:04.512  INFO home-PC --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-04 18:26:04.810  INFO home-PC --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-04 18:26:05.057  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@75e01201: startup date [Tue Sep 04 18:26:02 IST 2018]; root of context hierarchy
+2018-09-04 18:26:05.117  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/catalog],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.catalog()
+2018-09-04 18:26:05.118  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/product],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.product()
+2018-09-04 18:26:05.121  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/insertImage],methods=[GET]}" onto public java.lang.String com.dm_02_tbdapp.controller.UserAppController.image(java.lang.String)
+2018-09-04 18:26:05.121  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/insertIntoProduct_Table],methods=[POST]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.insertIntoProduct_Table(org.json.simple.JSONObject)
+2018-09-04 18:26:05.122  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/user],methods=[GET],produces=[application/json || application/xml]}" onto public com.dm_02_tbdapp.bean.UserProfile com.dm_02_tbdapp.controller.UserAppController.setUserProfile(java.lang.String)
+2018-09-04 18:26:05.123  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/login],methods=[POST]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.loginUser(org.json.simple.JSONObject)
+2018-09-04 18:26:05.123  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/RegisterUser],methods=[POST]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.newUser(org.json.simple.JSONObject)
+2018-09-04 18:26:05.124  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/logout],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.logoutUser()
+2018-09-04 18:26:05.124  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/registerUser],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.registerUser(com.dm_02_tbdapp.bean.User)
+2018-09-04 18:26:05.125  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/updateUser],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.updateUser(com.dm_02_tbdapp.bean.User)
+2018-09-04 18:26:05.125  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/updateUserAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.updateAddress(com.dm_02_tbdapp.bean.User)
+2018-09-04 18:26:05.126  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/addAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.addAddress(com.dm_02_tbdapp.bean.User)
+2018-09-04 18:26:05.126  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/removeAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.removeAddress(com.dm_02_tbdapp.bean.User)
+2018-09-04 18:26:05.126  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/showImage],methods=[GET],produces=[image/jpeg]}" onto public byte[] com.dm_02_tbdapp.controller.UserAppController.displayImg(int) throws java.io.IOException
+2018-09-04 18:26:05.127  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/showImageNew]}" onto public void com.dm_02_tbdapp.controller.UserAppController.photo(javax.servlet.http.HttpServletResponse,int) throws java.io.IOException
+2018-09-04 18:26:05.160  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-04 18:26:05.161  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-04 18:26:05.194  INFO home-PC --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-04 18:26:05.195  INFO home-PC --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-04 18:26:05.503  INFO home-PC --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-09-04 18:26:05.506  INFO home-PC --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-09-04 18:26:05.512  INFO home-PC --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-09-04 18:26:05.526  INFO home-PC --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2018-09-04 18:26:05.538  INFO home-PC --- [           main] o.a.t.u.n.NioSelectorPool                : Using a shared selector for servlet write/read
+2018-09-04 18:26:05.554  INFO home-PC --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2018-09-04 18:26:05.560  INFO home-PC --- [           main] c.d.c.App                                : Started App in 3.135 seconds (JVM running for 4.508)
+2018-09-04 18:26:52.867  INFO home-PC --- [nio-8080-exec-2] o.a.c.c.C.[.[.[/]                        : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-09-04 18:26:52.868  INFO home-PC --- [nio-8080-exec-2] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization started
+2018-09-04 18:26:52.886  INFO home-PC --- [nio-8080-exec-2] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization completed in 18 ms
+2018-09-04 18:26:52.926  INFO home-PC --- [nio-8080-exec-2] c.d.d.ImageDAO                           : entered into showImage() of class ImageDAO.
+2018-09-04 18:26:52.933  INFO home-PC --- [nio-8080-exec-2] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2018-09-04 18:26:53.346  INFO home-PC --- [nio-8080-exec-2] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2018-09-04 18:26:53.982  INFO home-PC --- [nio-8080-exec-2] c.d.c.UserAppController                  : getClass() mehtod : shirt
+2018-09-04 18:26:53.982  INFO home-PC --- [nio-8080-exec-2] c.d.c.UserAppController                  : InputStream object is : java.io.FileInputStream@495a6aae
+2018-09-04 18:27:35.552  INFO home-PC --- [on(8)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-09-04 18:27:35.552  INFO home-PC --- [on(8)-127.0.0.1] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@75e01201: startup date [Tue Sep 04 18:26:02 IST 2018]; root of context hierarchy
+2018-09-04 18:27:35.555  INFO home-PC --- [on(8)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-09-04 18:27:35.556  INFO home-PC --- [on(8)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-09-04 18:27:35.557  INFO home-PC --- [on(8)-127.0.0.1] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2018-09-04 18:27:35.575  INFO home-PC --- [on(8)-127.0.0.1] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2018-09-04 18:27:55.656  INFO home-PC --- [           main] c.d.c.App                                : Starting App on home-PC with PID 3988 (C:\Users\shashi\Desktop\UserApp\UserApp\target\classes started by shashi in C:\Users\shashi\Desktop\UserApp\UserApp)
+2018-09-04 18:27:55.662  INFO home-PC --- [           main] c.d.c.App                                : No active profile set, falling back to default profiles: default
+2018-09-04 18:27:55.733  INFO home-PC --- [           main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2783717b: startup date [Tue Sep 04 18:27:55 IST 2018]; root of context hierarchy
+2018-09-04 18:27:57.165  INFO home-PC --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2018-09-04 18:27:57.192  INFO home-PC --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2018-09-04 18:27:57.205  INFO home-PC --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2018-09-04 18:27:57.206  INFO home-PC --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-09-04 18:27:57.213  INFO home-PC --- [ost-startStop-1] o.a.c.c.AprLifecycleListener             : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-10\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk-10\bin;C:\Program Files\Java\jdk-10\bin;C:\Program Files\Java\jdk-10\bin;.]
+2018-09-04 18:27:57.323  INFO home-PC --- [ost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2018-09-04 18:27:57.323  INFO home-PC --- [ost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1597 ms
+2018-09-04 18:27:57.464  INFO home-PC --- [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Servlet dispatcherServlet mapped to [/]
+2018-09-04 18:27:57.469  INFO home-PC --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-04 18:27:57.470  INFO home-PC --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-04 18:27:57.470  INFO home-PC --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-04 18:27:57.470  INFO home-PC --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-04 18:27:57.781  INFO home-PC --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-04 18:27:57.997  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2783717b: startup date [Tue Sep 04 18:27:55 IST 2018]; root of context hierarchy
+2018-09-04 18:27:58.057  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/catalog],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.catalog()
+2018-09-04 18:27:58.058  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/product],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.product()
+2018-09-04 18:27:58.060  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/insertImage],methods=[GET]}" onto public java.lang.String com.dm_02_tbdapp.controller.UserAppController.image(java.lang.String)
+2018-09-04 18:27:58.061  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/user],methods=[GET],produces=[application/json || application/xml]}" onto public com.dm_02_tbdapp.bean.UserProfile com.dm_02_tbdapp.controller.UserAppController.setUserProfile(java.lang.String)
+2018-09-04 18:27:58.062  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/login],methods=[POST]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.loginUser(org.json.simple.JSONObject)
+2018-09-04 18:27:58.062  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/RegisterUser],methods=[POST]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.newUser(org.json.simple.JSONObject)
+2018-09-04 18:27:58.063  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/logout],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.logoutUser()
+2018-09-04 18:27:58.063  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/registerUser],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.registerUser(com.dm_02_tbdapp.bean.User)
+2018-09-04 18:27:58.063  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/updateUser],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.updateUser(com.dm_02_tbdapp.bean.User)
+2018-09-04 18:27:58.064  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/updateUserAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.updateAddress(com.dm_02_tbdapp.bean.User)
+2018-09-04 18:27:58.064  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/addAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.addAddress(com.dm_02_tbdapp.bean.User)
+2018-09-04 18:27:58.064  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/removeAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.removeAddress(com.dm_02_tbdapp.bean.User)
+2018-09-04 18:27:58.065  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/showImage],methods=[GET],produces=[image/jpeg]}" onto public byte[] com.dm_02_tbdapp.controller.UserAppController.displayImg(int) throws java.io.IOException
+2018-09-04 18:27:58.066  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/showImageNew]}" onto public void com.dm_02_tbdapp.controller.UserAppController.photo(javax.servlet.http.HttpServletResponse,int) throws java.io.IOException
+2018-09-04 18:27:58.066  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/insertIntoProduct_Table],methods=[POST]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.insertIntoProduct_Table(org.json.simple.JSONObject)
+2018-09-04 18:27:58.073  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-04 18:27:58.074  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-04 18:27:58.109  INFO home-PC --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-04 18:27:58.110  INFO home-PC --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-04 18:27:58.386  INFO home-PC --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-09-04 18:27:58.389  INFO home-PC --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-09-04 18:27:58.395  INFO home-PC --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-09-04 18:27:58.436  INFO home-PC --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2018-09-04 18:27:58.449  INFO home-PC --- [           main] o.a.t.u.n.NioSelectorPool                : Using a shared selector for servlet write/read
+2018-09-04 18:27:58.470  INFO home-PC --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2018-09-04 18:27:58.475  INFO home-PC --- [           main] c.d.c.App                                : Started App in 3.194 seconds (JVM running for 4.687)
+2018-09-04 18:29:14.610  INFO home-PC --- [nio-8080-exec-9] o.a.c.c.C.[.[.[/]                        : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-09-04 18:29:14.611  INFO home-PC --- [nio-8080-exec-9] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization started
+2018-09-04 18:29:14.629  INFO home-PC --- [nio-8080-exec-9] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization completed in 18 ms
+2018-09-04 18:29:14.667  INFO home-PC --- [nio-8080-exec-9] c.d.d.ImageDAO                           : entered into showImage() of class ImageDAO.
+2018-09-04 18:29:14.674  INFO home-PC --- [nio-8080-exec-9] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2018-09-04 18:29:15.085  INFO home-PC --- [nio-8080-exec-9] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2018-09-04 18:29:15.614  INFO home-PC --- [nio-8080-exec-9] c.d.c.UserAppController                  : getClass() mehtod : shirt
+2018-09-04 18:29:15.614  INFO home-PC --- [nio-8080-exec-9] c.d.c.UserAppController                  : InputStream object is : java.io.FileInputStream@30f8cc5
+2018-09-04 18:39:57.830  INFO home-PC --- [nio-8080-exec-1] c.d.d.ImageDAO                           : entered into showImage() of class ImageDAO.
+2018-09-04 18:39:58.040 ERROR home-PC --- [nio-8080-exec-1] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IndexOutOfBoundsException: Index 0 out-of-bounds for length 0] with root cause
+java.lang.IndexOutOfBoundsException: Index 0 out-of-bounds for length 0
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:248)
+	at java.base/java.util.Objects.checkIndex(Objects.java:372)
+	at java.base/java.util.ArrayList.get(ArrayList.java:440)
+	at com.dm_02_tbdapp.dao.ImageDAO.showImage(ImageDAO.java:43)
+	at com.dm_02_tbdapp.dao.ImageDAO$$FastClassBySpringCGLIB$$72163e22.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:746)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at com.dm_02_tbdapp.dao.ImageDAO$$EnhancerBySpringCGLIB$$42e4c775.showImage(<generated>)
+	at com.dm_02_tbdapp.controller.CatalogManager.displayImage(CatalogManager.java:40)
+	at com.dm_02_tbdapp.controller.UserAppController.photo(UserAppController.java:248)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+2018-09-04 19:10:15.301  INFO home-PC --- [n(49)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-09-04 19:10:15.317  INFO home-PC --- [n(49)-127.0.0.1] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2783717b: startup date [Tue Sep 04 18:27:55 IST 2018]; root of context hierarchy
+2018-09-04 19:10:15.321  INFO home-PC --- [n(49)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-09-04 19:10:15.322  INFO home-PC --- [n(49)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-09-04 19:10:15.323  INFO home-PC --- [n(49)-127.0.0.1] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2018-09-04 19:10:15.345  INFO home-PC --- [n(49)-127.0.0.1] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2018-09-04 19:10:45.834  INFO home-PC --- [           main] c.d.c.App                                : Starting App on home-PC with PID 6148 (C:\Users\shashi\Desktop\UserApp\UserApp\target\classes started by shashi in C:\Users\shashi\Desktop\UserApp\UserApp)
+2018-09-04 19:10:45.840  INFO home-PC --- [           main] c.d.c.App                                : No active profile set, falling back to default profiles: default
+2018-09-04 19:10:45.897  INFO home-PC --- [           main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1623134f: startup date [Tue Sep 04 19:10:45 IST 2018]; root of context hierarchy
+2018-09-04 19:10:47.418  INFO home-PC --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2018-09-04 19:10:47.445  INFO home-PC --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2018-09-04 19:10:47.459  INFO home-PC --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2018-09-04 19:10:47.460  INFO home-PC --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-09-04 19:10:47.467  INFO home-PC --- [ost-startStop-1] o.a.c.c.AprLifecycleListener             : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-10\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk-10\bin;C:\Program Files\Java\jdk-10\bin;C:\Program Files\Java\jdk-10\bin;.]
+2018-09-04 19:10:47.566  INFO home-PC --- [ost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2018-09-04 19:10:47.602  INFO home-PC --- [ost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1711 ms
+2018-09-04 19:10:47.748  INFO home-PC --- [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Servlet dispatcherServlet mapped to [/]
+2018-09-04 19:10:47.755  INFO home-PC --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-04 19:10:47.755  INFO home-PC --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-04 19:10:47.756  INFO home-PC --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-04 19:10:47.756  INFO home-PC --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-04 19:10:48.050  INFO home-PC --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-04 19:10:48.290  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1623134f: startup date [Tue Sep 04 19:10:45 IST 2018]; root of context hierarchy
+2018-09-04 19:10:48.352  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/catalog],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.catalog()
+2018-09-04 19:10:48.355  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/product],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.product()
+2018-09-04 19:10:48.357  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/insertImage],methods=[GET]}" onto public java.lang.String com.dm_02_tbdapp.controller.UserAppController.image(java.lang.String)
+2018-09-04 19:10:48.358  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/user],methods=[GET],produces=[application/json || application/xml]}" onto public com.dm_02_tbdapp.bean.UserProfile com.dm_02_tbdapp.controller.UserAppController.setUserProfile(java.lang.String)
+2018-09-04 19:10:48.358  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/login],methods=[POST]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.loginUser(org.json.simple.JSONObject)
+2018-09-04 19:10:48.359  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/RegisterUser],methods=[POST]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.newUser(org.json.simple.JSONObject)
+2018-09-04 19:10:48.359  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/logout],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.logoutUser()
+2018-09-04 19:10:48.359  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/registerUser],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.registerUser(com.dm_02_tbdapp.bean.User)
+2018-09-04 19:10:48.360  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/updateUser],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.updateUser(com.dm_02_tbdapp.bean.User)
+2018-09-04 19:10:48.360  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/updateUserAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.updateAddress(com.dm_02_tbdapp.bean.User)
+2018-09-04 19:10:48.360  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/addAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.addAddress(com.dm_02_tbdapp.bean.User)
+2018-09-04 19:10:48.361  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/removeAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.removeAddress(com.dm_02_tbdapp.bean.User)
+2018-09-04 19:10:48.361  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/showImage],methods=[GET],produces=[image/jpeg]}" onto public byte[] com.dm_02_tbdapp.controller.UserAppController.displayImg(int) throws java.io.IOException
+2018-09-04 19:10:48.361  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/insertIntoProduct_Table],methods=[POST]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.insertIntoProduct_Table(org.json.simple.JSONObject)
+2018-09-04 19:10:48.362  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/showImageNew]}" onto public void com.dm_02_tbdapp.controller.UserAppController.photo(javax.servlet.http.HttpServletResponse,int) throws java.io.IOException
+2018-09-04 19:10:48.368  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-04 19:10:48.369  INFO home-PC --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-04 19:10:48.400  INFO home-PC --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-04 19:10:48.401  INFO home-PC --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-04 19:10:48.728  INFO home-PC --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-09-04 19:10:48.731  INFO home-PC --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-09-04 19:10:48.737  INFO home-PC --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-09-04 19:10:48.751  INFO home-PC --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2018-09-04 19:10:48.763  INFO home-PC --- [           main] o.a.t.u.n.NioSelectorPool                : Using a shared selector for servlet write/read
+2018-09-04 19:10:48.779  INFO home-PC --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2018-09-04 19:10:48.784  INFO home-PC --- [           main] c.d.c.App                                : Started App in 3.332 seconds (JVM running for 4.843)
+2018-09-04 19:11:10.517  INFO home-PC --- [nio-8080-exec-2] o.a.c.c.C.[.[.[/]                        : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-09-04 19:11:10.518  INFO home-PC --- [nio-8080-exec-2] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization started
+2018-09-04 19:11:10.535  INFO home-PC --- [nio-8080-exec-2] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization completed in 17 ms
+2018-09-04 19:11:10.577  INFO home-PC --- [nio-8080-exec-2] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2018-09-04 19:11:10.995  INFO home-PC --- [nio-8080-exec-2] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2018-09-04 19:14:43.617  INFO home-PC --- [nio-8080-exec-9] c.d.d.ImageDAO                           : entered into showImage() of class ImageDAO.
+2018-09-04 19:14:43.778  INFO home-PC --- [nio-8080-exec-9] c.d.c.UserAppController                  : getClass() mehtod : shirt.png
+2018-09-04 19:14:43.779  INFO home-PC --- [nio-8080-exec-9] c.d.c.UserAppController                  : InputStream object is : java.io.FileInputStream@5931d0a6
+2018-09-04 19:15:13.663  INFO home-PC --- [io-8080-exec-10] c.d.d.ImageDAO                           : entered into showImage() of class ImageDAO.
+2018-09-04 19:15:13.711  INFO home-PC --- [io-8080-exec-10] c.d.c.UserAppController                  : getClass() mehtod : shirt2.png
+2018-09-04 19:15:13.711  INFO home-PC --- [io-8080-exec-10] c.d.c.UserAppController                  : InputStream object is : java.io.FileInputStream@4bbb9857
+2018-09-04 19:15:28.580  INFO home-PC --- [nio-8080-exec-1] c.d.d.ImageDAO                           : entered into showImage() of class ImageDAO.
+2018-09-04 19:15:28.812  INFO home-PC --- [nio-8080-exec-1] c.d.c.UserAppController                  : getClass() mehtod : shirt3.png
+2018-09-04 19:15:28.813  INFO home-PC --- [nio-8080-exec-1] c.d.c.UserAppController                  : InputStream object is : java.io.FileInputStream@16571fcb
+2018-09-04 19:15:35.759  INFO home-PC --- [nio-8080-exec-2] c.d.d.ImageDAO                           : entered into showImage() of class ImageDAO.
+2018-09-04 19:15:36.707  INFO home-PC --- [nio-8080-exec-2] c.d.c.UserAppController                  : getClass() mehtod : shirt4.jpg
+2018-09-04 19:15:36.707  INFO home-PC --- [nio-8080-exec-2] c.d.c.UserAppController                  : InputStream object is : java.io.FileInputStream@48345737
+2018-09-04 19:19:46.833  INFO home-PC --- [n(15)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-09-04 19:19:46.834  INFO home-PC --- [n(15)-127.0.0.1] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1623134f: startup date [Tue Sep 04 19:10:45 IST 2018]; root of context hierarchy
+2018-09-04 19:19:46.837  INFO home-PC --- [n(15)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-09-04 19:19:46.838  INFO home-PC --- [n(15)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-09-04 19:19:46.839  INFO home-PC --- [n(15)-127.0.0.1] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2018-09-04 19:19:46.861  INFO home-PC --- [n(15)-127.0.0.1] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.

@@ -1,0 +1,927 @@
+2018-07-25 10:14:00.839  INFO shantim2-l2 --- [           main] c.d.c.App                                : Starting App on shantim2-l2 with PID 6204 (C:\Users\shashikant\eclipse-workspace\UserApp\target\classes started by shashikant in C:\Users\shashikant\eclipse-workspace\UserApp)
+2018-07-25 10:14:01.010  INFO shantim2-l2 --- [           main] c.d.c.App                                : No active profile set, falling back to default profiles: default
+2018-07-25 10:14:01.260  INFO shantim2-l2 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@63475ace: startup date [Wed Jul 25 10:14:01 IST 2018]; root of context hierarchy
+2018-07-25 10:14:01.307  INFO shantim2-l2 --- [kground-preinit] o.h.v.i.u.Version                        : HV000001: Hibernate Validator 5.3.5.Final
+2018-07-25 10:14:03.198  INFO shantim2-l2 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-07-25 10:14:03.198  INFO shantim2-l2 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2018-07-25 10:14:03.198  INFO shantim2-l2 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-07-25 10:14:03.402  INFO shantim2-l2 --- [ost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2018-07-25 10:14:03.418  INFO shantim2-l2 --- [ost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 2283 ms
+2018-07-25 10:14:03.620  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2018-07-25 10:14:03.620  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-25 10:14:03.620  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-25 10:14:03.620  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-25 10:14:03.620  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-25 10:14:04.119  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@63475ace: startup date [Wed Jul 25 10:14:01 IST 2018]; root of context hierarchy
+2018-07-25 10:14:04.181  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/user],methods=[GET],produces=[application/json || application/xml]}" onto public com.dm_02_tbdapp.bean.UserProfile com.dm_02_tbdapp.controller.UserAppController.setUserProfile(java.lang.String)
+2018-07-25 10:14:04.181  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/login],methods=[POST]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.loginUser(org.json.simple.JSONObject)
+2018-07-25 10:14:04.181  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/RegisterUser],methods=[POST]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.newUser(org.json.simple.JSONObject)
+2018-07-25 10:14:04.181  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/logout],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.logoutUser()
+2018-07-25 10:14:04.181  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/registerUser],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.registerUser(com.dm_02_tbdapp.bean.User)
+2018-07-25 10:14:04.197  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/updateUser],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.updateUser(com.dm_02_tbdapp.bean.User)
+2018-07-25 10:14:04.197  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/updateUserAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.updateAddress(com.dm_02_tbdapp.bean.User)
+2018-07-25 10:14:04.197  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/addAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.addAddress(com.dm_02_tbdapp.bean.User)
+2018-07-25 10:14:04.197  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/removeAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.removeAddress(com.dm_02_tbdapp.bean.User)
+2018-07-25 10:14:04.197  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-25 10:14:04.197  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-25 10:14:04.244  INFO shantim2-l2 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-25 10:14:04.244  INFO shantim2-l2 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-25 10:14:04.292  INFO shantim2-l2 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-25 10:14:04.557  INFO shantim2-l2 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-07-25 10:14:04.573  INFO shantim2-l2 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2018-07-25 10:14:04.588  INFO shantim2-l2 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2018-07-25 10:14:04.651  INFO shantim2-l2 --- [           main] o.a.t.u.n.NioSelectorPool                : Using a shared selector for servlet write/read
+2018-07-25 10:14:04.666  INFO shantim2-l2 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2018-07-25 10:14:04.682  INFO shantim2-l2 --- [           main] c.d.c.App                                : Started App in 4.314 seconds (JVM running for 8.439)
+2018-07-25 10:26:01.687  INFO shantim2-l2 --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-07-25 10:26:01.687  INFO shantim2-l2 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization started
+2018-07-25 10:26:01.719  INFO shantim2-l2 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization completed in 32 ms
+2018-07-25 10:26:01.828  INFO shantim2-l2 --- [nio-8080-exec-1] c.d.c.UserManager                        : entered into UserManager class 
+2018-07-25 10:26:01.828  INFO shantim2-l2 --- [nio-8080-exec-1] c.d.c.UserManager                        : registeredNewUserObj is: yeshwanth
+2018-07-25 10:26:01.828  INFO shantim2-l2 --- [nio-8080-exec-1] c.d.c.UserManager                        : compleate json object is: {"reason":"entered details are valid.","UserProfile":{"firstName":"yeshwanth","lastName":"yash","password":"ROHIT$jain24","mobileNumber":"8978971245","emailid":"yeshwant123@gmail.com"},"status":"registration completed."}
+2018-07-25 10:27:39.362  INFO shantim2-l2 --- [nio-8080-exec-3] c.d.c.UserManager                        : entered into UserManager class 
+2018-07-25 10:27:39.362  INFO shantim2-l2 --- [nio-8080-exec-3] c.d.c.UserManager                        : registeredNewUserObj is:  shashi 
+2018-07-25 10:27:39.362  INFO shantim2-l2 --- [nio-8080-exec-3] c.d.c.UserManager                        : compleate json object is: {"reason":"entered details are valid.","UserProfile":{"firstName":" shashi ","lastName":"reddy ","password":"shashi123","mobileNumber":"12345","emailid":"shashi@gmail.com "},"status":"registration completed."}
+2018-07-25 10:27:39.426  INFO shantim2-l2 --- [nio-8080-exec-4] c.d.c.UserManager                        : entered into UserManager class 
+2018-07-25 10:27:39.426  INFO shantim2-l2 --- [nio-8080-exec-4] c.d.c.UserManager                        : registeredNewUserObj is: shashi 
+2018-07-25 10:27:39.426  INFO shantim2-l2 --- [nio-8080-exec-4] c.d.c.UserManager                        : compleate json object is: {"reason":"entered details are valid.","UserProfile":{"firstName":"shashi ","lastName":"reddy ","password":"shashi123","mobileNumber":"12345","emailid":"shashi@gmail.com "},"status":"registration completed."}
+2018-07-25 10:37:43.412  INFO shantim2-l2 --- [nio-8080-exec-6] c.d.c.UserManager                        : entered into UserManager class 
+2018-07-25 10:37:43.412  INFO shantim2-l2 --- [nio-8080-exec-6] c.d.c.UserManager                        : registeredNewUserObj is:  shashi 
+2018-07-25 10:37:43.412  INFO shantim2-l2 --- [nio-8080-exec-6] c.d.c.UserManager                        : compleate json object is: {"reason":"entered details are valid.","UserProfile":{"firstName":" shashi ","lastName":"reddy ","password":"shashi123","mobileNumber":"12345","emailid":"shashi@gmail.com "},"status":"registration completed."}
+2018-07-25 10:37:43.459  INFO shantim2-l2 --- [nio-8080-exec-7] c.d.c.UserManager                        : entered into UserManager class 
+2018-07-25 10:37:43.459  INFO shantim2-l2 --- [nio-8080-exec-7] c.d.c.UserManager                        : registeredNewUserObj is: shashi 
+2018-07-25 10:37:43.459  INFO shantim2-l2 --- [nio-8080-exec-7] c.d.c.UserManager                        : compleate json object is: {"reason":"entered details are valid.","UserProfile":{"firstName":"shashi ","lastName":"reddy ","password":"shashi123","mobileNumber":"12345","emailid":"shashi@gmail.com "},"status":"registration completed."}
+2018-07-25 11:52:54.679  INFO shantim2-l2 --- [on(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-07-25 11:52:54.679  INFO shantim2-l2 --- [on(2)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@63475ace: startup date [Wed Jul 25 10:14:01 IST 2018]; root of context hierarchy
+2018-07-25 11:52:54.695  INFO shantim2-l2 --- [on(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-07-25 14:38:46.474  INFO shantim2-l2 --- [           main] c.d.c.App                                : Starting App on shantim2-l2 with PID 6236 (C:\Users\shashikant\eclipse-workspace\UserApp\target\classes started by shashikant in C:\Users\shashikant\eclipse-workspace\UserApp)
+2018-07-25 14:38:46.480  INFO shantim2-l2 --- [           main] c.d.c.App                                : No active profile set, falling back to default profiles: default
+2018-07-25 14:38:46.616  INFO shantim2-l2 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@63475ace: startup date [Wed Jul 25 14:38:46 IST 2018]; root of context hierarchy
+2018-07-25 14:38:46.740  INFO shantim2-l2 --- [kground-preinit] o.h.v.i.u.Version                        : HV000001: Hibernate Validator 5.3.5.Final
+2018-07-25 14:38:48.449  INFO shantim2-l2 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-07-25 14:38:48.462  INFO shantim2-l2 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2018-07-25 14:38:48.464  INFO shantim2-l2 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-07-25 14:38:48.579  INFO shantim2-l2 --- [ost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2018-07-25 14:38:48.580  INFO shantim2-l2 --- [ost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1970 ms
+2018-07-25 14:38:48.803  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2018-07-25 14:38:48.808  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-25 14:38:48.809  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-25 14:38:48.809  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-25 14:38:48.809  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-25 14:38:49.228  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@63475ace: startup date [Wed Jul 25 14:38:46 IST 2018]; root of context hierarchy
+2018-07-25 14:38:49.337  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/login],methods=[POST]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.loginUser(org.json.simple.JSONObject)
+2018-07-25 14:38:49.339  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/RegisterUser],methods=[POST]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.newUser(org.json.simple.JSONObject)
+2018-07-25 14:38:49.339  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/logout],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.logoutUser()
+2018-07-25 14:38:49.340  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/registerUser],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.registerUser(com.dm_02_tbdapp.bean.User)
+2018-07-25 14:38:49.340  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/updateUser],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.updateUser(com.dm_02_tbdapp.bean.User)
+2018-07-25 14:38:49.341  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/updateUserAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.updateAddress(com.dm_02_tbdapp.bean.User)
+2018-07-25 14:38:49.342  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/addAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.addAddress(com.dm_02_tbdapp.bean.User)
+2018-07-25 14:38:49.343  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/removeAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.removeAddress(com.dm_02_tbdapp.bean.User)
+2018-07-25 14:38:49.343  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/user],methods=[GET],produces=[application/json || application/xml]}" onto public com.dm_02_tbdapp.bean.UserProfile com.dm_02_tbdapp.controller.UserAppController.setUserProfile(java.lang.String)
+2018-07-25 14:38:49.350  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-25 14:38:49.351  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-25 14:38:49.408  INFO shantim2-l2 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-25 14:38:49.409  INFO shantim2-l2 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-25 14:38:49.476  INFO shantim2-l2 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-25 14:38:49.700  INFO shantim2-l2 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-07-25 14:38:49.728  INFO shantim2-l2 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2018-07-25 14:38:49.744  INFO shantim2-l2 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2018-07-25 14:38:49.763  INFO shantim2-l2 --- [           main] o.a.t.u.n.NioSelectorPool                : Using a shared selector for servlet write/read
+2018-07-25 14:38:49.804  INFO shantim2-l2 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2018-07-25 14:38:49.813  INFO shantim2-l2 --- [           main] c.d.c.App                                : Started App in 3.728 seconds (JVM running for 5.342)
+2018-07-25 14:39:30.547  INFO shantim2-l2 --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-07-25 14:39:30.556  INFO shantim2-l2 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization started
+2018-07-25 14:39:31.538  INFO shantim2-l2 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization completed in 976 ms
+2018-07-25 14:39:34.926  INFO shantim2-l2 --- [nio-8080-exec-1] c.d.c.UserManager                        : entered into UserManager class 
+2018-07-25 14:39:34.953  INFO shantim2-l2 --- [nio-8080-exec-1] c.d.c.UserManager                        : registeredNewUserObj is:  shashi 
+2018-07-25 14:39:34.966  INFO shantim2-l2 --- [nio-8080-exec-1] c.d.c.UserManager                        : compleate json object is: {"reason":"entered details are valid.","UserProfile":{"firstName":" shashi ","lastName":"reddy ","password":"shashi123","mobileNumber":"12345","emailid":"shashi@gmail.com "},"status":"registration completed."}
+2018-07-25 14:39:36.088  INFO shantim2-l2 --- [nio-8080-exec-1] c.d.c.UserManager                        : entered into UserManager class 
+2018-07-25 14:39:36.093  INFO shantim2-l2 --- [nio-8080-exec-1] c.d.c.UserManager                        : registeredNewUserObj is: shashi 
+2018-07-25 14:39:36.100  INFO shantim2-l2 --- [nio-8080-exec-1] c.d.c.UserManager                        : compleate json object is: {"reason":"entered details are valid.","UserProfile":{"firstName":"shashi ","lastName":"reddy ","password":"shashi123","mobileNumber":"12345","emailid":"shashi@gmail.com "},"status":"registration completed."}
+2018-07-25 14:40:57.758  INFO shantim2-l2 --- [nio-8080-exec-3] c.d.c.UserManager                        : entered into UserManager class 
+2018-07-25 14:40:57.758  INFO shantim2-l2 --- [nio-8080-exec-3] c.d.c.UserManager                        : registeredNewUserObj is:  shashi 
+2018-07-25 14:40:57.758  INFO shantim2-l2 --- [nio-8080-exec-3] c.d.c.UserManager                        : compleate json object is: {"reason":"entered details are valid.","UserProfile":{"firstName":" shashi ","lastName":"reddy ","password":"shashi123","mobileNumber":"12345","emailid":"shashi@gmail.com "},"status":"registration completed."}
+2018-07-25 14:40:57.805  INFO shantim2-l2 --- [nio-8080-exec-4] c.d.c.UserManager                        : entered into UserManager class 
+2018-07-25 14:40:57.805  INFO shantim2-l2 --- [nio-8080-exec-4] c.d.c.UserManager                        : registeredNewUserObj is: shashi 
+2018-07-25 14:40:57.805  INFO shantim2-l2 --- [nio-8080-exec-4] c.d.c.UserManager                        : compleate json object is: {"reason":"entered details are valid.","UserProfile":{"firstName":"shashi ","lastName":"reddy ","password":"shashi123","mobileNumber":"12345","emailid":"shashi@gmail.com "},"status":"registration completed."}
+2018-07-25 15:23:06.884  INFO shantim2-l2 --- [nio-8080-exec-6] c.d.c.UserManager                        : entered into UserManager class 
+2018-07-25 15:23:06.886  INFO shantim2-l2 --- [nio-8080-exec-6] c.d.c.UserManager                        : registeredNewUserObj is:  shashi 
+2018-07-25 15:23:06.887  INFO shantim2-l2 --- [nio-8080-exec-6] c.d.c.UserManager                        : compleate json object is: {"reason":"entered details are valid.","UserProfile":{"firstName":" shashi ","lastName":"reddy ","password":"shashi123","mobileNumber":"12345","emailid":"shashi@gmail.com "},"status":"registration completed."}
+2018-07-25 15:23:07.137  INFO shantim2-l2 --- [nio-8080-exec-7] c.d.c.UserManager                        : entered into UserManager class 
+2018-07-25 15:23:07.138  INFO shantim2-l2 --- [nio-8080-exec-7] c.d.c.UserManager                        : registeredNewUserObj is: shashi 
+2018-07-25 15:23:07.140  INFO shantim2-l2 --- [nio-8080-exec-7] c.d.c.UserManager                        : compleate json object is: {"reason":"entered details are valid.","UserProfile":{"firstName":"shashi ","lastName":"reddy ","password":"shashi123","mobileNumber":"12345","emailid":"shashi@gmail.com "},"status":"registration completed."}
+2018-07-25 16:59:46.218  INFO shantim2-l2 --- [nio-8080-exec-9] c.d.c.UserManager                        : entered into UserManager class 
+2018-07-25 16:59:46.218  INFO shantim2-l2 --- [nio-8080-exec-9] c.d.c.UserManager                        : registeredNewUserObj is:  shashi 
+2018-07-25 16:59:46.218  INFO shantim2-l2 --- [nio-8080-exec-9] c.d.c.UserManager                        : compleate json object is: {"reason":"entered details are valid.","UserProfile":{"firstName":" shashi ","lastName":"reddy ","password":"shashi123","mobileNumber":"12345","emailid":"shashi@gmail.com "},"status":"registration completed."}
+2018-07-25 16:59:46.285  INFO shantim2-l2 --- [io-8080-exec-10] c.d.c.UserManager                        : entered into UserManager class 
+2018-07-25 16:59:46.285  INFO shantim2-l2 --- [io-8080-exec-10] c.d.c.UserManager                        : registeredNewUserObj is: shashi 
+2018-07-25 16:59:46.285  INFO shantim2-l2 --- [io-8080-exec-10] c.d.c.UserManager                        : compleate json object is: {"reason":"entered details are valid.","UserProfile":{"firstName":"shashi ","lastName":"reddy ","password":"shashi123","mobileNumber":"12345","emailid":"shashi@gmail.com "},"status":"registration completed."}
+2018-07-25 17:01:01.754  INFO shantim2-l2 --- [nio-8080-exec-2] c.d.c.UserManager                        : entered into UserManager class 
+2018-07-25 17:01:01.755  INFO shantim2-l2 --- [nio-8080-exec-2] c.d.c.UserManager                        : registeredNewUserObj is:  shashi 
+2018-07-25 17:01:01.756  INFO shantim2-l2 --- [nio-8080-exec-2] c.d.c.UserManager                        : compleate json object is: {"reason":"entered details are valid.","UserProfile":{"firstName":" shashi ","lastName":"reddy ","password":"shashi123","mobileNumber":"12345","emailid":"shashi@gmail.com "},"status":"registration completed."}
+2018-07-25 17:01:01.815  INFO shantim2-l2 --- [nio-8080-exec-3] c.d.c.UserManager                        : entered into UserManager class 
+2018-07-25 17:01:01.816  INFO shantim2-l2 --- [nio-8080-exec-3] c.d.c.UserManager                        : registeredNewUserObj is: shashi 
+2018-07-25 17:01:01.817  INFO shantim2-l2 --- [nio-8080-exec-3] c.d.c.UserManager                        : compleate json object is: {"reason":"entered details are valid.","UserProfile":{"firstName":"shashi ","lastName":"reddy ","password":"shashi123","mobileNumber":"12345","emailid":"shashi@gmail.com "},"status":"registration completed."}
+2018-07-25 17:04:43.041  INFO shantim2-l2 --- [nio-8080-exec-5] c.d.c.UserManager                        : entered into UserManager class 
+2018-07-25 17:04:43.042  INFO shantim2-l2 --- [nio-8080-exec-5] c.d.c.UserManager                        : registeredNewUserObj is:  shashi 
+2018-07-25 17:04:43.042  INFO shantim2-l2 --- [nio-8080-exec-5] c.d.c.UserManager                        : compleate json object is: {"reason":"entered details are valid.","UserProfile":{"firstName":" shashi ","lastName":"reddy ","password":"shashi123","mobileNumber":"12345","emailid":"shashi@gmail.com "},"status":"registration completed."}
+2018-07-25 17:04:43.094  INFO shantim2-l2 --- [nio-8080-exec-6] c.d.c.UserManager                        : entered into UserManager class 
+2018-07-25 17:04:43.095  INFO shantim2-l2 --- [nio-8080-exec-6] c.d.c.UserManager                        : registeredNewUserObj is: shashi 
+2018-07-25 17:04:43.096  INFO shantim2-l2 --- [nio-8080-exec-6] c.d.c.UserManager                        : compleate json object is: {"reason":"entered details are valid.","UserProfile":{"firstName":"shashi ","lastName":"reddy ","password":"shashi123","mobileNumber":"12345","emailid":"shashi@gmail.com "},"status":"registration completed."}
+2018-07-25 17:11:14.711  INFO shantim2-l2 --- [nio-8080-exec-8] c.d.c.UserManager                        : entered into UserManager class 
+2018-07-25 17:11:14.718  INFO shantim2-l2 --- [nio-8080-exec-8] c.d.c.UserManager                        : registeredNewUserObj is:  shashi 
+2018-07-25 17:11:14.722  INFO shantim2-l2 --- [nio-8080-exec-8] c.d.c.UserManager                        : compleate json object is: {"reason":"entered details are valid.","UserProfile":{"firstName":" shashi ","lastName":"reddy ","password":"shashi123","mobileNumber":"12345","emailid":"shashi@gmail.com "},"status":"registration completed."}
+2018-07-25 17:11:15.377  INFO shantim2-l2 --- [nio-8080-exec-9] c.d.c.UserManager                        : entered into UserManager class 
+2018-07-25 17:11:15.382  INFO shantim2-l2 --- [nio-8080-exec-9] c.d.c.UserManager                        : registeredNewUserObj is: shashi 
+2018-07-25 17:11:15.387  INFO shantim2-l2 --- [nio-8080-exec-9] c.d.c.UserManager                        : compleate json object is: {"reason":"entered details are valid.","UserProfile":{"firstName":"shashi ","lastName":"reddy ","password":"shashi123","mobileNumber":"12345","emailid":"shashi@gmail.com "},"status":"registration completed."}
+2018-07-25 17:13:44.213  INFO shantim2-l2 --- [nio-8080-exec-1] c.d.c.UserManager                        : entered into UserManager class 
+2018-07-25 17:13:44.214  INFO shantim2-l2 --- [nio-8080-exec-1] c.d.c.UserManager                        : registeredNewUserObj is:  shashi 
+2018-07-25 17:13:44.214  INFO shantim2-l2 --- [nio-8080-exec-1] c.d.c.UserManager                        : compleate json object is: {"reason":"entered details are valid.","UserProfile":{"firstName":" shashi ","lastName":"reddy ","password":"shashi123","mobileNumber":"12345","emailid":"shashi@gmail.com "},"status":"registration completed."}
+2018-07-25 17:13:44.278  INFO shantim2-l2 --- [nio-8080-exec-2] c.d.c.UserManager                        : entered into UserManager class 
+2018-07-25 17:13:44.279  INFO shantim2-l2 --- [nio-8080-exec-2] c.d.c.UserManager                        : registeredNewUserObj is: shashi 
+2018-07-25 17:13:44.280  INFO shantim2-l2 --- [nio-8080-exec-2] c.d.c.UserManager                        : compleate json object is: {"reason":"entered details are valid.","UserProfile":{"firstName":"shashi ","lastName":"reddy ","password":"shashi123","mobileNumber":"12345","emailid":"shashi@gmail.com "},"status":"registration completed."}
+2018-07-25 17:14:39.068  INFO shantim2-l2 --- [on(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-07-25 17:14:39.069  INFO shantim2-l2 --- [on(2)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@63475ace: startup date [Wed Jul 25 14:38:46 IST 2018]; root of context hierarchy
+2018-07-25 17:14:39.074  INFO shantim2-l2 --- [on(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-07-25 17:24:32.293 ERROR shantim2-l2 --- [           main] o.s.b.SpringApplication                  : Application startup failed
+java.lang.IllegalStateException: Failed to load property source from location 'classpath:/application.xml'
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.loadIntoGroup(ConfigFileApplicationListener.java:476)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.load(ConfigFileApplicationListener.java:465)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.load(ConfigFileApplicationListener.java:386)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.addPropertySources(ConfigFileApplicationListener.java:225)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.postProcessEnvironment(ConfigFileApplicationListener.java:195)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.onApplicationEnvironmentPreparedEvent(ConfigFileApplicationListener.java:182)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.onApplicationEvent(ConfigFileApplicationListener.java:168)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:122)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:74)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:54)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:325)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:296)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.dm_02_tbdapp.controller.App.main(App.java:15)
+Caused by: java.util.InvalidPropertiesFormatException: org.xml.sax.SAXException: Invalid system identifier: http://www.springframework.org/dtd/spring-beans.dtd
+	at sun.util.xml.PlatformXmlPropertiesProvider.load(PlatformXmlPropertiesProvider.java:80)
+	at java.util.Properties$XmlSupport.load(Properties.java:1201)
+	at java.util.Properties.loadFromXML(Properties.java:881)
+	at org.springframework.core.io.support.PropertiesLoaderUtils.fillProperties(PropertiesLoaderUtils.java:136)
+	at org.springframework.core.io.support.PropertiesLoaderUtils.loadProperties(PropertiesLoaderUtils.java:121)
+	at org.springframework.boot.env.PropertiesPropertySourceLoader.load(PropertiesPropertySourceLoader.java:44)
+	at org.springframework.boot.env.PropertySourcesLoader.load(PropertySourcesLoader.java:127)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.doLoadIntoGroup(ConfigFileApplicationListener.java:490)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.loadIntoGroup(ConfigFileApplicationListener.java:473)
+	... 17 more
+Caused by: org.xml.sax.SAXException: Invalid system identifier: http://www.springframework.org/dtd/spring-beans.dtd
+	at sun.util.xml.PlatformXmlPropertiesProvider$Resolver.resolveEntity(PlatformXmlPropertiesProvider.java:204)
+	at com.sun.org.apache.xerces.internal.util.EntityResolverWrapper.resolveEntity(EntityResolverWrapper.java:110)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.resolveEntityAsPerStax(XMLEntityManager.java:997)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$DTDDriver.dispatch(XMLDocumentScannerImpl.java:1151)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$DTDDriver.next(XMLDocumentScannerImpl.java:1045)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:959)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:841)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:770)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+	at sun.util.xml.PlatformXmlPropertiesProvider.getLoadingDoc(PlatformXmlPropertiesProvider.java:106)
+	at sun.util.xml.PlatformXmlPropertiesProvider.load(PlatformXmlPropertiesProvider.java:78)
+	... 25 more
+2018-07-25 17:29:09.726 ERROR shantim2-l2 --- [           main] o.s.b.SpringApplication                  : Application startup failed
+java.lang.IllegalStateException: Failed to load property source from location 'classpath:/application.xml'
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.loadIntoGroup(ConfigFileApplicationListener.java:476)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.load(ConfigFileApplicationListener.java:465)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.load(ConfigFileApplicationListener.java:386)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.addPropertySources(ConfigFileApplicationListener.java:225)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.postProcessEnvironment(ConfigFileApplicationListener.java:195)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.onApplicationEnvironmentPreparedEvent(ConfigFileApplicationListener.java:182)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.onApplicationEvent(ConfigFileApplicationListener.java:168)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:122)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:74)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:54)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:325)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:296)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.dm_02_tbdapp.controller.App.main(App.java:15)
+Caused by: java.util.InvalidPropertiesFormatException: org.xml.sax.SAXException: Invalid system identifier: http://www.springframework.org/dtd/spring-beans.dtd
+	at sun.util.xml.PlatformXmlPropertiesProvider.load(PlatformXmlPropertiesProvider.java:80)
+	at java.util.Properties$XmlSupport.load(Properties.java:1201)
+	at java.util.Properties.loadFromXML(Properties.java:881)
+	at org.springframework.core.io.support.PropertiesLoaderUtils.fillProperties(PropertiesLoaderUtils.java:136)
+	at org.springframework.core.io.support.PropertiesLoaderUtils.loadProperties(PropertiesLoaderUtils.java:121)
+	at org.springframework.boot.env.PropertiesPropertySourceLoader.load(PropertiesPropertySourceLoader.java:44)
+	at org.springframework.boot.env.PropertySourcesLoader.load(PropertySourcesLoader.java:127)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.doLoadIntoGroup(ConfigFileApplicationListener.java:490)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.loadIntoGroup(ConfigFileApplicationListener.java:473)
+	... 17 more
+Caused by: org.xml.sax.SAXException: Invalid system identifier: http://www.springframework.org/dtd/spring-beans.dtd
+	at sun.util.xml.PlatformXmlPropertiesProvider$Resolver.resolveEntity(PlatformXmlPropertiesProvider.java:204)
+	at com.sun.org.apache.xerces.internal.util.EntityResolverWrapper.resolveEntity(EntityResolverWrapper.java:110)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.resolveEntityAsPerStax(XMLEntityManager.java:997)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$DTDDriver.dispatch(XMLDocumentScannerImpl.java:1151)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$DTDDriver.next(XMLDocumentScannerImpl.java:1045)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:959)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:841)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:770)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+	at sun.util.xml.PlatformXmlPropertiesProvider.getLoadingDoc(PlatformXmlPropertiesProvider.java:106)
+	at sun.util.xml.PlatformXmlPropertiesProvider.load(PlatformXmlPropertiesProvider.java:78)
+	... 25 more
+2018-07-25 17:32:01.029 ERROR shantim2-l2 --- [           main] o.s.b.SpringApplication                  : Application startup failed
+java.lang.IllegalStateException: Failed to load property source from location 'classpath:/application.xml'
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.loadIntoGroup(ConfigFileApplicationListener.java:476)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.load(ConfigFileApplicationListener.java:465)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.load(ConfigFileApplicationListener.java:386)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.addPropertySources(ConfigFileApplicationListener.java:225)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.postProcessEnvironment(ConfigFileApplicationListener.java:195)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.onApplicationEnvironmentPreparedEvent(ConfigFileApplicationListener.java:182)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.onApplicationEvent(ConfigFileApplicationListener.java:168)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:122)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:74)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:54)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:325)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:296)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.dm_02_tbdapp.controller.App.main(App.java:15)
+Caused by: java.util.InvalidPropertiesFormatException: org.xml.sax.SAXException: Invalid system identifier: http://www.springframework.org/dtd/spring-beans.dtd
+	at sun.util.xml.PlatformXmlPropertiesProvider.load(PlatformXmlPropertiesProvider.java:80)
+	at java.util.Properties$XmlSupport.load(Properties.java:1201)
+	at java.util.Properties.loadFromXML(Properties.java:881)
+	at org.springframework.core.io.support.PropertiesLoaderUtils.fillProperties(PropertiesLoaderUtils.java:136)
+	at org.springframework.core.io.support.PropertiesLoaderUtils.loadProperties(PropertiesLoaderUtils.java:121)
+	at org.springframework.boot.env.PropertiesPropertySourceLoader.load(PropertiesPropertySourceLoader.java:44)
+	at org.springframework.boot.env.PropertySourcesLoader.load(PropertySourcesLoader.java:127)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.doLoadIntoGroup(ConfigFileApplicationListener.java:490)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.loadIntoGroup(ConfigFileApplicationListener.java:473)
+	... 17 more
+Caused by: org.xml.sax.SAXException: Invalid system identifier: http://www.springframework.org/dtd/spring-beans.dtd
+	at sun.util.xml.PlatformXmlPropertiesProvider$Resolver.resolveEntity(PlatformXmlPropertiesProvider.java:204)
+	at com.sun.org.apache.xerces.internal.util.EntityResolverWrapper.resolveEntity(EntityResolverWrapper.java:110)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.resolveEntityAsPerStax(XMLEntityManager.java:997)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$DTDDriver.dispatch(XMLDocumentScannerImpl.java:1151)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$DTDDriver.next(XMLDocumentScannerImpl.java:1045)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:959)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:841)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:770)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+	at sun.util.xml.PlatformXmlPropertiesProvider.getLoadingDoc(PlatformXmlPropertiesProvider.java:106)
+	at sun.util.xml.PlatformXmlPropertiesProvider.load(PlatformXmlPropertiesProvider.java:78)
+	... 25 more
+2018-07-25 17:34:26.882 ERROR shantim2-l2 --- [           main] o.s.b.SpringApplication                  : Application startup failed
+java.lang.IllegalStateException: Failed to load property source from location 'classpath:/application.xml'
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.loadIntoGroup(ConfigFileApplicationListener.java:476)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.load(ConfigFileApplicationListener.java:465)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.load(ConfigFileApplicationListener.java:386)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.addPropertySources(ConfigFileApplicationListener.java:225)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.postProcessEnvironment(ConfigFileApplicationListener.java:195)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.onApplicationEnvironmentPreparedEvent(ConfigFileApplicationListener.java:182)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.onApplicationEvent(ConfigFileApplicationListener.java:168)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:122)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:74)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:54)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:325)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:296)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.dm_02_tbdapp.controller.App.main(App.java:15)
+Caused by: java.util.InvalidPropertiesFormatException: org.xml.sax.SAXException: Invalid system identifier: http://www.springframework.org/dtd/spring-beans.dtd
+	at sun.util.xml.PlatformXmlPropertiesProvider.load(PlatformXmlPropertiesProvider.java:80)
+	at java.util.Properties$XmlSupport.load(Properties.java:1201)
+	at java.util.Properties.loadFromXML(Properties.java:881)
+	at org.springframework.core.io.support.PropertiesLoaderUtils.fillProperties(PropertiesLoaderUtils.java:136)
+	at org.springframework.core.io.support.PropertiesLoaderUtils.loadProperties(PropertiesLoaderUtils.java:121)
+	at org.springframework.boot.env.PropertiesPropertySourceLoader.load(PropertiesPropertySourceLoader.java:44)
+	at org.springframework.boot.env.PropertySourcesLoader.load(PropertySourcesLoader.java:127)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.doLoadIntoGroup(ConfigFileApplicationListener.java:490)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.loadIntoGroup(ConfigFileApplicationListener.java:473)
+	... 17 more
+Caused by: org.xml.sax.SAXException: Invalid system identifier: http://www.springframework.org/dtd/spring-beans.dtd
+	at sun.util.xml.PlatformXmlPropertiesProvider$Resolver.resolveEntity(PlatformXmlPropertiesProvider.java:204)
+	at com.sun.org.apache.xerces.internal.util.EntityResolverWrapper.resolveEntity(EntityResolverWrapper.java:110)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.resolveEntityAsPerStax(XMLEntityManager.java:997)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$DTDDriver.dispatch(XMLDocumentScannerImpl.java:1151)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$DTDDriver.next(XMLDocumentScannerImpl.java:1045)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:959)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:841)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:770)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+	at sun.util.xml.PlatformXmlPropertiesProvider.getLoadingDoc(PlatformXmlPropertiesProvider.java:106)
+	at sun.util.xml.PlatformXmlPropertiesProvider.load(PlatformXmlPropertiesProvider.java:78)
+	... 25 more
+2018-07-25 17:44:48.304 ERROR shantim2-l2 --- [           main] o.s.b.SpringApplication                  : Application startup failed
+java.lang.IllegalStateException: Failed to load property source from location 'classpath:/application.xml'
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.loadIntoGroup(ConfigFileApplicationListener.java:476)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.load(ConfigFileApplicationListener.java:465)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.load(ConfigFileApplicationListener.java:386)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.addPropertySources(ConfigFileApplicationListener.java:225)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.postProcessEnvironment(ConfigFileApplicationListener.java:195)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.onApplicationEnvironmentPreparedEvent(ConfigFileApplicationListener.java:182)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.onApplicationEvent(ConfigFileApplicationListener.java:168)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:122)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:74)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:54)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:325)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:296)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.dm_02_tbdapp.controller.App.main(App.java:15)
+Caused by: java.util.InvalidPropertiesFormatException: org.xml.sax.SAXException: Invalid system identifier: http://www.springframework.org/dtd/spring-beans.dtd
+	at sun.util.xml.PlatformXmlPropertiesProvider.load(PlatformXmlPropertiesProvider.java:80)
+	at java.util.Properties$XmlSupport.load(Properties.java:1201)
+	at java.util.Properties.loadFromXML(Properties.java:881)
+	at org.springframework.core.io.support.PropertiesLoaderUtils.fillProperties(PropertiesLoaderUtils.java:136)
+	at org.springframework.core.io.support.PropertiesLoaderUtils.loadProperties(PropertiesLoaderUtils.java:121)
+	at org.springframework.boot.env.PropertiesPropertySourceLoader.load(PropertiesPropertySourceLoader.java:44)
+	at org.springframework.boot.env.PropertySourcesLoader.load(PropertySourcesLoader.java:127)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.doLoadIntoGroup(ConfigFileApplicationListener.java:490)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.loadIntoGroup(ConfigFileApplicationListener.java:473)
+	... 17 more
+Caused by: org.xml.sax.SAXException: Invalid system identifier: http://www.springframework.org/dtd/spring-beans.dtd
+	at sun.util.xml.PlatformXmlPropertiesProvider$Resolver.resolveEntity(PlatformXmlPropertiesProvider.java:204)
+	at com.sun.org.apache.xerces.internal.util.EntityResolverWrapper.resolveEntity(EntityResolverWrapper.java:110)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.resolveEntityAsPerStax(XMLEntityManager.java:997)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$DTDDriver.dispatch(XMLDocumentScannerImpl.java:1151)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$DTDDriver.next(XMLDocumentScannerImpl.java:1045)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:959)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:841)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:770)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+	at sun.util.xml.PlatformXmlPropertiesProvider.getLoadingDoc(PlatformXmlPropertiesProvider.java:106)
+	at sun.util.xml.PlatformXmlPropertiesProvider.load(PlatformXmlPropertiesProvider.java:78)
+	... 25 more
+2018-07-25 17:47:14.254 ERROR shantim2-l2 --- [           main] o.s.b.SpringApplication                  : Application startup failed
+java.lang.IllegalStateException: Failed to load property source from location 'classpath:/application.xml'
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.loadIntoGroup(ConfigFileApplicationListener.java:476)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.load(ConfigFileApplicationListener.java:465)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.load(ConfigFileApplicationListener.java:386)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.addPropertySources(ConfigFileApplicationListener.java:225)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.postProcessEnvironment(ConfigFileApplicationListener.java:195)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.onApplicationEnvironmentPreparedEvent(ConfigFileApplicationListener.java:182)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.onApplicationEvent(ConfigFileApplicationListener.java:168)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:122)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:74)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:54)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:325)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:296)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.dm_02_tbdapp.controller.App.main(App.java:15)
+Caused by: java.util.InvalidPropertiesFormatException: org.xml.sax.SAXException: Invalid system identifier: http://www.springframework.org/dtd/spring-beans.dtd
+	at sun.util.xml.PlatformXmlPropertiesProvider.load(PlatformXmlPropertiesProvider.java:80)
+	at java.util.Properties$XmlSupport.load(Properties.java:1201)
+	at java.util.Properties.loadFromXML(Properties.java:881)
+	at org.springframework.core.io.support.PropertiesLoaderUtils.fillProperties(PropertiesLoaderUtils.java:136)
+	at org.springframework.core.io.support.PropertiesLoaderUtils.loadProperties(PropertiesLoaderUtils.java:121)
+	at org.springframework.boot.env.PropertiesPropertySourceLoader.load(PropertiesPropertySourceLoader.java:44)
+	at org.springframework.boot.env.PropertySourcesLoader.load(PropertySourcesLoader.java:127)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.doLoadIntoGroup(ConfigFileApplicationListener.java:490)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.loadIntoGroup(ConfigFileApplicationListener.java:473)
+	... 17 more
+Caused by: org.xml.sax.SAXException: Invalid system identifier: http://www.springframework.org/dtd/spring-beans.dtd
+	at sun.util.xml.PlatformXmlPropertiesProvider$Resolver.resolveEntity(PlatformXmlPropertiesProvider.java:204)
+	at com.sun.org.apache.xerces.internal.util.EntityResolverWrapper.resolveEntity(EntityResolverWrapper.java:110)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.resolveEntityAsPerStax(XMLEntityManager.java:997)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$DTDDriver.dispatch(XMLDocumentScannerImpl.java:1151)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$DTDDriver.next(XMLDocumentScannerImpl.java:1045)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:959)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:841)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:770)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+	at sun.util.xml.PlatformXmlPropertiesProvider.getLoadingDoc(PlatformXmlPropertiesProvider.java:106)
+	at sun.util.xml.PlatformXmlPropertiesProvider.load(PlatformXmlPropertiesProvider.java:78)
+	... 25 more
+2018-07-25 17:47:40.428 ERROR shantim2-l2 --- [           main] o.s.b.SpringApplication                  : Application startup failed
+java.lang.IllegalStateException: Failed to load property source from location 'classpath:/application.xml'
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.loadIntoGroup(ConfigFileApplicationListener.java:476)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.load(ConfigFileApplicationListener.java:465)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.load(ConfigFileApplicationListener.java:386)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.addPropertySources(ConfigFileApplicationListener.java:225)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.postProcessEnvironment(ConfigFileApplicationListener.java:195)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.onApplicationEnvironmentPreparedEvent(ConfigFileApplicationListener.java:182)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.onApplicationEvent(ConfigFileApplicationListener.java:168)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:122)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:74)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:54)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:325)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:296)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.dm_02_tbdapp.controller.App.main(App.java:15)
+Caused by: java.util.InvalidPropertiesFormatException: org.xml.sax.SAXException: Invalid system identifier: http://www.springframework.org/dtd/spring-beans.dtd
+	at sun.util.xml.PlatformXmlPropertiesProvider.load(PlatformXmlPropertiesProvider.java:80)
+	at java.util.Properties$XmlSupport.load(Properties.java:1201)
+	at java.util.Properties.loadFromXML(Properties.java:881)
+	at org.springframework.core.io.support.PropertiesLoaderUtils.fillProperties(PropertiesLoaderUtils.java:136)
+	at org.springframework.core.io.support.PropertiesLoaderUtils.loadProperties(PropertiesLoaderUtils.java:121)
+	at org.springframework.boot.env.PropertiesPropertySourceLoader.load(PropertiesPropertySourceLoader.java:44)
+	at org.springframework.boot.env.PropertySourcesLoader.load(PropertySourcesLoader.java:127)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.doLoadIntoGroup(ConfigFileApplicationListener.java:490)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.loadIntoGroup(ConfigFileApplicationListener.java:473)
+	... 17 more
+Caused by: org.xml.sax.SAXException: Invalid system identifier: http://www.springframework.org/dtd/spring-beans.dtd
+	at sun.util.xml.PlatformXmlPropertiesProvider$Resolver.resolveEntity(PlatformXmlPropertiesProvider.java:204)
+	at com.sun.org.apache.xerces.internal.util.EntityResolverWrapper.resolveEntity(EntityResolverWrapper.java:110)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.resolveEntityAsPerStax(XMLEntityManager.java:997)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$DTDDriver.dispatch(XMLDocumentScannerImpl.java:1151)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$DTDDriver.next(XMLDocumentScannerImpl.java:1045)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:959)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:841)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:770)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+	at sun.util.xml.PlatformXmlPropertiesProvider.getLoadingDoc(PlatformXmlPropertiesProvider.java:106)
+	at sun.util.xml.PlatformXmlPropertiesProvider.load(PlatformXmlPropertiesProvider.java:78)
+	... 25 more
+2018-07-25 17:50:49.393 ERROR shantim2-l2 --- [           main] o.s.b.SpringApplication                  : Application startup failed
+java.lang.IllegalStateException: Failed to load property source from location 'classpath:/application.xml'
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.loadIntoGroup(ConfigFileApplicationListener.java:476)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.load(ConfigFileApplicationListener.java:465)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.load(ConfigFileApplicationListener.java:386)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.addPropertySources(ConfigFileApplicationListener.java:225)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.postProcessEnvironment(ConfigFileApplicationListener.java:195)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.onApplicationEnvironmentPreparedEvent(ConfigFileApplicationListener.java:182)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.onApplicationEvent(ConfigFileApplicationListener.java:168)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:122)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:74)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:54)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:325)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:296)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.dm_02_tbdapp.controller.App.main(App.java:15)
+Caused by: java.util.InvalidPropertiesFormatException: org.xml.sax.SAXException: Invalid system identifier: http://www.springframework.org/dtd/spring-beans.dtd
+	at sun.util.xml.PlatformXmlPropertiesProvider.load(PlatformXmlPropertiesProvider.java:80)
+	at java.util.Properties$XmlSupport.load(Properties.java:1201)
+	at java.util.Properties.loadFromXML(Properties.java:881)
+	at org.springframework.core.io.support.PropertiesLoaderUtils.fillProperties(PropertiesLoaderUtils.java:136)
+	at org.springframework.core.io.support.PropertiesLoaderUtils.loadProperties(PropertiesLoaderUtils.java:121)
+	at org.springframework.boot.env.PropertiesPropertySourceLoader.load(PropertiesPropertySourceLoader.java:44)
+	at org.springframework.boot.env.PropertySourcesLoader.load(PropertySourcesLoader.java:127)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.doLoadIntoGroup(ConfigFileApplicationListener.java:490)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.loadIntoGroup(ConfigFileApplicationListener.java:473)
+	... 17 more
+Caused by: org.xml.sax.SAXException: Invalid system identifier: http://www.springframework.org/dtd/spring-beans.dtd
+	at sun.util.xml.PlatformXmlPropertiesProvider$Resolver.resolveEntity(PlatformXmlPropertiesProvider.java:204)
+	at com.sun.org.apache.xerces.internal.util.EntityResolverWrapper.resolveEntity(EntityResolverWrapper.java:110)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.resolveEntityAsPerStax(XMLEntityManager.java:997)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$DTDDriver.dispatch(XMLDocumentScannerImpl.java:1151)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$DTDDriver.next(XMLDocumentScannerImpl.java:1045)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:959)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:841)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:770)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+	at sun.util.xml.PlatformXmlPropertiesProvider.getLoadingDoc(PlatformXmlPropertiesProvider.java:106)
+	at sun.util.xml.PlatformXmlPropertiesProvider.load(PlatformXmlPropertiesProvider.java:78)
+	... 25 more
+2018-07-25 17:57:06.751 ERROR shantim2-l2 --- [           main] o.s.b.SpringApplication                  : Application startup failed
+java.lang.IllegalStateException: Failed to load property source from location 'classpath:/application.xml'
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.loadIntoGroup(ConfigFileApplicationListener.java:476)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.load(ConfigFileApplicationListener.java:465)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.load(ConfigFileApplicationListener.java:386)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.addPropertySources(ConfigFileApplicationListener.java:225)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.postProcessEnvironment(ConfigFileApplicationListener.java:195)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.onApplicationEnvironmentPreparedEvent(ConfigFileApplicationListener.java:182)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.onApplicationEvent(ConfigFileApplicationListener.java:168)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:122)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:74)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:54)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:325)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:296)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.dm_02_tbdapp.controller.App.main(App.java:15)
+Caused by: java.util.InvalidPropertiesFormatException: org.xml.sax.SAXParseException; lineNumber: 7; columnNumber: 105; Document root element "beans", must match DOCTYPE root "null".
+	at sun.util.xml.PlatformXmlPropertiesProvider.load(PlatformXmlPropertiesProvider.java:80)
+	at java.util.Properties$XmlSupport.load(Properties.java:1201)
+	at java.util.Properties.loadFromXML(Properties.java:881)
+	at org.springframework.core.io.support.PropertiesLoaderUtils.fillProperties(PropertiesLoaderUtils.java:136)
+	at org.springframework.core.io.support.PropertiesLoaderUtils.loadProperties(PropertiesLoaderUtils.java:121)
+	at org.springframework.boot.env.PropertiesPropertySourceLoader.load(PropertiesPropertySourceLoader.java:44)
+	at org.springframework.boot.env.PropertySourcesLoader.load(PropertySourcesLoader.java:127)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.doLoadIntoGroup(ConfigFileApplicationListener.java:490)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.loadIntoGroup(ConfigFileApplicationListener.java:473)
+	... 17 more
+Caused by: org.xml.sax.SAXParseException; lineNumber: 7; columnNumber: 105; Document root element "beans", must match DOCTYPE root "null".
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:134)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:396)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:284)
+	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.rootElementSpecified(XMLDTDValidator.java:1599)
+	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.handleStartElement(XMLDTDValidator.java:1877)
+	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.startElement(XMLDTDValidator.java:742)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanStartElement(XMLDocumentFragmentScannerImpl.java:1359)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$ContentDriver.scanRootElementHook(XMLDocumentScannerImpl.java:1289)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:3132)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:852)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:841)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:770)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+	at sun.util.xml.PlatformXmlPropertiesProvider.getLoadingDoc(PlatformXmlPropertiesProvider.java:106)
+	at sun.util.xml.PlatformXmlPropertiesProvider.load(PlatformXmlPropertiesProvider.java:78)
+	... 25 more
+2018-07-25 18:15:14.815 ERROR shantim2-l2 --- [           main] o.s.b.SpringApplication                  : Application startup failed
+java.lang.IllegalStateException: Failed to load property source from location 'classpath:/application.xml'
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.loadIntoGroup(ConfigFileApplicationListener.java:476)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.load(ConfigFileApplicationListener.java:465)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.load(ConfigFileApplicationListener.java:386)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.addPropertySources(ConfigFileApplicationListener.java:225)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.postProcessEnvironment(ConfigFileApplicationListener.java:195)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.onApplicationEnvironmentPreparedEvent(ConfigFileApplicationListener.java:182)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.onApplicationEvent(ConfigFileApplicationListener.java:168)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:122)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:74)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:54)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:325)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:296)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.dm_02_tbdapp.controller.App.main(App.java:15)
+Caused by: java.util.InvalidPropertiesFormatException: org.xml.sax.SAXException: Invalid system identifier: http://www.springframework.org/dtd/spring-beans.dtd
+	at sun.util.xml.PlatformXmlPropertiesProvider.load(PlatformXmlPropertiesProvider.java:80)
+	at java.util.Properties$XmlSupport.load(Properties.java:1201)
+	at java.util.Properties.loadFromXML(Properties.java:881)
+	at org.springframework.core.io.support.PropertiesLoaderUtils.fillProperties(PropertiesLoaderUtils.java:136)
+	at org.springframework.core.io.support.PropertiesLoaderUtils.loadProperties(PropertiesLoaderUtils.java:121)
+	at org.springframework.boot.env.PropertiesPropertySourceLoader.load(PropertiesPropertySourceLoader.java:44)
+	at org.springframework.boot.env.PropertySourcesLoader.load(PropertySourcesLoader.java:127)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.doLoadIntoGroup(ConfigFileApplicationListener.java:490)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.loadIntoGroup(ConfigFileApplicationListener.java:473)
+	... 17 more
+Caused by: org.xml.sax.SAXException: Invalid system identifier: http://www.springframework.org/dtd/spring-beans.dtd
+	at sun.util.xml.PlatformXmlPropertiesProvider$Resolver.resolveEntity(PlatformXmlPropertiesProvider.java:204)
+	at com.sun.org.apache.xerces.internal.util.EntityResolverWrapper.resolveEntity(EntityResolverWrapper.java:110)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.resolveEntityAsPerStax(XMLEntityManager.java:997)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$DTDDriver.dispatch(XMLDocumentScannerImpl.java:1151)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$DTDDriver.next(XMLDocumentScannerImpl.java:1045)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:959)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:841)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:770)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+	at sun.util.xml.PlatformXmlPropertiesProvider.getLoadingDoc(PlatformXmlPropertiesProvider.java:106)
+	at sun.util.xml.PlatformXmlPropertiesProvider.load(PlatformXmlPropertiesProvider.java:78)
+	... 25 more
+2018-07-25 18:33:03.612 ERROR shantim2-l2 --- [           main] o.s.b.SpringApplication                  : Application startup failed
+java.lang.IllegalStateException: Failed to load property source from location 'classpath:/application.xml'
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.loadIntoGroup(ConfigFileApplicationListener.java:476)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.load(ConfigFileApplicationListener.java:465)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.load(ConfigFileApplicationListener.java:386)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.addPropertySources(ConfigFileApplicationListener.java:225)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.postProcessEnvironment(ConfigFileApplicationListener.java:195)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.onApplicationEnvironmentPreparedEvent(ConfigFileApplicationListener.java:182)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.onApplicationEvent(ConfigFileApplicationListener.java:168)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:122)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:74)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:54)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:325)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:296)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.dm_02_tbdapp.controller.App.main(App.java:15)
+Caused by: java.util.InvalidPropertiesFormatException: org.xml.sax.SAXException: Invalid system identifier: http://www.springframework.org/dtd/spring-beans.dtd
+	at sun.util.xml.PlatformXmlPropertiesProvider.load(PlatformXmlPropertiesProvider.java:80)
+	at java.util.Properties$XmlSupport.load(Properties.java:1201)
+	at java.util.Properties.loadFromXML(Properties.java:881)
+	at org.springframework.core.io.support.PropertiesLoaderUtils.fillProperties(PropertiesLoaderUtils.java:136)
+	at org.springframework.core.io.support.PropertiesLoaderUtils.loadProperties(PropertiesLoaderUtils.java:121)
+	at org.springframework.boot.env.PropertiesPropertySourceLoader.load(PropertiesPropertySourceLoader.java:44)
+	at org.springframework.boot.env.PropertySourcesLoader.load(PropertySourcesLoader.java:127)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.doLoadIntoGroup(ConfigFileApplicationListener.java:490)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.loadIntoGroup(ConfigFileApplicationListener.java:473)
+	... 17 more
+Caused by: org.xml.sax.SAXException: Invalid system identifier: http://www.springframework.org/dtd/spring-beans.dtd
+	at sun.util.xml.PlatformXmlPropertiesProvider$Resolver.resolveEntity(PlatformXmlPropertiesProvider.java:204)
+	at com.sun.org.apache.xerces.internal.util.EntityResolverWrapper.resolveEntity(EntityResolverWrapper.java:110)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.resolveEntityAsPerStax(XMLEntityManager.java:997)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$DTDDriver.dispatch(XMLDocumentScannerImpl.java:1151)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$DTDDriver.next(XMLDocumentScannerImpl.java:1045)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:959)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:841)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:770)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+	at sun.util.xml.PlatformXmlPropertiesProvider.getLoadingDoc(PlatformXmlPropertiesProvider.java:106)
+	at sun.util.xml.PlatformXmlPropertiesProvider.load(PlatformXmlPropertiesProvider.java:78)
+	... 25 more
+2018-07-25 19:09:36.173 ERROR shantim2-l2 --- [           main] o.s.b.SpringApplication                  : Application startup failed
+java.lang.IllegalStateException: Failed to load property source from location 'classpath:/application.xml'
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.loadIntoGroup(ConfigFileApplicationListener.java:476)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.load(ConfigFileApplicationListener.java:465)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.load(ConfigFileApplicationListener.java:386)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.addPropertySources(ConfigFileApplicationListener.java:225)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.postProcessEnvironment(ConfigFileApplicationListener.java:195)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.onApplicationEnvironmentPreparedEvent(ConfigFileApplicationListener.java:182)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.onApplicationEvent(ConfigFileApplicationListener.java:168)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:122)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:74)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:54)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:325)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:296)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.dm_02_tbdapp.controller.App.main(App.java:15)
+Caused by: java.util.InvalidPropertiesFormatException: org.xml.sax.SAXParseException; lineNumber: 2; columnNumber: 82; The document type declaration for root element type "beans" must end with '>'.
+	at sun.util.xml.PlatformXmlPropertiesProvider.load(PlatformXmlPropertiesProvider.java:80)
+	at java.util.Properties$XmlSupport.load(Properties.java:1201)
+	at java.util.Properties.loadFromXML(Properties.java:881)
+	at org.springframework.core.io.support.PropertiesLoaderUtils.fillProperties(PropertiesLoaderUtils.java:136)
+	at org.springframework.core.io.support.PropertiesLoaderUtils.loadProperties(PropertiesLoaderUtils.java:121)
+	at org.springframework.boot.env.PropertiesPropertySourceLoader.load(PropertiesPropertySourceLoader.java:44)
+	at org.springframework.boot.env.PropertySourcesLoader.load(PropertySourcesLoader.java:127)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.doLoadIntoGroup(ConfigFileApplicationListener.java:490)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.loadIntoGroup(ConfigFileApplicationListener.java:473)
+	... 17 more
+Caused by: org.xml.sax.SAXParseException; lineNumber: 2; columnNumber: 82; The document type declaration for root element type "beans" must end with '>'.
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:177)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1472)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.scanDoctypeDecl(XMLDocumentScannerImpl.java:679)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:924)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:841)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:770)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+	at sun.util.xml.PlatformXmlPropertiesProvider.getLoadingDoc(PlatformXmlPropertiesProvider.java:106)
+	at sun.util.xml.PlatformXmlPropertiesProvider.load(PlatformXmlPropertiesProvider.java:78)
+	... 25 more
+2018-07-25 19:12:24.274 ERROR shantim2-l2 --- [           main] o.s.b.SpringApplication                  : Application startup failed
+java.lang.IllegalStateException: Failed to load property source from location 'classpath:/application.xml'
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.loadIntoGroup(ConfigFileApplicationListener.java:476)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.load(ConfigFileApplicationListener.java:465)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.load(ConfigFileApplicationListener.java:386)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.addPropertySources(ConfigFileApplicationListener.java:225)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.postProcessEnvironment(ConfigFileApplicationListener.java:195)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.onApplicationEnvironmentPreparedEvent(ConfigFileApplicationListener.java:182)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.onApplicationEvent(ConfigFileApplicationListener.java:168)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:122)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:74)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:54)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:325)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:296)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.dm_02_tbdapp.controller.App.main(App.java:15)
+Caused by: java.util.InvalidPropertiesFormatException: org.xml.sax.SAXParseException; lineNumber: 2; columnNumber: 82; The document type declaration for root element type "beans" must end with '>'.
+	at sun.util.xml.PlatformXmlPropertiesProvider.load(PlatformXmlPropertiesProvider.java:80)
+	at java.util.Properties$XmlSupport.load(Properties.java:1201)
+	at java.util.Properties.loadFromXML(Properties.java:881)
+	at org.springframework.core.io.support.PropertiesLoaderUtils.fillProperties(PropertiesLoaderUtils.java:136)
+	at org.springframework.core.io.support.PropertiesLoaderUtils.loadProperties(PropertiesLoaderUtils.java:121)
+	at org.springframework.boot.env.PropertiesPropertySourceLoader.load(PropertiesPropertySourceLoader.java:44)
+	at org.springframework.boot.env.PropertySourcesLoader.load(PropertySourcesLoader.java:127)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.doLoadIntoGroup(ConfigFileApplicationListener.java:490)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.loadIntoGroup(ConfigFileApplicationListener.java:473)
+	... 17 more
+Caused by: org.xml.sax.SAXParseException; lineNumber: 2; columnNumber: 82; The document type declaration for root element type "beans" must end with '>'.
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:177)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1472)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.scanDoctypeDecl(XMLDocumentScannerImpl.java:679)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:924)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:841)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:770)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+	at sun.util.xml.PlatformXmlPropertiesProvider.getLoadingDoc(PlatformXmlPropertiesProvider.java:106)
+	at sun.util.xml.PlatformXmlPropertiesProvider.load(PlatformXmlPropertiesProvider.java:78)
+	... 25 more
+2018-07-25 19:18:22.216 ERROR shantim2-l2 --- [           main] o.s.b.SpringApplication                  : Application startup failed
+java.lang.IllegalStateException: Failed to load property source from location 'classpath:/application.xml'
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.loadIntoGroup(ConfigFileApplicationListener.java:476)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.load(ConfigFileApplicationListener.java:465)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.load(ConfigFileApplicationListener.java:386)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.addPropertySources(ConfigFileApplicationListener.java:225)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.postProcessEnvironment(ConfigFileApplicationListener.java:195)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.onApplicationEnvironmentPreparedEvent(ConfigFileApplicationListener.java:182)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.onApplicationEvent(ConfigFileApplicationListener.java:168)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:122)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:74)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:54)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:325)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:296)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.dm_02_tbdapp.controller.App.main(App.java:15)
+Caused by: java.util.InvalidPropertiesFormatException: org.xml.sax.SAXException: Invalid system identifier: http://www.springframework.org/dtd/spring-beans-2.0.dtd
+	at sun.util.xml.PlatformXmlPropertiesProvider.load(PlatformXmlPropertiesProvider.java:80)
+	at java.util.Properties$XmlSupport.load(Properties.java:1201)
+	at java.util.Properties.loadFromXML(Properties.java:881)
+	at org.springframework.core.io.support.PropertiesLoaderUtils.fillProperties(PropertiesLoaderUtils.java:136)
+	at org.springframework.core.io.support.PropertiesLoaderUtils.loadProperties(PropertiesLoaderUtils.java:121)
+	at org.springframework.boot.env.PropertiesPropertySourceLoader.load(PropertiesPropertySourceLoader.java:44)
+	at org.springframework.boot.env.PropertySourcesLoader.load(PropertySourcesLoader.java:127)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.doLoadIntoGroup(ConfigFileApplicationListener.java:490)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.loadIntoGroup(ConfigFileApplicationListener.java:473)
+	... 17 more
+Caused by: org.xml.sax.SAXException: Invalid system identifier: http://www.springframework.org/dtd/spring-beans-2.0.dtd
+	at sun.util.xml.PlatformXmlPropertiesProvider$Resolver.resolveEntity(PlatformXmlPropertiesProvider.java:204)
+	at com.sun.org.apache.xerces.internal.util.EntityResolverWrapper.resolveEntity(EntityResolverWrapper.java:110)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.resolveEntityAsPerStax(XMLEntityManager.java:997)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$DTDDriver.dispatch(XMLDocumentScannerImpl.java:1151)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$DTDDriver.next(XMLDocumentScannerImpl.java:1045)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:959)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:841)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:770)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+	at sun.util.xml.PlatformXmlPropertiesProvider.getLoadingDoc(PlatformXmlPropertiesProvider.java:106)
+	at sun.util.xml.PlatformXmlPropertiesProvider.load(PlatformXmlPropertiesProvider.java:78)
+	... 25 more
+2018-07-25 19:20:05.906 ERROR shantim2-l2 --- [           main] o.s.b.SpringApplication                  : Application startup failed
+java.lang.IllegalStateException: Failed to load property source from location 'classpath:/application.xml'
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.loadIntoGroup(ConfigFileApplicationListener.java:476)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.load(ConfigFileApplicationListener.java:465)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.load(ConfigFileApplicationListener.java:386)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.addPropertySources(ConfigFileApplicationListener.java:225)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.postProcessEnvironment(ConfigFileApplicationListener.java:195)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.onApplicationEnvironmentPreparedEvent(ConfigFileApplicationListener.java:182)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.onApplicationEvent(ConfigFileApplicationListener.java:168)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:122)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:74)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:54)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:325)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:296)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.dm_02_tbdapp.controller.App.main(App.java:15)
+Caused by: java.util.InvalidPropertiesFormatException: org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 8; Document root element "beans", must match DOCTYPE root "null".
+	at sun.util.xml.PlatformXmlPropertiesProvider.load(PlatformXmlPropertiesProvider.java:80)
+	at java.util.Properties$XmlSupport.load(Properties.java:1201)
+	at java.util.Properties.loadFromXML(Properties.java:881)
+	at org.springframework.core.io.support.PropertiesLoaderUtils.fillProperties(PropertiesLoaderUtils.java:136)
+	at org.springframework.core.io.support.PropertiesLoaderUtils.loadProperties(PropertiesLoaderUtils.java:121)
+	at org.springframework.boot.env.PropertiesPropertySourceLoader.load(PropertiesPropertySourceLoader.java:44)
+	at org.springframework.boot.env.PropertySourcesLoader.load(PropertySourcesLoader.java:127)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.doLoadIntoGroup(ConfigFileApplicationListener.java:490)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.loadIntoGroup(ConfigFileApplicationListener.java:473)
+	... 17 more
+Caused by: org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 8; Document root element "beans", must match DOCTYPE root "null".
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:134)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:396)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:284)
+	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.rootElementSpecified(XMLDTDValidator.java:1599)
+	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.handleStartElement(XMLDTDValidator.java:1877)
+	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.startElement(XMLDTDValidator.java:742)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanStartElement(XMLDocumentFragmentScannerImpl.java:1359)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$ContentDriver.scanRootElementHook(XMLDocumentScannerImpl.java:1289)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:3132)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:852)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:841)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:770)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+	at sun.util.xml.PlatformXmlPropertiesProvider.getLoadingDoc(PlatformXmlPropertiesProvider.java:106)
+	at sun.util.xml.PlatformXmlPropertiesProvider.load(PlatformXmlPropertiesProvider.java:78)
+	... 25 more
+2018-07-25 19:22:37.324 ERROR shantim2-l2 --- [           main] o.s.b.SpringApplication                  : Application startup failed
+java.lang.IllegalStateException: Failed to load property source from location 'classpath:/application.xml'
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.loadIntoGroup(ConfigFileApplicationListener.java:476)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.load(ConfigFileApplicationListener.java:465)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.load(ConfigFileApplicationListener.java:386)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.addPropertySources(ConfigFileApplicationListener.java:225)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.postProcessEnvironment(ConfigFileApplicationListener.java:195)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.onApplicationEnvironmentPreparedEvent(ConfigFileApplicationListener.java:182)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.onApplicationEvent(ConfigFileApplicationListener.java:168)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:122)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:74)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:54)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:325)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:296)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.dm_02_tbdapp.controller.App.main(App.java:15)
+Caused by: java.util.InvalidPropertiesFormatException: org.xml.sax.SAXException: Invalid system identifier: http://www.springframework.org/dtd/spring-beans-2.0.dtd
+	at sun.util.xml.PlatformXmlPropertiesProvider.load(PlatformXmlPropertiesProvider.java:80)
+	at java.util.Properties$XmlSupport.load(Properties.java:1201)
+	at java.util.Properties.loadFromXML(Properties.java:881)
+	at org.springframework.core.io.support.PropertiesLoaderUtils.fillProperties(PropertiesLoaderUtils.java:136)
+	at org.springframework.core.io.support.PropertiesLoaderUtils.loadProperties(PropertiesLoaderUtils.java:121)
+	at org.springframework.boot.env.PropertiesPropertySourceLoader.load(PropertiesPropertySourceLoader.java:44)
+	at org.springframework.boot.env.PropertySourcesLoader.load(PropertySourcesLoader.java:127)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.doLoadIntoGroup(ConfigFileApplicationListener.java:490)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.loadIntoGroup(ConfigFileApplicationListener.java:473)
+	... 17 more
+Caused by: org.xml.sax.SAXException: Invalid system identifier: http://www.springframework.org/dtd/spring-beans-2.0.dtd
+	at sun.util.xml.PlatformXmlPropertiesProvider$Resolver.resolveEntity(PlatformXmlPropertiesProvider.java:204)
+	at com.sun.org.apache.xerces.internal.util.EntityResolverWrapper.resolveEntity(EntityResolverWrapper.java:110)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.resolveEntityAsPerStax(XMLEntityManager.java:997)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$DTDDriver.dispatch(XMLDocumentScannerImpl.java:1151)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$DTDDriver.next(XMLDocumentScannerImpl.java:1045)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:959)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:841)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:770)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+	at sun.util.xml.PlatformXmlPropertiesProvider.getLoadingDoc(PlatformXmlPropertiesProvider.java:106)
+	at sun.util.xml.PlatformXmlPropertiesProvider.load(PlatformXmlPropertiesProvider.java:78)
+	... 25 more

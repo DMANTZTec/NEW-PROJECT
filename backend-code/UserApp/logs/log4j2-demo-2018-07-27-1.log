@@ -1,0 +1,509 @@
+2018-07-27 10:51:55.408  INFO shantim2-l2 --- [           main] c.d.c.App                                : Starting App on shantim2-l2 with PID 5000 (C:\Users\shashikant\eclipse-workspace\UserApp\target\classes started by shashikant in C:\Users\shashikant\eclipse-workspace\UserApp)
+2018-07-27 10:51:55.459  INFO shantim2-l2 --- [           main] c.d.c.App                                : No active profile set, falling back to default profiles: default
+2018-07-27 10:51:55.612  INFO shantim2-l2 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@c0c2f8d: startup date [Fri Jul 27 10:51:55 IST 2018]; root of context hierarchy
+2018-07-27 10:51:55.947  INFO shantim2-l2 --- [kground-preinit] o.h.v.i.u.Version                        : HV000001: Hibernate Validator 5.3.5.Final
+2018-07-27 10:51:58.145  INFO shantim2-l2 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-07-27 10:51:58.164  INFO shantim2-l2 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2018-07-27 10:51:58.166  INFO shantim2-l2 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-07-27 10:51:58.348  INFO shantim2-l2 --- [ost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2018-07-27 10:51:58.349  INFO shantim2-l2 --- [ost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 2760 ms
+2018-07-27 10:51:58.567  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2018-07-27 10:51:58.729  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-27 10:51:58.730  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-27 10:51:58.730  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-27 10:51:58.730  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-27 10:51:59.363  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@c0c2f8d: startup date [Fri Jul 27 10:51:55 IST 2018]; root of context hierarchy
+2018-07-27 10:51:59.482  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/user],methods=[GET],produces=[application/json || application/xml]}" onto public com.dm_02_tbdapp.bean.UserProfile com.dm_02_tbdapp.controller.UserAppController.setUserProfile(java.lang.String)
+2018-07-27 10:51:59.485  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/login],methods=[POST]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.loginUser(org.json.simple.JSONObject)
+2018-07-27 10:51:59.486  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/RegisterUser],methods=[POST]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.newUser(org.json.simple.JSONObject)
+2018-07-27 10:51:59.487  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/logout],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.logoutUser()
+2018-07-27 10:51:59.487  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/registerUser],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.registerUser(com.dm_02_tbdapp.bean.User)
+2018-07-27 10:51:59.488  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/updateUser],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.updateUser(com.dm_02_tbdapp.bean.User)
+2018-07-27 10:51:59.489  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/updateUserAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.updateAddress(com.dm_02_tbdapp.bean.User)
+2018-07-27 10:51:59.490  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/addAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.addAddress(com.dm_02_tbdapp.bean.User)
+2018-07-27 10:51:59.490  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/removeAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.removeAddress(com.dm_02_tbdapp.bean.User)
+2018-07-27 10:51:59.496  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-27 10:51:59.501  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-27 10:51:59.571  INFO shantim2-l2 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-27 10:51:59.571  INFO shantim2-l2 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-27 10:51:59.664  INFO shantim2-l2 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-27 10:52:00.004  INFO shantim2-l2 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-07-27 10:52:00.030  INFO shantim2-l2 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2018-07-27 10:52:00.042  INFO shantim2-l2 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2018-07-27 10:52:00.192  INFO shantim2-l2 --- [           main] o.a.t.u.n.NioSelectorPool                : Using a shared selector for servlet write/read
+2018-07-27 10:52:00.270  INFO shantim2-l2 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2018-07-27 10:52:00.278  INFO shantim2-l2 --- [           main] c.d.c.App                                : Started App in 5.833 seconds (JVM running for 12.874)
+2018-07-27 10:53:09.334  INFO shantim2-l2 --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-07-27 10:53:09.383  INFO shantim2-l2 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization started
+2018-07-27 10:53:11.229  INFO shantim2-l2 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization completed in 1838 ms
+2018-07-27 10:53:17.942  INFO shantim2-l2 --- [nio-8080-exec-1] c.d.c.UserManager                        : entered into UserManager class 
+2018-07-27 10:53:18.013  INFO shantim2-l2 --- [nio-8080-exec-1] c.d.c.UserManager                        : registeredNewUserObj is: rohit
+2018-07-27 10:53:18.021  INFO shantim2-l2 --- [nio-8080-exec-1] c.d.c.UserManager                        : compleate json object is: {"reason":"entered details are valid.","UserProfile":{"firstName":"rohit","lastName":"jain","password":"Pass123@","mobileNumber":"8978971254","emailid":"rohit24@hotmail.com"},"status":"registration completed."}
+2018-07-27 10:56:09.886  INFO shantim2-l2 --- [nio-8080-exec-3] c.d.c.UserManager                        : entered into UserManager class 
+2018-07-27 10:56:09.887  INFO shantim2-l2 --- [nio-8080-exec-3] c.d.c.UserManager                        : registeredNewUserObj is: rohit
+2018-07-27 10:56:09.888  INFO shantim2-l2 --- [nio-8080-exec-3] c.d.c.UserManager                        : compleate json object is: {"reason":"entered details are valid.","UserProfile":{"firstName":"rohit","lastName":"jain","password":"Pass123a@","mobileNumber":"8978971254","emailid":"rohit244@hotmail.com"},"status":"registration completed."}
+2018-07-27 11:05:33.518  INFO shantim2-l2 --- [nio-8080-exec-5] c.d.c.UserManager                        : entered into UserManager class 
+2018-07-27 11:05:33.519  INFO shantim2-l2 --- [nio-8080-exec-5] c.d.c.UserManager                        : registeredNewUserObj is: rohit
+2018-07-27 11:05:33.520  INFO shantim2-l2 --- [nio-8080-exec-5] c.d.c.UserManager                        : compleate json object is: {"reason":"entered details are valid.","UserProfile":{"firstName":"rohit","lastName":"ain","password":"Pass123@","mobileNumber":"8978971286","emailid":"rohit24@hotmail.com"},"status":"registration completed."}
+2018-07-27 11:09:42.651  INFO shantim2-l2 --- [nio-8080-exec-7] c.d.c.UserManager                        : entered into UserManager class 
+2018-07-27 11:09:42.652  INFO shantim2-l2 --- [nio-8080-exec-7] c.d.c.UserManager                        : registeredNewUserObj is: 
+2018-07-27 11:09:42.653  INFO shantim2-l2 --- [nio-8080-exec-7] c.d.c.UserManager                        : compleate json object is: {"reason":"entered details are valid.","UserProfile":{"firstName":"","lastName":"","password":"","mobileNumber":"","emailid":""},"status":"registration completed."}
+2018-07-27 11:10:20.510  INFO shantim2-l2 --- [nio-8080-exec-8] c.d.c.UserManager                        : entered into UserManager class 
+2018-07-27 11:10:20.511  INFO shantim2-l2 --- [nio-8080-exec-8] c.d.c.UserManager                        : registeredNewUserObj is: rohit
+2018-07-27 11:10:20.512  INFO shantim2-l2 --- [nio-8080-exec-8] c.d.c.UserManager                        : compleate json object is: {"reason":"entered details are valid.","UserProfile":{"firstName":"rohit","lastName":"jain","password":"Pass123@","mobileNumber":"8978971254","emailid":"rohit24@hotmail.com"},"status":"registration completed."}
+2018-07-27 11:10:58.520  INFO shantim2-l2 --- [nio-8080-exec-9] c.d.c.UserManager                        : entered into UserManager class 
+2018-07-27 11:10:58.521  INFO shantim2-l2 --- [nio-8080-exec-9] c.d.c.UserManager                        : registeredNewUserObj is: rohit
+2018-07-27 11:10:58.521  INFO shantim2-l2 --- [nio-8080-exec-9] c.d.c.UserManager                        : compleate json object is: {"reason":"entered details are valid.","UserProfile":{"firstName":"rohit","lastName":"jain","password":"Pass123@","mobileNumber":"8978971254","emailid":"rohit24@hotmail.com"},"status":"registration completed."}
+2018-07-27 11:13:22.000  INFO shantim2-l2 --- [nio-8080-exec-1] c.d.c.UserManager                        : entered into UserManager class 
+2018-07-27 11:13:22.013  INFO shantim2-l2 --- [nio-8080-exec-1] c.d.c.UserManager                        : registeredNewUserObj is: rohit
+2018-07-27 11:13:22.029  INFO shantim2-l2 --- [nio-8080-exec-1] c.d.c.UserManager                        : compleate json object is: {"reason":"entered details are valid.","UserProfile":{"firstName":"rohit","lastName":"jain","password":"Pass123@","mobileNumber":"8978971254","emailid":"rohit24@hotmail.com"},"status":"registration completed."}
+2018-07-27 11:13:28.742  INFO shantim2-l2 --- [nio-8080-exec-2] c.d.c.UserManager                        : entered into UserManager class 
+2018-07-27 11:13:28.755  INFO shantim2-l2 --- [nio-8080-exec-2] c.d.c.UserManager                        : registeredNewUserObj is: rohit
+2018-07-27 11:13:28.760  INFO shantim2-l2 --- [nio-8080-exec-2] c.d.c.UserManager                        : compleate json object is: {"reason":"entered details are valid.","UserProfile":{"firstName":"rohit","lastName":"jain","password":"Pass123@","mobileNumber":"8978971254","emailid":"rohit24@hotmail.com"},"status":"registration completed."}
+2018-07-27 11:15:01.309  INFO shantim2-l2 --- [nio-8080-exec-4] c.d.c.UserManager                        : entered into UserManager class 
+2018-07-27 11:15:01.309  INFO shantim2-l2 --- [nio-8080-exec-4] c.d.c.UserManager                        : registeredNewUserObj is: rohit
+2018-07-27 11:15:01.310  INFO shantim2-l2 --- [nio-8080-exec-4] c.d.c.UserManager                        : compleate json object is: {"reason":"entered details are valid.","UserProfile":{"firstName":"rohit","lastName":"jain","password":"Pass123@","mobileNumber":"8978971254","emailid":"rohit24@hotmail.com"},"status":"registration completed."}
+2018-07-27 11:16:07.628  INFO shantim2-l2 --- [nio-8080-exec-6] c.d.c.UserManager                        : entered into UserManager class 
+2018-07-27 11:16:07.630  INFO shantim2-l2 --- [nio-8080-exec-6] c.d.c.UserManager                        : registeredNewUserObj is: rohit
+2018-07-27 11:16:07.630  INFO shantim2-l2 --- [nio-8080-exec-6] c.d.c.UserManager                        : compleate json object is: {"reason":"entered details are valid.","UserProfile":{"firstName":"rohit","lastName":"jain","password":"Pass123@","mobileNumber":"8978971254","emailid":"rohit24@hotmail.com"},"status":"registration completed."}
+2018-07-27 11:16:26.546  INFO shantim2-l2 --- [nio-8080-exec-7] c.d.c.UserManager                        : entered into UserManager class 
+2018-07-27 11:16:26.546  INFO shantim2-l2 --- [nio-8080-exec-7] c.d.c.UserManager                        : registeredNewUserObj is: rohit
+2018-07-27 11:16:26.547  INFO shantim2-l2 --- [nio-8080-exec-7] c.d.c.UserManager                        : compleate json object is: {"reason":"entered details are valid.","UserProfile":{"firstName":"rohit","lastName":"jain","password":"Pass123@","mobileNumber":"8978971254","emailid":"rohit24@hotmail.com"},"status":"registration completed."}
+2018-07-27 11:17:52.152  INFO shantim2-l2 --- [nio-8080-exec-9] c.d.c.UserManager                        : entered into UserManager class 
+2018-07-27 11:17:52.152  INFO shantim2-l2 --- [nio-8080-exec-9] c.d.c.UserManager                        : registeredNewUserObj is: rohit
+2018-07-27 11:17:52.153  INFO shantim2-l2 --- [nio-8080-exec-9] c.d.c.UserManager                        : compleate json object is: {"reason":"entered details are valid.","UserProfile":{"firstName":"rohit","lastName":"jain","password":"PAss123@","mobileNumber":"8978971245","emailid":"ohit24@hotmail.com"},"status":"registration completed."}
+2018-07-27 11:22:54.646  INFO shantim2-l2 --- [nio-8080-exec-1] c.d.c.UserManager                        : entered into UserManager class 
+2018-07-27 11:22:54.646  INFO shantim2-l2 --- [nio-8080-exec-1] c.d.c.UserManager                        : registeredNewUserObj is: rohit
+2018-07-27 11:22:54.646  INFO shantim2-l2 --- [nio-8080-exec-1] c.d.c.UserManager                        : compleate json object is: {"reason":"entered details are valid.","UserProfile":{"firstName":"rohit","lastName":"ain","password":"Pass123@","mobileNumber":"8978971245","emailid":"rohit24@hotmail.com"},"status":"registration completed."}
+2018-07-27 11:40:13.381  INFO shantim2-l2 --- [on(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-07-27 11:40:13.382  INFO shantim2-l2 --- [on(2)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@c0c2f8d: startup date [Fri Jul 27 10:51:55 IST 2018]; root of context hierarchy
+2018-07-27 11:40:13.393  INFO shantim2-l2 --- [on(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-07-27 15:21:25.326  INFO shantim2-l2 --- [           main] c.d.c.App                                : Starting App on shantim2-l2 with PID 8532 (C:\Users\shashikant\eclipse-workspace\UserApp\target\classes started by shashikant in C:\Users\shashikant\eclipse-workspace\UserApp)
+2018-07-27 15:21:25.341  INFO shantim2-l2 --- [           main] c.d.c.App                                : No active profile set, falling back to default profiles: default
+2018-07-27 15:21:25.669  INFO shantim2-l2 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@c0c2f8d: startup date [Fri Jul 27 15:21:25 IST 2018]; root of context hierarchy
+2018-07-27 15:21:25.872  INFO shantim2-l2 --- [kground-preinit] o.h.v.i.u.Version                        : HV000001: Hibernate Validator 5.3.5.Final
+2018-07-27 15:21:29.288  INFO shantim2-l2 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-07-27 15:21:29.303  INFO shantim2-l2 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2018-07-27 15:21:29.321  INFO shantim2-l2 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-07-27 15:21:29.586  INFO shantim2-l2 --- [ost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2018-07-27 15:21:29.586  INFO shantim2-l2 --- [ost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 3948 ms
+2018-07-27 15:21:29.937  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2018-07-27 15:21:29.937  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-27 15:21:29.937  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-27 15:21:29.937  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-27 15:21:29.937  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-27 15:21:30.748  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@c0c2f8d: startup date [Fri Jul 27 15:21:25 IST 2018]; root of context hierarchy
+2018-07-27 15:21:30.890  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/user],methods=[GET],produces=[application/json || application/xml]}" onto public com.dm_02_tbdapp.bean.UserProfile com.dm_02_tbdapp.controller.UserAppController.setUserProfile(java.lang.String)
+2018-07-27 15:21:30.905  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/login],methods=[POST]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.loginUser(org.json.simple.JSONObject)
+2018-07-27 15:21:30.905  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/RegisterUser],methods=[POST]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.newUser(org.json.simple.JSONObject)
+2018-07-27 15:21:30.905  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/logout],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.logoutUser()
+2018-07-27 15:21:30.905  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/registerUser],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.registerUser(com.dm_02_tbdapp.bean.User)
+2018-07-27 15:21:30.905  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/updateUser],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.updateUser(com.dm_02_tbdapp.bean.User)
+2018-07-27 15:21:30.905  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/updateUserAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.updateAddress(com.dm_02_tbdapp.bean.User)
+2018-07-27 15:21:30.905  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/addAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.addAddress(com.dm_02_tbdapp.bean.User)
+2018-07-27 15:21:30.905  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/removeAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.removeAddress(com.dm_02_tbdapp.bean.User)
+2018-07-27 15:21:30.921  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-27 15:21:30.921  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-27 15:21:30.999  INFO shantim2-l2 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-27 15:21:30.999  INFO shantim2-l2 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-27 15:21:31.093  INFO shantim2-l2 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-27 15:21:31.382  INFO shantim2-l2 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-07-27 15:21:31.413  INFO shantim2-l2 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2018-07-27 15:21:31.413  INFO shantim2-l2 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2018-07-27 15:21:31.429  INFO shantim2-l2 --- [           main] o.a.t.u.n.NioSelectorPool                : Using a shared selector for servlet write/read
+2018-07-27 15:21:31.460  INFO shantim2-l2 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2018-07-27 15:21:31.460  INFO shantim2-l2 --- [           main] c.d.c.App                                : Started App in 6.837 seconds (JVM running for 9.643)
+2018-07-27 15:26:24.783  INFO shantim2-l2 --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-07-27 15:26:24.798  INFO shantim2-l2 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization started
+2018-07-27 15:26:24.908  INFO shantim2-l2 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization completed in 110 ms
+2018-07-27 15:26:25.425 ERROR shantim2-l2 --- [nio-8080-exec-1] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Handler dispatch failed; nested exception is java.lang.Error: Unresolved compilation problems: 
+	UserManager cannot be resolved to a type
+	UserManager cannot be resolved to a type
+] with root cause
+java.lang.Error: Unresolved compilation problems: 
+	UserManager cannot be resolved to a type
+	UserManager cannot be resolved to a type
+
+	at com.dm_02_tbdapp.controller.UserAppController.newUser(UserAppController.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2018-07-27 15:31:44.092 ERROR shantim2-l2 --- [nio-8080-exec-2] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Handler dispatch failed; nested exception is java.lang.Error: Unresolved compilation problems: 
+	UserManager cannot be resolved to a type
+	UserManager cannot be resolved to a type
+] with root cause
+java.lang.Error: Unresolved compilation problems: 
+	UserManager cannot be resolved to a type
+	UserManager cannot be resolved to a type
+
+	at com.dm_02_tbdapp.controller.UserAppController.newUser(UserAppController.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2018-07-27 16:10:19.694  INFO shantim2-l2 --- [on(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-07-27 16:10:19.694  INFO shantim2-l2 --- [on(2)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@c0c2f8d: startup date [Fri Jul 27 15:21:25 IST 2018]; root of context hierarchy
+2018-07-27 16:10:19.694  INFO shantim2-l2 --- [on(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-07-27 16:10:37.308  INFO shantim2-l2 --- [           main] c.d.c.App                                : Starting App on shantim2-l2 with PID 6260 (C:\Users\shashikant\eclipse-workspace\UserApp\target\classes started by shashikant in C:\Users\shashikant\eclipse-workspace\UserApp)
+2018-07-27 16:10:37.308  INFO shantim2-l2 --- [           main] c.d.c.App                                : No active profile set, falling back to default profiles: default
+2018-07-27 16:10:37.402  INFO shantim2-l2 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@c0c2f8d: startup date [Fri Jul 27 16:10:37 IST 2018]; root of context hierarchy
+2018-07-27 16:10:37.527  INFO shantim2-l2 --- [kground-preinit] o.h.v.i.u.Version                        : HV000001: Hibernate Validator 5.3.5.Final
+2018-07-27 16:10:39.151  INFO shantim2-l2 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-07-27 16:10:39.167  INFO shantim2-l2 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2018-07-27 16:10:39.167  INFO shantim2-l2 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-07-27 16:10:39.284  INFO shantim2-l2 --- [ost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2018-07-27 16:10:39.284  INFO shantim2-l2 --- [ost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1882 ms
+2018-07-27 16:10:39.487  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2018-07-27 16:10:39.487  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-27 16:10:39.487  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-27 16:10:39.487  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-27 16:10:39.487  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-27 16:10:39.893  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@c0c2f8d: startup date [Fri Jul 27 16:10:37 IST 2018]; root of context hierarchy
+2018-07-27 16:10:39.986  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/user],methods=[GET],produces=[application/json || application/xml]}" onto public com.dm_02_tbdapp.bean.UserProfile com.dm_02_tbdapp.controller.UserAppController.setUserProfile(java.lang.String)
+2018-07-27 16:10:39.986  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/login],methods=[POST]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.loginUser(org.json.simple.JSONObject)
+2018-07-27 16:10:39.986  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/RegisterUser],methods=[POST]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.newUser(org.json.simple.JSONObject)
+2018-07-27 16:10:39.986  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/logout],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.logoutUser()
+2018-07-27 16:10:39.986  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/registerUser],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.registerUser(com.dm_02_tbdapp.bean.User)
+2018-07-27 16:10:39.986  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/updateUser],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.updateUser(com.dm_02_tbdapp.bean.User)
+2018-07-27 16:10:39.986  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/updateUserAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.updateAddress(com.dm_02_tbdapp.bean.User)
+2018-07-27 16:10:39.986  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/addAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.addAddress(com.dm_02_tbdapp.bean.User)
+2018-07-27 16:10:39.986  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/removeAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.removeAddress(com.dm_02_tbdapp.bean.User)
+2018-07-27 16:10:40.002  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-27 16:10:40.002  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-27 16:10:40.033  INFO shantim2-l2 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-27 16:10:40.033  INFO shantim2-l2 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-27 16:10:40.080  INFO shantim2-l2 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-27 16:10:40.298  INFO shantim2-l2 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-07-27 16:10:40.330  INFO shantim2-l2 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2018-07-27 16:10:40.362  INFO shantim2-l2 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2018-07-27 16:10:40.377  INFO shantim2-l2 --- [           main] o.a.t.u.n.NioSelectorPool                : Using a shared selector for servlet write/read
+2018-07-27 16:10:40.393  INFO shantim2-l2 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2018-07-27 16:10:40.408  INFO shantim2-l2 --- [           main] c.d.c.App                                : Started App in 3.503 seconds (JVM running for 5.076)
+2018-07-27 16:33:21.684  INFO shantim2-l2 --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-07-27 16:33:21.699  INFO shantim2-l2 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization started
+2018-07-27 16:33:22.371  INFO shantim2-l2 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization completed in 672 ms
+2018-07-27 16:33:25.182 ERROR shantim2-l2 --- [nio-8080-exec-1] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Handler dispatch failed; nested exception is java.lang.Error: Unresolved compilation problems: 
+	UserManager cannot be resolved to a type
+	UserManager cannot be resolved to a type
+] with root cause
+java.lang.Error: Unresolved compilation problems: 
+	UserManager cannot be resolved to a type
+	UserManager cannot be resolved to a type
+
+	at com.dm_02_tbdapp.controller.UserAppController.newUser(UserAppController.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2018-07-27 16:38:16.054 ERROR shantim2-l2 --- [nio-8080-exec-2] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Handler dispatch failed; nested exception is java.lang.Error: Unresolved compilation problems: 
+	UserManager cannot be resolved to a type
+	UserManager cannot be resolved to a type
+] with root cause
+java.lang.Error: Unresolved compilation problems: 
+	UserManager cannot be resolved to a type
+	UserManager cannot be resolved to a type
+
+	at com.dm_02_tbdapp.controller.UserAppController.newUser(UserAppController.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2018-07-27 16:41:01.849  INFO shantim2-l2 --- [on(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-07-27 16:41:01.849  INFO shantim2-l2 --- [on(2)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@c0c2f8d: startup date [Fri Jul 27 16:10:37 IST 2018]; root of context hierarchy
+2018-07-27 16:41:01.865  INFO shantim2-l2 --- [on(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-07-27 16:41:31.178  INFO shantim2-l2 --- [           main] c.d.c.App                                : Starting App on shantim2-l2 with PID 9048 (C:\Users\shashikant\eclipse-workspace\UserApp\target\classes started by shashikant in C:\Users\shashikant\eclipse-workspace\UserApp)
+2018-07-27 16:41:31.194  INFO shantim2-l2 --- [           main] c.d.c.App                                : No active profile set, falling back to default profiles: default
+2018-07-27 16:41:31.303  INFO shantim2-l2 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@c0c2f8d: startup date [Fri Jul 27 16:41:31 IST 2018]; root of context hierarchy
+2018-07-27 16:41:31.896  INFO shantim2-l2 --- [kground-preinit] o.h.v.i.u.Version                        : HV000001: Hibernate Validator 5.3.5.Final
+2018-07-27 16:41:34.503  INFO shantim2-l2 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-07-27 16:41:34.550  INFO shantim2-l2 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2018-07-27 16:41:34.581  INFO shantim2-l2 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-07-27 16:41:35.020  INFO shantim2-l2 --- [ost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2018-07-27 16:41:35.020  INFO shantim2-l2 --- [ost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 3717 ms
+2018-07-27 16:41:35.738  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2018-07-27 16:41:35.753  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-27 16:41:35.753  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-27 16:41:35.753  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-27 16:41:35.753  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-27 16:41:37.689  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@c0c2f8d: startup date [Fri Jul 27 16:41:31 IST 2018]; root of context hierarchy
+2018-07-27 16:41:38.080  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/user],methods=[GET],produces=[application/json || application/xml]}" onto public com.dm_02_tbdapp.bean.UserProfile com.dm_02_tbdapp.controller.UserAppController.setUserProfile(java.lang.String)
+2018-07-27 16:41:38.080  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/login],methods=[POST]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.loginUser(org.json.simple.JSONObject)
+2018-07-27 16:41:38.080  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/RegisterUser],methods=[POST]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.newUser(org.json.simple.JSONObject)
+2018-07-27 16:41:38.080  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/logout],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.logoutUser()
+2018-07-27 16:41:38.080  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/registerUser],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.registerUser(com.dm_02_tbdapp.bean.User)
+2018-07-27 16:41:38.095  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/updateUser],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.updateUser(com.dm_02_tbdapp.bean.User)
+2018-07-27 16:41:38.095  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/updateUserAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.updateAddress(com.dm_02_tbdapp.bean.User)
+2018-07-27 16:41:38.095  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/addAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.addAddress(com.dm_02_tbdapp.bean.User)
+2018-07-27 16:41:38.095  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/removeAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.removeAddress(com.dm_02_tbdapp.bean.User)
+2018-07-27 16:41:38.111  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-27 16:41:38.127  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-27 16:41:38.314  INFO shantim2-l2 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-27 16:41:38.314  INFO shantim2-l2 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-27 16:41:38.532  INFO shantim2-l2 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-27 16:41:39.546  INFO shantim2-l2 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-07-27 16:41:39.641  INFO shantim2-l2 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2018-07-27 16:41:39.719  INFO shantim2-l2 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2018-07-27 16:41:39.781  INFO shantim2-l2 --- [           main] o.a.t.u.n.NioSelectorPool                : Using a shared selector for servlet write/read
+2018-07-27 16:41:39.984  INFO shantim2-l2 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2018-07-27 16:41:40.015  INFO shantim2-l2 --- [           main] c.d.c.App                                : Started App in 9.306 seconds (JVM running for 11.447)
+2018-07-27 16:48:14.194  INFO shantim2-l2 --- [nio-8080-exec-2] o.a.c.c.C.[.[.[/]                        : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-07-27 16:48:14.194  INFO shantim2-l2 --- [nio-8080-exec-2] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization started
+2018-07-27 16:48:14.267  INFO shantim2-l2 --- [nio-8080-exec-2] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization completed in 73 ms
+2018-07-27 16:48:14.610  INFO shantim2-l2 --- [nio-8080-exec-2] c.d.c.UserManager                        : entered into UserManager class 
+2018-07-27 16:48:14.610  INFO shantim2-l2 --- [nio-8080-exec-2] c.d.c.UserManager                        : registeredNewUserObj is:  shashi 
+2018-07-27 16:48:14.626  INFO shantim2-l2 --- [nio-8080-exec-2] c.d.c.UserManager                        : compleate json object is: {"reason":"entered details are valid.","UserProfile":{"firstName":" shashi ","lastName":"reddy ","password":" shahsi123","mobileNumber":"12345","emailid":"shashi@gmail.com "},"status":"registration completed."}
+2018-07-27 16:48:14.860  INFO shantim2-l2 --- [nio-8080-exec-6] c.d.c.UserManager                        : entered into UserManager class 
+2018-07-27 16:48:14.860  INFO shantim2-l2 --- [nio-8080-exec-6] c.d.c.UserManager                        : registeredNewUserObj is: shashi 
+2018-07-27 16:48:14.860  INFO shantim2-l2 --- [nio-8080-exec-6] c.d.c.UserManager                        : compleate json object is: {"reason":"entered details are valid.","UserProfile":{"firstName":"shashi ","lastName":"reddy ","password":"shahsi123 ","mobileNumber":"12345","emailid":"shashi@gmail.com "},"status":"registration completed."}
+2018-07-27 16:52:08.978  WARN shantim2-l2 --- [io-8080-exec-10] o.s.w.s.PageNotFound                     : Request method 'GET' not supported
+2018-07-27 16:59:59.032  INFO shantim2-l2 --- [nio-8080-exec-4] c.d.c.UserManager                        : entered into UserManager class 
+2018-07-27 16:59:59.032  INFO shantim2-l2 --- [nio-8080-exec-4] c.d.c.UserManager                        : registeredNewUserObj is: 
+2018-07-27 16:59:59.032  INFO shantim2-l2 --- [nio-8080-exec-4] c.d.c.UserManager                        : compleate json object is: {"reason":"entered details are valid.","UserProfile":{"firstName":"","lastName":"","password":"","mobileNumber":"","emailid":""},"status":"registration completed."}
+2018-07-27 17:08:15.036  INFO shantim2-l2 --- [on(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-07-27 17:08:15.039  INFO shantim2-l2 --- [on(2)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@c0c2f8d: startup date [Fri Jul 27 16:41:31 IST 2018]; root of context hierarchy
+2018-07-27 17:08:15.045  INFO shantim2-l2 --- [on(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-07-27 17:18:00.025  INFO shantim2-l2 --- [           main] c.d.c.App                                : Starting App on shantim2-l2 with PID 9384 (C:\Users\shashikant\eclipse-workspace\UserApp\target\classes started by shashikant in C:\Users\shashikant\eclipse-workspace\UserApp)
+2018-07-27 17:18:00.031  INFO shantim2-l2 --- [           main] c.d.c.App                                : No active profile set, falling back to default profiles: default
+2018-07-27 17:18:00.133  INFO shantim2-l2 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@c0c2f8d: startup date [Fri Jul 27 17:18:00 IST 2018]; root of context hierarchy
+2018-07-27 17:18:00.301  INFO shantim2-l2 --- [kground-preinit] o.h.v.i.u.Version                        : HV000001: Hibernate Validator 5.3.5.Final
+2018-07-27 17:18:01.996  INFO shantim2-l2 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-07-27 17:18:02.013  INFO shantim2-l2 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2018-07-27 17:18:02.015  INFO shantim2-l2 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-07-27 17:18:02.160  INFO shantim2-l2 --- [ost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2018-07-27 17:18:02.162  INFO shantim2-l2 --- [ost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 2034 ms
+2018-07-27 17:18:02.357  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2018-07-27 17:18:02.365  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-27 17:18:02.366  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-27 17:18:02.367  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-27 17:18:02.367  INFO shantim2-l2 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-27 17:18:02.806  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@c0c2f8d: startup date [Fri Jul 27 17:18:00 IST 2018]; root of context hierarchy
+2018-07-27 17:18:02.882  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/user],methods=[GET],produces=[application/json || application/xml]}" onto public com.dm_02_tbdapp.bean.UserProfile com.dm_02_tbdapp.controller.UserAppController.setUserProfile(java.lang.String)
+2018-07-27 17:18:02.884  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/login],methods=[POST]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.loginUser(org.json.simple.JSONObject)
+2018-07-27 17:18:02.884  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/RegisterUser],methods=[POST]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.newUser(org.json.simple.JSONObject)
+2018-07-27 17:18:02.885  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/logout],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.logoutUser()
+2018-07-27 17:18:02.885  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/registerUser],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.registerUser(com.dm_02_tbdapp.bean.User)
+2018-07-27 17:18:02.886  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/updateUser],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.updateUser(com.dm_02_tbdapp.bean.User)
+2018-07-27 17:18:02.887  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/updateUserAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.updateAddress(com.dm_02_tbdapp.bean.User)
+2018-07-27 17:18:02.887  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/addAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.addAddress(com.dm_02_tbdapp.bean.User)
+2018-07-27 17:18:02.888  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UserApp/removeAddress],methods=[GET]}" onto public org.json.simple.JSONObject com.dm_02_tbdapp.controller.UserAppController.removeAddress(com.dm_02_tbdapp.bean.User)
+2018-07-27 17:18:02.893  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-27 17:18:02.894  INFO shantim2-l2 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-27 17:18:02.944  INFO shantim2-l2 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-27 17:18:02.945  INFO shantim2-l2 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-27 17:18:03.001  INFO shantim2-l2 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-27 17:18:03.248  INFO shantim2-l2 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-07-27 17:18:03.305  INFO shantim2-l2 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2018-07-27 17:18:03.319  INFO shantim2-l2 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2018-07-27 17:18:03.336  INFO shantim2-l2 --- [           main] o.a.t.u.n.NioSelectorPool                : Using a shared selector for servlet write/read
+2018-07-27 17:18:03.362  INFO shantim2-l2 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2018-07-27 17:18:03.369  INFO shantim2-l2 --- [           main] c.d.c.App                                : Started App in 3.672 seconds (JVM running for 5.715)
+2018-07-27 17:29:00.438  INFO shantim2-l2 --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-07-27 17:29:00.439  INFO shantim2-l2 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization started
+2018-07-27 17:29:00.463  INFO shantim2-l2 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization completed in 24 ms
+2018-07-27 17:29:00.571  INFO shantim2-l2 --- [nio-8080-exec-1] c.d.c.UserManager                        : entered into UserManager class 
+2018-07-27 17:29:00.572  INFO shantim2-l2 --- [nio-8080-exec-1] c.d.c.UserManager                        : registeredNewUserObj is: rohit
+2018-07-27 17:29:00.572  INFO shantim2-l2 --- [nio-8080-exec-1] c.d.c.UserManager                        : compleate json object is: {"reason":"entered details are valid.","UserProfile":{"firstName":"rohit","lastName":"jain","password":"Pass123@","mobileNumber":"8978971286","emailid":"rohit24@homaol.com"},"status":"registration completed."}
+2018-07-27 17:34:29.527  INFO shantim2-l2 --- [on(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-07-27 17:34:29.528  INFO shantim2-l2 --- [on(2)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@c0c2f8d: startup date [Fri Jul 27 17:18:00 IST 2018]; root of context hierarchy
+2018-07-27 17:34:29.534  INFO shantim2-l2 --- [on(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
